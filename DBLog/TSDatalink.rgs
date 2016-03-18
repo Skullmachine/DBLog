@@ -1,0 +1,26 @@
+HKCR
+{
+	DBLog.TSDatalink.1 = s 'TSDatalink Class'
+	{
+		CLSID = s '{9D6338D1-57FB-11D4-8105-0090276F59E1}'
+	}
+	DBLog.TSDatalink = s 'TSDatalink Class'
+	{
+		CLSID = s '{9D6338D1-57FB-11D4-8105-0090276F59E1}'
+		CurVer = s 'DBLog.TSDatalink.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {9D6338D1-57FB-11D4-8105-0090276F59E1} = s 'TSDatalink Class'
+		{
+			ProgID = s 'DBLog.TSDatalink.1'
+			VersionIndependentProgID = s 'DBLog.TSDatalink'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Free'
+			}
+			'TypeLib' = s '{9D6338C0-57FB-11D4-8105-0090276F59E1}'
+		}
+	}
+}

@@ -1,0 +1,122 @@
+﻿La génération a démarré 17/03/2016 23:41:55.
+     1>Projet "C:\Program Files (x86)\National Instruments\TestStand 4.2.1\Components\Models\TestStandModels\Database\DBLog\DBLog.vcxproj" sur le nœud 2 (rebuild cible(s)).
+     1>_PrepareForClean:
+         Suppression du fichier ".\Debug\DBLog.lastbuildstate".
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(298,5): warning MSB8004: Le répertoire Intermediate ne se termine pas par une barre oblique finale.  Cette instance de build ajoutera une barre oblique, comme requis, pour permettre l'évaluation correcte du répertoire Intermediate.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(299,5): warning MSB8004: Le répertoire Output ne se termine pas par une barre oblique finale.  Cette instance de build ajoutera une barre oblique, comme requis, pour permettre l'évaluation correcte du répertoire Output.
+       InitializeBuildStatus:
+         Création de ".\Debug\DBLog.unsuccessfulbuild", car "AlwaysCreate" a été spécifié.
+       Midl:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\midl.exe /W1 /nologo /char signed /env win32 /Oicf /h "DBLog.h" /iid "DBLog_i.c" /tlb ".\DBLog.tlb" DBLog.idl 
+         Processing .\DBLog.idl
+         DBLog.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\oaidl.idl
+         oaidl.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\objidl.idl
+         objidl.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\unknwn.idl
+         unknwn.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\wtypes.idl
+         wtypes.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\basetsd.h
+         basetsd.h
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\guiddef.h
+         guiddef.h
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\ocidl.idl
+         ocidl.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\oleidl.idl
+         oleidl.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\servprov.idl
+         servprov.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\urlmon.idl
+         urlmon.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\msxml.idl
+         msxml.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\oaidl.acf
+         oaidl.acf
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\ocidl.acf
+         ocidl.acf
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\..\..\..\bin /I..\..\..\..\..\API\VC\Debug /I..\..\..\..\..\API\VC /ZI /nologo /W3 /WX- /Od /Oy- /D CREATING_DBLOG /D _REMOTE_TS /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D _VC80_UPGRADE=0x0710 /D _WINDLL /D _MBCS /D _AFXDLL /Gm- /EHa /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp".\Debug/DBLog.pch" /Fo".\Debug/" /Fd".\Debug/vc100.pdb" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
+         StdAfx.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\..\..\..\bin /I..\..\..\..\..\API\VC\Debug /I..\..\..\..\..\API\VC /ZI /nologo /W3 /WX- /Od /Oy- /D CREATING_DBLOG /D _REMOTE_TS /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D _VC80_UPGRADE=0x0710 /D _WINDLL /D _MBCS /D _AFXDLL /Gm- /EHa /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Debug/DBLog.pch" /Fo".\Debug/" /Fd".\Debug/vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Columns.cpp DBLog.cpp DBLogUtil.cpp format.cpp Mutex.cpp Statement.cpp TSDatalink.cpp TSDBLog.cpp
+         Columns.cpp
+         DBLog.cpp
+         DBLogUtil.cpp
+         format.cpp
+     1>c:\program files (x86)\national instruments\teststand 4.2.1\components\models\teststandmodels\database\dblog\format.cpp(1): warning C4627: '#include "tsutilcpp.h"' : ignoré lors de la recherche d'une utilisation d'un en-tête précompilé
+                 Ajoutez la directive à 'stdafx.h' ou régénérez l'en-tête précompilé
+         Mutex.cpp
+         Statement.cpp
+         TSDatalink.cpp
+     1>c:\program files (x86)\national instruments\teststand 4.2.1\components\models\teststandmodels\database\dblog\tsdatalink.cpp(141): warning C4297: 'CTSDatalink::LogResults' : la fonction lève une exception alors qu'elle est présumée ne pas le faire
+                 __declspec(nothrow) ou throw() a été spécifié sur la fonction
+     1>c:\program files (x86)\national instruments\teststand 4.2.1\components\models\teststandmodels\database\dblog\tsdatalink.cpp(155): warning C4297: 'CTSDatalink::LogResults' : la fonction lève une exception alors qu'elle est présumée ne pas le faire
+                 __declspec(nothrow) ou throw() a été spécifié sur la fonction
+     1>c:\program files (x86)\national instruments\teststand 4.2.1\components\models\teststandmodels\database\dblog\tsdatalink.cpp(164): warning C4297: 'CTSDatalink::LogResults' : la fonction lève une exception alors qu'elle est présumée ne pas le faire
+                 __declspec(nothrow) ou throw() a été spécifié sur la fonction
+     1>c:\program files (x86)\national instruments\teststand 4.2.1\components\models\teststandmodels\database\dblog\tsdatalink.cpp(217): warning C4297: 'CTSDatalink::Initialize' : la fonction lève une exception alors qu'elle est présumée ne pas le faire
+                 __declspec(nothrow) ou throw() a été spécifié sur la fonction
+     1>c:\program files (x86)\national instruments\teststand 4.2.1\components\models\teststandmodels\database\dblog\tsdatalink.cpp(262): warning C4297: 'CTSDatalink::Initialize' : la fonction lève une exception alors qu'elle est présumée ne pas le faire
+                 __declspec(nothrow) ou throw() a été spécifié sur la fonction
+     1>c:\program files (x86)\national instruments\teststand 4.2.1\components\models\teststandmodels\database\dblog\tsdatalink.cpp(270): warning C4297: 'CTSDatalink::Initialize' : la fonction lève une exception alors qu'elle est présumée ne pas le faire
+                 __declspec(nothrow) ou throw() a été spécifié sur la fonction
+     1>c:\program files (x86)\national instruments\teststand 4.2.1\components\models\teststandmodels\database\dblog\tsdatalink.cpp(273): warning C4297: 'CTSDatalink::Initialize' : la fonction lève une exception alors qu'elle est présumée ne pas le faire
+                 __declspec(nothrow) ou throw() a été spécifié sur la fonction
+     1>c:\program files (x86)\national instruments\teststand 4.2.1\components\models\teststandmodels\database\dblog\tsdatalink.cpp(282): warning C4297: 'CTSDatalink::Initialize' : la fonction lève une exception alors qu'elle est présumée ne pas le faire
+                 __declspec(nothrow) ou throw() a été spécifié sur la fonction
+     1>c:\program files (x86)\national instruments\teststand 4.2.1\components\models\teststandmodels\database\dblog\tsdatalink.cpp(291): warning C4297: 'CTSDatalink::Initialize' : la fonction lève une exception alors qu'elle est présumée ne pas le faire
+                 __declspec(nothrow) ou throw() a été spécifié sur la fonction
+     1>c:\program files (x86)\national instruments\teststand 4.2.1\components\models\teststandmodels\database\dblog\tsdatalink.cpp(737): warning C4297: 'CTSDatalink::LogOneResult' : la fonction lève une exception alors qu'elle est présumée ne pas le faire
+                 __declspec(nothrow) ou throw() a été spécifié sur la fonction
+     1>c:\program files (x86)\national instruments\teststand 4.2.1\components\models\teststandmodels\database\dblog\tsdatalink.cpp(740): warning C4297: 'CTSDatalink::LogOneResult' : la fonction lève une exception alors qu'elle est présumée ne pas le faire
+                 __declspec(nothrow) ou throw() a été spécifié sur la fonction
+     1>c:\program files (x86)\national instruments\teststand 4.2.1\components\models\teststandmodels\database\dblog\tsdatalink.cpp(775): warning C4297: 'CTSDatalink::LogUUTResult' : la fonction lève une exception alors qu'elle est présumée ne pas le faire
+                 __declspec(nothrow) ou throw() a été spécifié sur la fonction
+     1>c:\program files (x86)\national instruments\teststand 4.2.1\components\models\teststandmodels\database\dblog\tsdatalink.cpp(778): warning C4297: 'CTSDatalink::LogUUTResult' : la fonction lève une exception alors qu'elle est présumée ne pas le faire
+                 __declspec(nothrow) ou throw() a été spécifié sur la fonction
+         TSDBLog.cpp
+         Génération de code en cours...
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _VC80_UPGRADE=0x0710 /D _AFXDLL /l"0x0409" /I.\Debug\ /nologo /fo".\Debug\DBLog.res" DBLog.rc 
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo".\Debug\DBLog.dll.embed.manifest.res" .\Debug\DBLog_manifest.rc 
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Program Files (x86)\National Instruments\TestStand 4.2.1\Components\Models\TestStandModels\Database\DBLog\.\Debug\DBLog.dll) ne correspond pas à la valeur de la propriété OutputFile (C:\Program Files (x86)\National Instruments\TestStand 4.2.1\Components\Models\TestStandModels\Database\DBLog\DBLog.dll) de Linker. Cela peut entraîner une génération incorrecte de votre projet. Pour corriger ce problème, vérifiez que les valeurs des propriétés $(OutDir), $(TargetName) et $(TargetExt) correspondent à la valeur spécifiée dans %(Link.OutputFile).
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"DBLog.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib rpcrt4.lib /DEF:".\DBLog.def" /MANIFEST /ManifestFile:".\Debug\DBLog.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:".\Debug/DBLog.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug/DBLog.lib" /MACHINE:X86 /DLL .\Debug\DBLog.res
+         .\Debug\DBLog.dll.embed.manifest.res
+         .\Debug/Columns.obj
+         .\Debug/DBLog.obj
+         .\Debug/DBLogUtil.obj
+         .\Debug/format.obj
+         .\Debug/Mutex.obj
+         .\Debug/Statement.obj
+         .\Debug/StdAfx.obj
+         .\Debug/TSDatalink.obj
+         .\Debug/TSDBLog.obj
+            Création de la bibliothèque .\Debug/DBLog.lib et de l'objet .\Debug/DBLog.exp
+       Manifest:
+         Suppression du fichier ".\Debug\DBLog.dll.embed.manifest".
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:".\Debug\DBLog.dll.embed.manifest" /manifest .\Debug\DBLog.dll.intermediate.manifest "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo".\Debug\DBLog.dll.embed.manifest.res" .\Debug\DBLog_manifest.rc 
+       LinkEmbedManifest:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"DBLog.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib rpcrt4.lib /DEF:".\DBLog.def" /MANIFEST /ManifestFile:".\Debug\DBLog.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:".\Debug/DBLog.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug/DBLog.lib" /MACHINE:X86 /DLL .\Debug\DBLog.res
+         .\Debug\DBLog.dll.embed.manifest.res
+         .\Debug/Columns.obj
+         .\Debug/DBLog.obj
+         .\Debug/DBLogUtil.obj
+         .\Debug/format.obj
+         .\Debug/Mutex.obj
+         .\Debug/Statement.obj
+         .\Debug/StdAfx.obj
+         .\Debug/TSDatalink.obj
+         .\Debug/TSDBLog.obj
+         DBLog.vcxproj -> C:\Program Files (x86)\National Instruments\TestStand 4.2.1\Components\Models\TestStandModels\Database\DBLog\.\Debug\DBLog.dll
+       FinalizeBuildStatus:
+         Suppression du fichier ".\Debug\DBLog.unsuccessfulbuild".
+         Mise à jour de l'horodatage ".\Debug\DBLog.lastbuildstate".
+     1>Génération du projet "C:\Program Files (x86)\National Instruments\TestStand 4.2.1\Components\Models\TestStandModels\Database\DBLog\DBLog.vcxproj" terminée (rebuild cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:13.31

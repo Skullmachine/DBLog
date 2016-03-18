@@ -1,0 +1,69 @@
+// DBLog.idl : IDL source for DBLog.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (DBLog.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+
+[
+	uuid(9D6338C0-57FB-11D4-8105-0090276F59E1),
+	version(1.0),
+	helpstring("zNI TestStand Database Logging")
+]
+library DBLOGLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+	importlib("C:\Program Files (x86)\Common Files\System\ado\msado15.dll");
+
+	[
+		object,
+		uuid(9D6338CE-57FB-11D4-8105-0090276F59E1),
+		dual,
+		helpstring("ITSDBLog Interface"),
+		pointer_default(unique)
+	]
+	interface ITSDBLog : IDispatch
+	{
+		[id(1), helpstring("method LogResults")] HRESULT LogResults([in]IDispatch *seqContextDisp, [in]IDispatch *optionsDisp, [in]IDispatch *mainSeqResultsDisp);
+		[id(2), helpstring("method LogUUTResult")] HRESULT LogUUTResult(IDispatch *seqContextDisp, IDispatch *uutResultDisp);
+		[id(3), helpstring("method LogOneResult")] HRESULT LogOneResult(IDispatch *stepContextDisp, IDispatch *stepResultDisp);
+		[id(4), helpstring("method NewUUT")] HRESULT NewUUT(IDispatch *seqContextDisp, IDispatch *uutDisp, IDispatch *optionsDisp, IDispatch *startTimeDisp, IDispatch *startDateDisp, IDispatch *stationInfoDisp);
+	};
+	[
+		object,
+		uuid(9D6338D0-57FB-11D4-8105-0090276F59E1),
+		dual,
+		helpstring("ITSDatalink Interface"),
+		pointer_default(unique)
+	]
+	interface ITSDatalink : IDispatch
+	{
+		[id(1), helpstring("method LogResults")] HRESULT LogResults([in]IDispatch *seqContextDisp, [in]IDispatch *mainSeqResultsDisp);
+		[id(2), helpstring("method Initialize")] HRESULT Initialize([in]IDispatch *seqContextDisp, [in]IDispatch *optionsDisp);
+		[id(3), helpstring("method SetRuntimeBooleans")] HRESULT SetRuntimeBooleans(IDispatch *seqContextDisp, IDispatch *optionsDisp);
+		[id(4), helpstring("method NewUUT")] HRESULT NewUUT(IDispatch *seqContextDisp, IDispatch *uutDisp, IDispatch *optionsDisp, IDispatch *startTimeDisp, IDispatch *startDateDisp, IDispatch *stationInfoDisp);
+		[id(5), helpstring("method LogOneResult")] HRESULT LogOneResult(IDispatch *stepContextDisp, IDispatch *stepResultDisp);
+		[id(6), helpstring("method LogUUTResult")] HRESULT LogUUTResult(IDispatch *seqContextDisp, IDispatch *uutResultDisp);
+	};
+
+	[
+		uuid(9D6338CF-57FB-11D4-8105-0090276F59E1),
+		helpstring("TSDBLog Class")
+	]
+	coclass TSDBLog
+	{
+		[default] interface ITSDBLog;
+	};
+	[
+		uuid(9D6338D1-57FB-11D4-8105-0090276F59E1),
+		helpstring("TSDatalink Class")
+	]
+	coclass TSDatalink
+	{
+		[default] interface ITSDatalink;
+	};
+};

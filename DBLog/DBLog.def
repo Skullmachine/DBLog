@@ -1,0 +1,9 @@
+; DBLog.def : Declares the module parameters.
+
+LIBRARY      "DBLog.DLL"
+
+EXPORTS
+	DllCanUnloadNow      PRIVATE
+	DllGetClassObject    PRIVATE
+	DllRegisterServer    PRIVATE
+	DllUnregisterServer	 PRIVATE

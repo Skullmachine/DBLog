@@ -1,0 +1,2128 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.40219.01 (4be88841).
+//
+// c:\program files (x86)\national instruments\teststand 4.2.1\components\models\teststandmodels\database\dblog\debug\tsuisupp.tlh
+//
+// C++ source equivalent of Win32 type library ..\..\bin\tsuisupp.dll
+// compiler-generated file created 03/17/16 at 23:41:59 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace TSUI {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("5b843d80-d9b6-412d-b33b-4172dd5a4c96"))
+/* LIBID */ __TSUISUPP;
+enum CommandKinds;
+enum CaptionSources;
+enum ImageSources;
+enum NumericSources;
+enum SeqListConnectionColumns;
+struct __declspec(uuid("54df4919-e3ac-4670-aa59-6a1ac42229f4"))
+/* dual interface */ MRUFiles;
+struct __declspec(uuid("70cb05ef-429f-46d2-9cfb-61830a2ccf45"))
+/* dual interface */ SelectedSteps;
+struct __declspec(uuid("81226336-afd2-4f83-9a07-82451b76aa8c"))
+/* dual interface */ Strings;
+struct __declspec(uuid("9e65a9ba-3170-46a4-a910-f78221c41d51"))
+/* dual interface */ NumericConnection;
+struct __declspec(uuid("ac2489dd-9f71-4930-a38b-69c327f6776d"))
+/* dual interface */ NumericConnections;
+struct __declspec(uuid("37b1411e-4b0f-4974-8106-ccf735fadd45"))
+/* dual interface */ ImageConnection;
+struct __declspec(uuid("fcd081e9-1524-4c3a-a33c-9de9f65e6a26"))
+/* dual interface */ ImageConnections;
+struct __declspec(uuid("1e7b8e59-9e21-40db-9fd3-a49b2a8b05a9"))
+/* dual interface */ CaptionConnection;
+struct __declspec(uuid("faca4e60-9b32-45d2-9114-ae41a36bc1f1"))
+/* dual interface */ CaptionConnections;
+struct __declspec(uuid("f79076b5-5f5f-438c-9995-508d2bd1f263"))
+/* dual interface */ CommandConnection;
+struct __declspec(uuid("89b8bc1b-c949-4808-a7a6-4b6bf1bdda80"))
+/* dual interface */ CommandConnections;
+struct __declspec(uuid("8d87dba5-79cb-48da-addd-cd6972560c66"))
+/* dual interface */ SequenceViewConnection;
+struct __declspec(uuid("c37df741-7df8-4322-ac90-6a458747a328"))
+/* dual interface */ SequenceViewConnections;
+struct __declspec(uuid("3b48d666-89a6-4752-b47c-851d11d2d249"))
+/* dual interface */ SequenceFileListConnection;
+struct __declspec(uuid("72218016-31a2-424c-8acf-173ef79e7252"))
+/* dual interface */ SequenceFileListConnections;
+struct __declspec(uuid("fd6b7579-8ece-4603-a13f-bfed9e28350a"))
+/* dual interface */ SequenceListConnection;
+struct __declspec(uuid("a5dad07f-151d-4571-a60a-afdd787da753"))
+/* dual interface */ SequenceListConnections;
+struct __declspec(uuid("33856bd8-41c1-4080-8d0a-c509e1b9675a"))
+/* dual interface */ StepGroupListConnection;
+struct __declspec(uuid("13c1098d-3781-4225-aa7a-0e340f042cc8"))
+/* dual interface */ StepGroupListConnections;
+struct __declspec(uuid("5c5ee64f-2276-41b0-92e1-8150567248a1"))
+/* dual interface */ SequenceFileViewMgrConnections;
+struct __declspec(uuid("8e871e5f-3f70-42c9-85c5-3705db0f779a"))
+/* dual interface */ VariablesConnections;
+struct __declspec(uuid("dc1d307b-b6bf-4c9d-a9f9-abf5088fb79a"))
+/* dual interface */ VariablesConnection;
+struct __declspec(uuid("5419626d-4043-4c92-a578-a222beba6dae"))
+/* dual interface */ InsertionPaletteConnections;
+struct __declspec(uuid("6e771725-9170-42d2-8f04-3d9bec018183"))
+/* dual interface */ InsertionPaletteConnection;
+struct __declspec(uuid("75561fbc-607b-4b0d-89ee-48fa8573673e"))
+/* dual interface */ ExecutionViewConnection;
+struct __declspec(uuid("546a0b81-9183-4b7b-a1de-7e408d98cc3e"))
+/* dual interface */ ExecutionViewConnections;
+struct __declspec(uuid("5819fada-bc88-4553-b6a8-8105ec8aac24"))
+/* dual interface */ CallStackConnection;
+struct __declspec(uuid("d9ec7f89-bd04-4441-8819-0d2c21284ea8"))
+/* dual interface */ CallStackConnections;
+struct __declspec(uuid("f399a842-0814-4efa-b20a-0f2a239838f0"))
+/* dual interface */ ThreadListConnection;
+struct __declspec(uuid("4e3131b4-f0ab-4eeb-9f00-1fa8020f05ed"))
+/* dual interface */ ThreadListConnections;
+struct __declspec(uuid("ca72867e-fb49-4d60-a209-1b09aaf87b42"))
+/* dual interface */ ExecutionListConnection;
+struct __declspec(uuid("d54de790-8f97-485c-ab90-9f785e2c33ce"))
+/* dual interface */ ExecutionListConnections;
+struct __declspec(uuid("3373db4c-85d3-4c8a-ae2b-f348cf685037"))
+/* dual interface */ ReportViewConnection;
+struct __declspec(uuid("e61c0b28-185e-4d4b-a09a-e322efb87054"))
+/* dual interface */ ReportViewConnections;
+struct __declspec(uuid("62adddcf-769a-4fab-9ed6-e405c71baa9e"))
+/* dual interface */ ExecutionViewMgrConnections;
+struct __declspec(uuid("21e7503a-f2a5-4ed9-b265-d53d0261ccd9"))
+/* dual interface */ ApplicationMgrConnections;
+struct __declspec(uuid("cab0e969-d1e7-40c2-9139-7e3572a0449e"))
+/* dual interface */ AdapterListConnections;
+struct __declspec(uuid("9e4bee6e-4a8c-41fc-9802-1f257932e531"))
+/* dual interface */ AdapterListConnection;
+struct __declspec(uuid("8170aeb6-2d67-453a-9eb4-708372cbaf95"))
+/* dual interface */ SelectedSequences;
+struct __declspec(uuid("09d34751-5851-4af5-a27b-58e37dd7e29f"))
+/* dual interface */ SelectedPropertyObjects;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(MRUFiles, __uuidof(MRUFiles));
+_COM_SMARTPTR_TYPEDEF(SelectedSteps, __uuidof(SelectedSteps));
+_COM_SMARTPTR_TYPEDEF(Strings, __uuidof(Strings));
+_COM_SMARTPTR_TYPEDEF(NumericConnection, __uuidof(NumericConnection));
+_COM_SMARTPTR_TYPEDEF(NumericConnections, __uuidof(NumericConnections));
+_COM_SMARTPTR_TYPEDEF(ImageConnection, __uuidof(ImageConnection));
+_COM_SMARTPTR_TYPEDEF(ImageConnections, __uuidof(ImageConnections));
+_COM_SMARTPTR_TYPEDEF(CaptionConnection, __uuidof(CaptionConnection));
+_COM_SMARTPTR_TYPEDEF(CaptionConnections, __uuidof(CaptionConnections));
+_COM_SMARTPTR_TYPEDEF(CommandConnection, __uuidof(CommandConnection));
+_COM_SMARTPTR_TYPEDEF(CommandConnections, __uuidof(CommandConnections));
+_COM_SMARTPTR_TYPEDEF(SequenceViewConnection, __uuidof(SequenceViewConnection));
+_COM_SMARTPTR_TYPEDEF(SequenceViewConnections, __uuidof(SequenceViewConnections));
+_COM_SMARTPTR_TYPEDEF(SequenceFileListConnection, __uuidof(SequenceFileListConnection));
+_COM_SMARTPTR_TYPEDEF(SequenceFileListConnections, __uuidof(SequenceFileListConnections));
+_COM_SMARTPTR_TYPEDEF(SequenceListConnection, __uuidof(SequenceListConnection));
+_COM_SMARTPTR_TYPEDEF(SequenceListConnections, __uuidof(SequenceListConnections));
+_COM_SMARTPTR_TYPEDEF(StepGroupListConnection, __uuidof(StepGroupListConnection));
+_COM_SMARTPTR_TYPEDEF(StepGroupListConnections, __uuidof(StepGroupListConnections));
+_COM_SMARTPTR_TYPEDEF(VariablesConnection, __uuidof(VariablesConnection));
+_COM_SMARTPTR_TYPEDEF(VariablesConnections, __uuidof(VariablesConnections));
+_COM_SMARTPTR_TYPEDEF(InsertionPaletteConnection, __uuidof(InsertionPaletteConnection));
+_COM_SMARTPTR_TYPEDEF(InsertionPaletteConnections, __uuidof(InsertionPaletteConnections));
+_COM_SMARTPTR_TYPEDEF(SequenceFileViewMgrConnections, __uuidof(SequenceFileViewMgrConnections));
+_COM_SMARTPTR_TYPEDEF(ExecutionViewConnection, __uuidof(ExecutionViewConnection));
+_COM_SMARTPTR_TYPEDEF(ExecutionViewConnections, __uuidof(ExecutionViewConnections));
+_COM_SMARTPTR_TYPEDEF(CallStackConnection, __uuidof(CallStackConnection));
+_COM_SMARTPTR_TYPEDEF(CallStackConnections, __uuidof(CallStackConnections));
+_COM_SMARTPTR_TYPEDEF(ThreadListConnection, __uuidof(ThreadListConnection));
+_COM_SMARTPTR_TYPEDEF(ThreadListConnections, __uuidof(ThreadListConnections));
+_COM_SMARTPTR_TYPEDEF(ExecutionListConnection, __uuidof(ExecutionListConnection));
+_COM_SMARTPTR_TYPEDEF(ExecutionListConnections, __uuidof(ExecutionListConnections));
+_COM_SMARTPTR_TYPEDEF(ReportViewConnection, __uuidof(ReportViewConnection));
+_COM_SMARTPTR_TYPEDEF(ReportViewConnections, __uuidof(ReportViewConnections));
+_COM_SMARTPTR_TYPEDEF(ExecutionViewMgrConnections, __uuidof(ExecutionViewMgrConnections));
+_COM_SMARTPTR_TYPEDEF(AdapterListConnection, __uuidof(AdapterListConnection));
+_COM_SMARTPTR_TYPEDEF(AdapterListConnections, __uuidof(AdapterListConnections));
+_COM_SMARTPTR_TYPEDEF(ApplicationMgrConnections, __uuidof(ApplicationMgrConnections));
+_COM_SMARTPTR_TYPEDEF(SelectedSequences, __uuidof(SelectedSequences));
+_COM_SMARTPTR_TYPEDEF(SelectedPropertyObjects, __uuidof(SelectedPropertyObjects));
+
+//
+// Type library items
+//
+
+enum CommandKinds
+{
+    CommandKind_NotACommand = 0,
+    CommandKind_Container = 1,
+    CommandKind_Separator = 2,
+    CommandKind_Custom = 3,
+    CommandKind_OpenSequenceFile = 20,
+    CommandKind_Close = 21,
+    CommandKind_CloseAll = 22,
+    CommandKind_CloseCompletedExecutions = 23,
+    CommandKind_OpenWorkspaceBrowser = 24,
+    CommandKind_Login = 25,
+    CommandKind_Logout = 26,
+    CommandKind_LoginLogout = 27,
+    CommandKind_UnloadAllModules = 28,
+    CommandKind_MRUFile = 29,
+    CommandKind_Exit = 30,
+    CommandKind_Restart = 40,
+    CommandKind_RunEntryPoint = 41,
+    CommandKind_RunEntryPointOnSelectedSteps = 42,
+    CommandKind_LoopEntryPointOnSelectedSteps = 43,
+    CommandKind_RunCurrentSequence = 44,
+    CommandKind_RunSpecificSequence = 45,
+    CommandKind_RunSelectedSteps = 46,
+    CommandKind_RunSelectedStepsUsingEntryPointsSubmenu = 47,
+    CommandKind_LoopOnSelectedSteps = 48,
+    CommandKind_LoopOnSelectedStepsUsingEntryPointsSubmenu = 49,
+    CommandKind_BreakOnFirstStep = 50,
+    CommandKind_BreakOnStepFailure = 51,
+    CommandKind_BreakOnSequenceFailure = 52,
+    CommandKind_TracingEnabled = 53,
+    CommandKind_ToggleBreakpoint = 60,
+    CommandKind_SetRunModeSubmenu = 61,
+    CommandKind_RunModeForcePass = 62,
+    CommandKind_RunModeForceFail = 63,
+    CommandKind_RunModeSkip = 64,
+    CommandKind_RunModeNormal = 65,
+    CommandKind_Resume = 66,
+    CommandKind_StepInto = 67,
+    CommandKind_StepOver = 68,
+    CommandKind_StepOut = 69,
+    CommandKind_SetNextStep = 70,
+    CommandKind_Break = 71,
+    CommandKind_BreakResume = 72,
+    CommandKind_Terminate = 73,
+    CommandKind_TerminateRestart = 74,
+    CommandKind_Abort = 75,
+    CommandKind_BreakAll = 76,
+    CommandKind_TerminateAll = 77,
+    CommandKind_AbortAll = 78,
+    CommandKind_ResumeAll = 79,
+    CommandKind_DisplayBreakpointsAndWatchExpressions = 80,
+    CommandKind_DisplayBreakpointSettings = 81,
+    CommandKind_BreakpointSubmenu = 85,
+    CommandKind_ConfigureAdapters = 90,
+    CommandKind_ConfigureStationOptions = 91,
+    CommandKind_ConfigureSearchDirectories = 92,
+    CommandKind_ConfigureExternalViewers = 93,
+    CommandKind_ToolItem = 100,
+    CommandKind_CustomizeTools = 101,
+    CommandKind_ExecutionEntryPointInsertionMarker = 110,
+    CommandKind_ExecutionEntryPointDefaultMenuInsertionMarker = 111,
+    CommandKind_ConfigurationEntryPointInsertionMarker = 112,
+    CommandKind_ConfigurationEntryPointDefaultMenuInsertionMarker = 113,
+    CommandKind_SequenceViewConfiguration = 116,
+    CommandKind_SequenceViewConfigurationsSubmenu = 118,
+    CommandKind_DefaultFileMenu_Set = 120,
+    CommandKind_DefaultExecuteMenu_Set = 121,
+    CommandKind_DefaultDebugMenu_Set = 123,
+    CommandKind_DefaultConfigureMenu_Set = 124,
+    CommandKind_DefaultToolsMenu_Set = 125,
+    CommandKind_DefaultSequenceViewContextMenu_Set = 126,
+    CommandKind_DefaultListBarContextMenu_Set = 127,
+    CommandKind_DefaultEditMenu_Set = 128,
+    CommandKind_DefaultSequenceListContextMenu_Set = 129,
+    CommandKind_SequenceViewConfigurations_Set = 139,
+    CommandKind_MRUFiles_Set = 140,
+    CommandKind_ExecutionEntryPoints_Set = 141,
+    CommandKind_RunSequences_Set = 142,
+    CommandKind_RunSelectedStepsUsingEntryPoints_Set = 143,
+    CommandKind_LoopOnSelectedStepsUsingEntryPoints_Set = 144,
+    CommandKind_ConfigurationEntryPoints_Set = 145,
+    CommandKind_Tools_Set = 146,
+    CommandKind_OpenSequenceFiles = 147,
+    CommandKind_LockUnlock = 148,
+    CommandKind_ConfigureSequenceViews = 149,
+    CommandKind_Edit_Undo = 200,
+    CommandKind_Edit_Redo = 201,
+    CommandKind_Edit_Rename = 202,
+    CommandKind_Edit_Cut = 203,
+    CommandKind_Edit_Copy = 204,
+    CommandKind_Edit_Paste = 205,
+    CommandKind_Edit_Delete = 206,
+    CommandKind_Edit_InsertStep = 207,
+    CommandKind_Edit_Save = 208,
+    CommandKind_Edit_SaveAs = 209,
+    CommandKind_Edit_SaveAll = 210,
+    CommandKind_Edit_NewSequenceFile = 211,
+    CommandKind_Edit_StepProperties = 212,
+    CommandKind_Edit_SequenceProperties = 213,
+    CommandKind_Edit_SequenceFileProperties = 214,
+    CommandKind_Edit_SpecifyModule = 215,
+    CommandKind_Edit_EditCode = 216,
+    CommandKind_Edit_EditStep = 217,
+    CommandKind_Edit_Preconditions = 218,
+    CommandKind_SelectAll = 219,
+    CommandKind_Edit_SelectDefaultAdapter = 220,
+    CommandKind_Edit_InsertSequence = 221,
+    CommandKind_Edit_SequenceFileCallbacks = 222,
+    CommandKind_Edit_EditPaths = 223,
+    CommandKind_Edit_InsertStepsSubmenu = 300,
+    CommandKind_Edit_EditStepsSubmenu = 301,
+    CommandKind_Edit_SelectDefaultAdaptersSubmenu = 302,
+    CommandKind_Edit_InsertSteps_Set = 340,
+    CommandKind_Edit_EditSteps_Set = 341,
+    CommandKind_Edit_SelectDefaultAdapters_Set = 342,
+    CommandKind_ShowInList = 400,
+    CommandKind_ShowInVariables = 401,
+    CommandKind_ShowTestStandHelp = 420,
+    CommandKind_ShowGuideToDocumentation = 421,
+    CommandKind_ShowHelpTopic = 422,
+    CommandKind_ShowTestStandWebResources = 423,
+    CommandKind_ShowTestStandDiscussionForum = 424,
+    CommandKind_ShowPatents = 425,
+    CommandKind_DefaultHelpMenu_Set = 440
+};
+
+enum CaptionSources
+{
+    CaptionSource_NotASource = 0,
+    CaptionSource_MacroExpression = 1,
+    CaptionSource_UUTSerialNumber = 2,
+    CaptionSource_UUTStatus = 3,
+    CaptionSource_BatchSerialNumber = 4,
+    CaptionSource_BatchStatus = 5,
+    CaptionSource_BatchState = 6,
+    CaptionSource_ModelState = 7,
+    CaptionSource_UserName = 8,
+    CaptionSource_ProgressText = 9,
+    CaptionSource_ProgressPercent = 10,
+    CaptionSource_CurrentSequenceFile = 11,
+    CaptionSource_CurrentSequenceFileComment = 12,
+    CaptionSource_CurrentSequence = 13,
+    CaptionSource_CurrentSequenceComment = 14,
+    CaptionSource_CurrentStepGroup = 15,
+    CaptionSource_CurrentStep = 16,
+    CaptionSource_CurrentStepComment = 17,
+    CaptionSource_CurrentStepIndex_ZeroBased = 18,
+    CaptionSource_CurrentTestIndex_OneBased = 19,
+    CaptionSource_SelectedSteps_ZeroBased = 20,
+    CaptionSource_SelectedTests_OneBased = 21,
+    CaptionSource_NumberOfSteps = 22,
+    CaptionSource_NumberOfTests = 23,
+    CaptionSource_CurrentExecution = 24,
+    CaptionSource_CurrentThread = 25,
+    CaptionSource_CurrentCallStackEntry = 26,
+    CaptionSource_CurrentProcessModelFile = 27,
+    CaptionSource_ReportLocation = 28,
+    CaptionSource_TestSocketIndex = 29,
+    CaptionSource_Time = 30,
+    CaptionSource_Date = 31
+};
+
+enum ImageSources
+{
+    ImageSource_NotASource = 0,
+    ImageSource_UUTStatus = 3,
+    ImageSource_BatchStatus = 5,
+    ImageSource_BatchState = 6,
+    ImageSource_ModelState = 7,
+    ImageSource_CurrentSequenceFile = 11,
+    ImageSource_CurrentSequence = 12,
+    ImageSource_CurrentStepGroup = 13,
+    ImageSource_CurrentStep = 14,
+    ImageSource_CurrentExecution = 21,
+    ImageSource_CurrentThread = 22,
+    ImageSource_CurrentCallStackEntry = 23,
+    ImageSource_CurrentProcessModelFile = 24,
+    ImageSource_CurrentAdapter = 25
+};
+
+enum NumericSources
+{
+    NumericSource_NotASource = 0,
+    NumericSource_ProgressPercent = 10
+};
+    const long SelectionFlag_NoFlags = 0;
+    const long SelectionFlag_SetupStartSelected = 1;
+    const long SelectionFlag_MainStartSelected = 2;
+    const long SelectionFlag_CleanupStartSelected = 4;
+    const long SelectionFlag_SetupEndSelected = 8;
+    const long SelectionFlag_MainEndSelected = 16;
+    const long SelectionFlag_CleanupEndSelected = 32;
+    const long SelectionFlag_SetupCollapsed = 64;
+    const long SelectionFlag_MainCollapsed = 128;
+    const long SelectionFlag_CleanupCollapsed = 256;
+
+enum SeqListConnectionColumns
+{
+    SeqListConnectionColumn_Label = 0,
+    SeqListConnectionColumn_Comments = 1,
+    SeqListConnectionColumn_Requirements = 2
+};
+
+struct __declspec(uuid("54df4919-e3ac-4670-aa59-6a1ac42229f4"))
+MRUFiles : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    _bstr_t Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=GetMax,put=PutMax))
+    long Max;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetItem (
+        long itemIndex );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    long GetMax ( );
+    void PutMax (
+        long val );
+    HRESULT Clear ( );
+    VARIANT_BOOL Remove (
+        _bstr_t fileNameVal );
+    _bstr_t GetDisplayName (
+        long itemIndex,
+        long maxWidth );
+    HRESULT Add (
+        _bstr_t fileNameVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long itemIndex,
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall get_Max (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall put_Max (
+        /*[in]*/ long val ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall raw_Remove (
+        /*[in]*/ BSTR fileNameVal,
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+      virtual HRESULT __stdcall raw_GetDisplayName (
+        /*[in]*/ long itemIndex,
+        /*[in]*/ long maxWidth,
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ BSTR fileNameVal ) = 0;
+};
+
+struct __declspec(uuid("70cb05ef-429f-46d2-9cfb-61830a2ccf45"))
+SelectedSteps : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    TS::StepPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=GetEndSelected,put=PutEndSelected))
+    VARIANT_BOOL EndSelected;
+    __declspec(property(get=GetSelectionFlags,put=PutSelectionFlags))
+    long SelectionFlags;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    TS::StepPtr GetItem (
+        long itemIndex );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    HRESULT Clear ( );
+    HRESULT AddStepIndex (
+        long stepIndex );
+    VARIANT_BOOL GetEndSelected ( );
+    void PutEndSelected (
+        VARIANT_BOOL val );
+    long GetStepIndex (
+        long nthSelectedStep );
+    enum TS::StepGroups GetStepGroup (
+        long nthSelectedStep );
+    HRESULT AddStep (
+        struct TS::Step * val );
+    HRESULT AddSteps (
+        SAFEARRAY * val );
+    long GetSelectionFlags ( );
+    void PutSelectionFlags (
+        long val );
+    HRESULT BeginUpdate ( );
+    HRESULT EndUpdate ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long itemIndex,
+        /*[out,retval]*/ struct TS::Step * * val ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall raw_AddStepIndex (
+        /*[in]*/ long stepIndex ) = 0;
+      virtual HRESULT __stdcall get_EndSelected (
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+      virtual HRESULT __stdcall put_EndSelected (
+        /*[in]*/ VARIANT_BOOL val ) = 0;
+      virtual HRESULT __stdcall raw_GetStepIndex (
+        /*[in]*/ long nthSelectedStep,
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall raw_GetStepGroup (
+        /*[in]*/ long nthSelectedStep,
+        /*[out,retval]*/ enum TS::StepGroups * val ) = 0;
+      virtual HRESULT __stdcall raw_AddStep (
+        /*[in]*/ struct TS::Step * val ) = 0;
+      virtual HRESULT __stdcall raw_AddSteps (
+        /*[in]*/ SAFEARRAY * val ) = 0;
+      virtual HRESULT __stdcall get_SelectionFlags (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall put_SelectionFlags (
+        /*[in]*/ long val ) = 0;
+      virtual HRESULT __stdcall raw_BeginUpdate ( ) = 0;
+      virtual HRESULT __stdcall raw_EndUpdate ( ) = 0;
+};
+
+struct __declspec(uuid("81226336-afd2-4f83-9a07-82451b76aa8c"))
+Strings : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem,put=PutItem))
+    _bstr_t Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetItem (
+        long itemIndex );
+    void PutItem (
+        long itemIndex,
+        _bstr_t val );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    HRESULT Clear ( );
+    HRESULT Add (
+        _bstr_t val );
+    HRESULT Insert (
+        long itemIndex,
+        _bstr_t val );
+    HRESULT Remove (
+        long itemIndex );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long itemIndex,
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall put_Item (
+        /*[in]*/ long itemIndex,
+        /*[in]*/ BSTR val ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ BSTR val ) = 0;
+      virtual HRESULT __stdcall raw_Insert (
+        /*[in]*/ long itemIndex,
+        /*[in]*/ BSTR val ) = 0;
+      virtual HRESULT __stdcall raw_Remove (
+        /*[in]*/ long itemIndex ) = 0;
+};
+
+struct __declspec(uuid("9e65a9ba-3170-46a4-a910-f78221c41d51"))
+NumericConnection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetSource,put=PutSource))
+    enum NumericSources Source;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    enum NumericSources GetSource ( );
+    void PutSource (
+        enum NumericSources val );
+    HRESULT Refresh ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Source (
+        /*[out,retval]*/ enum NumericSources * val ) = 0;
+      virtual HRESULT __stdcall put_Source (
+        /*[in]*/ enum NumericSources val ) = 0;
+      virtual HRESULT __stdcall raw_Refresh ( ) = 0;
+};
+
+struct __declspec(uuid("ac2489dd-9f71-4930-a38b-69c327f6776d"))
+NumericConnections : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    NumericConnectionPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    NumericConnectionPtr GetItem (
+        long itemIndex );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    NumericConnectionPtr Add (
+        IDispatch * uiObj );
+    VARIANT_BOOL Remove (
+        IDispatch * uiObj );
+    HRESULT Clear ( );
+    NumericConnectionPtr FromControl (
+        IDispatch * uiObj );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long itemIndex,
+        /*[out,retval]*/ struct NumericConnection * * val ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct NumericConnection * * val ) = 0;
+      virtual HRESULT __stdcall raw_Remove (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall raw_FromControl (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct NumericConnection * * val ) = 0;
+};
+
+struct __declspec(uuid("37b1411e-4b0f-4974-8106-ccf735fadd45"))
+ImageConnection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetSource,put=PutSource))
+    enum ImageSources Source;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    enum ImageSources GetSource ( );
+    void PutSource (
+        enum ImageSources val );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Source (
+        /*[out,retval]*/ enum ImageSources * val ) = 0;
+      virtual HRESULT __stdcall put_Source (
+        /*[in]*/ enum ImageSources val ) = 0;
+};
+
+struct __declspec(uuid("fcd081e9-1524-4c3a-a33c-9de9f65e6a26"))
+ImageConnections : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    ImageConnectionPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    ImageConnectionPtr GetItem (
+        long itemIndex );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    ImageConnectionPtr Add (
+        IDispatch * uiObj );
+    VARIANT_BOOL Remove (
+        IDispatch * uiObj );
+    HRESULT Clear ( );
+    ImageConnectionPtr FromControl (
+        IDispatch * uiObj );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long itemIndex,
+        /*[out,retval]*/ struct ImageConnection * * val ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct ImageConnection * * val ) = 0;
+      virtual HRESULT __stdcall raw_Remove (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall raw_FromControl (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct ImageConnection * * val ) = 0;
+};
+
+struct __declspec(uuid("1e7b8e59-9e21-40db-9fd3-a49b2a8b05a9"))
+CaptionConnection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetSource,put=PutSource))
+    enum CaptionSources Source;
+    __declspec(property(get=GetLongName,put=PutLongName))
+    VARIANT_BOOL LongName;
+    __declspec(property(get=GetFormatExpression,put=PutFormatExpression))
+    _bstr_t FormatExpression;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    enum CaptionSources GetSource ( );
+    void PutSource (
+        enum CaptionSources val );
+    VARIANT_BOOL GetLongName ( );
+    void PutLongName (
+        VARIANT_BOOL val );
+    void PutFormatExpression (
+        _bstr_t val );
+    _bstr_t GetFormatExpression ( );
+    HRESULT Refresh ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Source (
+        /*[out,retval]*/ enum CaptionSources * val ) = 0;
+      virtual HRESULT __stdcall put_Source (
+        /*[in]*/ enum CaptionSources val ) = 0;
+      virtual HRESULT __stdcall get_LongName (
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+      virtual HRESULT __stdcall put_LongName (
+        /*[in]*/ VARIANT_BOOL val ) = 0;
+      virtual HRESULT __stdcall put_FormatExpression (
+        /*[in]*/ BSTR val ) = 0;
+      virtual HRESULT __stdcall get_FormatExpression (
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall raw_Refresh ( ) = 0;
+};
+
+struct __declspec(uuid("faca4e60-9b32-45d2-9114-ae41a36bc1f1"))
+CaptionConnections : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    CaptionConnectionPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    CaptionConnectionPtr GetItem (
+        long itemIndex );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    CaptionConnectionPtr Add (
+        IDispatch * uiObj );
+    VARIANT_BOOL Remove (
+        IDispatch * uiObj );
+    HRESULT Clear ( );
+    CaptionConnectionPtr FromControl (
+        IDispatch * uiObj );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long itemIndex,
+        /*[out,retval]*/ struct CaptionConnection * * val ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct CaptionConnection * * val ) = 0;
+      virtual HRESULT __stdcall raw_Remove (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall raw_FromControl (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct CaptionConnection * * val ) = 0;
+};
+
+struct __declspec(uuid("f79076b5-5f5f-438c-9995-508d2bd1f263"))
+CommandConnection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetKind,put=PutKind))
+    enum CommandKinds Kind;
+    __declspec(property(get=GetIndex,put=PutIndex))
+    long Index;
+    __declspec(property(get=GetOptions,put=PutOptions))
+    long Options;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    enum CommandKinds GetKind ( );
+    void PutKind (
+        enum CommandKinds val );
+    long GetIndex ( );
+    void PutIndex (
+        long val );
+    long GetOptions ( );
+    void PutOptions (
+        long val );
+    HRESULT Refresh ( );
+    HRESULT FreezeRefresh (
+        VARIANT_BOOL frz );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Kind (
+        /*[out,retval]*/ enum CommandKinds * val ) = 0;
+      virtual HRESULT __stdcall put_Kind (
+        /*[in]*/ enum CommandKinds val ) = 0;
+      virtual HRESULT __stdcall get_Index (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall put_Index (
+        /*[in]*/ long val ) = 0;
+      virtual HRESULT __stdcall get_Options (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall put_Options (
+        /*[in]*/ long val ) = 0;
+      virtual HRESULT __stdcall raw_Refresh ( ) = 0;
+      virtual HRESULT __stdcall raw_FreezeRefresh (
+        /*[in]*/ VARIANT_BOOL frz ) = 0;
+};
+
+struct __declspec(uuid("89b8bc1b-c949-4808-a7a6-4b6bf1bdda80"))
+CommandConnections : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    CommandConnectionPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    CommandConnectionPtr GetItem (
+        long itemIndex );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    CommandConnectionPtr Add (
+        IDispatch * uiObj );
+    VARIANT_BOOL Remove (
+        IDispatch * uiObj );
+    HRESULT Clear ( );
+    CommandConnectionPtr FromControl (
+        IDispatch * uiObj );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long itemIndex,
+        /*[out,retval]*/ struct CommandConnection * * val ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct CommandConnection * * val ) = 0;
+      virtual HRESULT __stdcall raw_Remove (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall raw_FromControl (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct CommandConnection * * val ) = 0;
+};
+
+struct __declspec(uuid("8d87dba5-79cb-48da-addd-cd6972560c66"))
+SequenceViewConnection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetUIControl))
+    IDispatchPtr UIControl;
+    __declspec(property(get=GetDoubleClickEditsStepProperties,put=PutDoubleClickEditsStepProperties))
+    VARIANT_BOOL DoubleClickEditsStepProperties;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IDispatchPtr GetUIControl ( );
+    VARIANT_BOOL GetDoubleClickEditsStepProperties ( );
+    void PutDoubleClickEditsStepProperties (
+        VARIANT_BOOL val );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_UIControl (
+        /*[out,retval]*/ IDispatch * * val ) = 0;
+      virtual HRESULT __stdcall get_DoubleClickEditsStepProperties (
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+      virtual HRESULT __stdcall put_DoubleClickEditsStepProperties (
+        /*[in]*/ VARIANT_BOOL val ) = 0;
+};
+
+struct __declspec(uuid("c37df741-7df8-4322-ac90-6a458747a328"))
+SequenceViewConnections : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    SequenceViewConnectionPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    SequenceViewConnectionPtr GetItem (
+        long itemIndex );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    SequenceViewConnectionPtr Add (
+        IDispatch * uiObj );
+    VARIANT_BOOL Remove (
+        IDispatch * uiObj );
+    HRESULT Clear ( );
+    SequenceViewConnectionPtr FromControl (
+        IDispatch * uiObj );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long itemIndex,
+        /*[out,retval]*/ struct SequenceViewConnection * * val ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct SequenceViewConnection * * val ) = 0;
+      virtual HRESULT __stdcall raw_Remove (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall raw_FromControl (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct SequenceViewConnection * * val ) = 0;
+};
+
+struct __declspec(uuid("3b48d666-89a6-4752-b47c-851d11d2d249"))
+SequenceFileListConnection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetShowFullPath,put=PutShowFullPath))
+    VARIANT_BOOL ShowFullPath;
+    __declspec(property(get=GetShowCommentInTip,put=PutShowCommentInTip))
+    VARIANT_BOOL ShowCommentInTip;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    VARIANT_BOOL GetShowFullPath ( );
+    void PutShowFullPath (
+        VARIANT_BOOL val );
+    VARIANT_BOOL GetShowCommentInTip ( );
+    void PutShowCommentInTip (
+        VARIANT_BOOL val );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ShowFullPath (
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+      virtual HRESULT __stdcall put_ShowFullPath (
+        /*[in]*/ VARIANT_BOOL val ) = 0;
+      virtual HRESULT __stdcall get_ShowCommentInTip (
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+      virtual HRESULT __stdcall put_ShowCommentInTip (
+        /*[in]*/ VARIANT_BOOL val ) = 0;
+};
+
+struct __declspec(uuid("72218016-31a2-424c-8acf-173ef79e7252"))
+SequenceFileListConnections : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    SequenceFileListConnectionPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    SequenceFileListConnectionPtr GetItem (
+        long itemIndex );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    SequenceFileListConnectionPtr Add (
+        IDispatch * uiObj );
+    VARIANT_BOOL Remove (
+        IDispatch * uiObj );
+    HRESULT Clear ( );
+    SequenceFileListConnectionPtr FromControl (
+        IDispatch * uiObj );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long itemIndex,
+        /*[out,retval]*/ struct SequenceFileListConnection * * val ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct SequenceFileListConnection * * val ) = 0;
+      virtual HRESULT __stdcall raw_Remove (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall raw_FromControl (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct SequenceFileListConnection * * val ) = 0;
+};
+
+struct __declspec(uuid("fd6b7579-8ece-4603-a13f-bfed9e28350a"))
+SequenceListConnection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetUIControl))
+    IDispatchPtr UIControl;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IDispatchPtr GetUIControl ( );
+    VARIANT_BOOL GetColumnVisible (
+        enum SeqListConnectionColumns column );
+    HRESULT SetColumnVisible (
+        enum SeqListConnectionColumns column,
+        VARIANT_BOOL val );
+    long GetColumnIndex (
+        enum SeqListConnectionColumns column );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_UIControl (
+        /*[out,retval]*/ IDispatch * * val ) = 0;
+      virtual HRESULT __stdcall raw_GetColumnVisible (
+        /*[in]*/ enum SeqListConnectionColumns column,
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+      virtual HRESULT __stdcall raw_SetColumnVisible (
+        /*[in]*/ enum SeqListConnectionColumns column,
+        /*[in]*/ VARIANT_BOOL val ) = 0;
+      virtual HRESULT __stdcall raw_GetColumnIndex (
+        /*[in]*/ enum SeqListConnectionColumns column,
+        /*[out,retval]*/ long * val ) = 0;
+};
+
+struct __declspec(uuid("a5dad07f-151d-4571-a60a-afdd787da753"))
+SequenceListConnections : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    SequenceListConnectionPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    SequenceListConnectionPtr GetItem (
+        long itemIndex );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    SequenceListConnectionPtr Add (
+        IDispatch * uiObj );
+    VARIANT_BOOL Remove (
+        IDispatch * uiObj );
+    HRESULT Clear ( );
+    SequenceListConnectionPtr FromControl (
+        IDispatch * uiObj );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long itemIndex,
+        /*[out,retval]*/ struct SequenceListConnection * * val ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct SequenceListConnection * * val ) = 0;
+      virtual HRESULT __stdcall raw_Remove (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall raw_FromControl (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct SequenceListConnection * * val ) = 0;
+};
+
+struct __declspec(uuid("33856bd8-41c1-4080-8d0a-c509e1b9675a"))
+StepGroupListConnection : IDispatch
+{};
+
+struct __declspec(uuid("13c1098d-3781-4225-aa7a-0e340f042cc8"))
+StepGroupListConnections : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    StepGroupListConnectionPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    StepGroupListConnectionPtr GetItem (
+        long itemIndex );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    StepGroupListConnectionPtr Add (
+        IDispatch * uiObj );
+    VARIANT_BOOL Remove (
+        IDispatch * uiObj );
+    HRESULT Clear ( );
+    StepGroupListConnectionPtr FromControl (
+        IDispatch * uiObj );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long itemIndex,
+        /*[out,retval]*/ struct StepGroupListConnection * * val ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct StepGroupListConnection * * val ) = 0;
+      virtual HRESULT __stdcall raw_Remove (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall raw_FromControl (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct StepGroupListConnection * * val ) = 0;
+};
+
+struct __declspec(uuid("dc1d307b-b6bf-4c9d-a9f9-abf5088fb79a"))
+VariablesConnection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetUIControl))
+    IDispatchPtr UIControl;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IDispatchPtr GetUIControl ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_UIControl (
+        /*[out,retval]*/ IDispatch * * val ) = 0;
+};
+
+struct __declspec(uuid("8e871e5f-3f70-42c9-85c5-3705db0f779a"))
+VariablesConnections : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    VariablesConnectionPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    VariablesConnectionPtr GetItem (
+        long itemIndex );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    VariablesConnectionPtr Add (
+        IDispatch * uiObj );
+    VARIANT_BOOL Remove (
+        IDispatch * uiObj );
+    HRESULT Clear ( );
+    VariablesConnectionPtr FromControl (
+        IDispatch * uiObj );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long itemIndex,
+        /*[out,retval]*/ struct VariablesConnection * * val ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct VariablesConnection * * val ) = 0;
+      virtual HRESULT __stdcall raw_Remove (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall raw_FromControl (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct VariablesConnection * * val ) = 0;
+};
+
+struct __declspec(uuid("6e771725-9170-42d2-8f04-3d9bec018183"))
+InsertionPaletteConnection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetUIControl))
+    IDispatchPtr UIControl;
+    __declspec(property(get=GetStepTypesPage))
+    long StepTypesPage;
+    __declspec(property(get=GetTemplatesPage))
+    long TemplatesPage;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IDispatchPtr GetUIControl ( );
+    long GetStepTypesPage ( );
+    long GetTemplatesPage ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_UIControl (
+        /*[out,retval]*/ IDispatch * * val ) = 0;
+      virtual HRESULT __stdcall get_StepTypesPage (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall get_TemplatesPage (
+        /*[out,retval]*/ long * val ) = 0;
+};
+
+struct __declspec(uuid("5419626d-4043-4c92-a578-a222beba6dae"))
+InsertionPaletteConnections : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    InsertionPaletteConnectionPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    InsertionPaletteConnectionPtr GetItem (
+        long itemIndex );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    InsertionPaletteConnectionPtr Add (
+        IDispatch * uiObj );
+    VARIANT_BOOL Remove (
+        IDispatch * uiObj );
+    HRESULT Clear ( );
+    InsertionPaletteConnectionPtr FromControl (
+        IDispatch * uiObj );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long itemIndex,
+        /*[out,retval]*/ struct InsertionPaletteConnection * * val ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct InsertionPaletteConnection * * val ) = 0;
+      virtual HRESULT __stdcall raw_Remove (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall raw_FromControl (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct InsertionPaletteConnection * * val ) = 0;
+};
+
+struct __declspec(uuid("5c5ee64f-2276-41b0-92e1-8150567248a1"))
+SequenceFileViewMgrConnections : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetSequenceFileList))
+    SequenceFileListConnectionsPtr SequenceFileList;
+    __declspec(property(get=GetSequenceList))
+    SequenceListConnectionsPtr SequenceList;
+    __declspec(property(get=GetStepGroupList))
+    StepGroupListConnectionsPtr StepGroupList;
+    __declspec(property(get=GetSequenceView))
+    SequenceViewConnectionsPtr SequenceView;
+    __declspec(property(get=GetCommand))
+    CommandConnectionsPtr Command;
+    __declspec(property(get=GetCaption))
+    CaptionConnectionsPtr Caption;
+    __declspec(property(get=GetImage))
+    ImageConnectionsPtr Image;
+    __declspec(property(get=GetVariables))
+    VariablesConnectionsPtr Variables;
+    __declspec(property(get=GetInsertionPalettes))
+    InsertionPaletteConnectionsPtr InsertionPalettes;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    SequenceFileListConnectionsPtr GetSequenceFileList ( );
+    SequenceListConnectionsPtr GetSequenceList ( );
+    StepGroupListConnectionsPtr GetStepGroupList ( );
+    SequenceViewConnectionsPtr GetSequenceView ( );
+    CommandConnectionsPtr GetCommand ( );
+    CaptionConnectionsPtr GetCaption ( );
+    ImageConnectionsPtr GetImage ( );
+    VariablesConnectionsPtr GetVariables ( );
+    InsertionPaletteConnectionsPtr GetInsertionPalettes ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_SequenceFileList (
+        /*[out,retval]*/ struct SequenceFileListConnections * * val ) = 0;
+      virtual HRESULT __stdcall get_SequenceList (
+        /*[out,retval]*/ struct SequenceListConnections * * val ) = 0;
+      virtual HRESULT __stdcall get_StepGroupList (
+        /*[out,retval]*/ struct StepGroupListConnections * * val ) = 0;
+      virtual HRESULT __stdcall get_SequenceView (
+        /*[out,retval]*/ struct SequenceViewConnections * * val ) = 0;
+      virtual HRESULT __stdcall get_Command (
+        /*[out,retval]*/ struct CommandConnections * * val ) = 0;
+      virtual HRESULT __stdcall get_Caption (
+        /*[out,retval]*/ struct CaptionConnections * * val ) = 0;
+      virtual HRESULT __stdcall get_Image (
+        /*[out,retval]*/ struct ImageConnections * * val ) = 0;
+      virtual HRESULT __stdcall get_Variables (
+        /*[out,retval]*/ struct VariablesConnections * * val ) = 0;
+      virtual HRESULT __stdcall get_InsertionPalettes (
+        /*[out,retval]*/ struct InsertionPaletteConnections * * val ) = 0;
+};
+
+struct __declspec(uuid("75561fbc-607b-4b0d-89ee-48fa8573673e"))
+ExecutionViewConnection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetColorRunning,put=PutColorRunning))
+    OLE_COLOR ColorRunning;
+    __declspec(property(get=GetColorPaused,put=PutColorPaused))
+    OLE_COLOR ColorPaused;
+    __declspec(property(get=GetColorStopped,put=PutColorStopped))
+    OLE_COLOR ColorStopped;
+    __declspec(property(get=GetOptions,put=PutOptions))
+    long Options;
+    __declspec(property(get=GetUIControl))
+    IDispatchPtr UIControl;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    OLE_COLOR GetColorRunning ( );
+    void PutColorRunning (
+        OLE_COLOR val );
+    OLE_COLOR GetColorPaused ( );
+    void PutColorPaused (
+        OLE_COLOR val );
+    OLE_COLOR GetColorStopped ( );
+    void PutColorStopped (
+        OLE_COLOR val );
+    long GetOptions ( );
+    void PutOptions (
+        long val );
+    IDispatchPtr GetUIControl ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ColorRunning (
+        /*[out,retval]*/ OLE_COLOR * val ) = 0;
+      virtual HRESULT __stdcall put_ColorRunning (
+        /*[in]*/ OLE_COLOR val ) = 0;
+      virtual HRESULT __stdcall get_ColorPaused (
+        /*[out,retval]*/ OLE_COLOR * val ) = 0;
+      virtual HRESULT __stdcall put_ColorPaused (
+        /*[in]*/ OLE_COLOR val ) = 0;
+      virtual HRESULT __stdcall get_ColorStopped (
+        /*[out,retval]*/ OLE_COLOR * val ) = 0;
+      virtual HRESULT __stdcall put_ColorStopped (
+        /*[in]*/ OLE_COLOR val ) = 0;
+      virtual HRESULT __stdcall get_Options (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall put_Options (
+        /*[in]*/ long val ) = 0;
+      virtual HRESULT __stdcall get_UIControl (
+        /*[out,retval]*/ IDispatch * * val ) = 0;
+};
+
+struct __declspec(uuid("546a0b81-9183-4b7b-a1de-7e408d98cc3e"))
+ExecutionViewConnections : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    ExecutionViewConnectionPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    ExecutionViewConnectionPtr GetItem (
+        long itemIndex );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    ExecutionViewConnectionPtr Add (
+        IDispatch * uiObj );
+    VARIANT_BOOL Remove (
+        IDispatch * uiObj );
+    HRESULT Clear ( );
+    ExecutionViewConnectionPtr FromControl (
+        IDispatch * uiObj );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long itemIndex,
+        /*[out,retval]*/ struct ExecutionViewConnection * * val ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct ExecutionViewConnection * * val ) = 0;
+      virtual HRESULT __stdcall raw_Remove (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall raw_FromControl (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct ExecutionViewConnection * * val ) = 0;
+};
+
+struct __declspec(uuid("5819fada-bc88-4553-b6a8-8105ec8aac24"))
+CallStackConnection : IDispatch
+{};
+
+struct __declspec(uuid("d9ec7f89-bd04-4441-8819-0d2c21284ea8"))
+CallStackConnections : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    CallStackConnectionPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    CallStackConnectionPtr GetItem (
+        long itemIndex );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    CallStackConnectionPtr Add (
+        IDispatch * uiObj );
+    VARIANT_BOOL Remove (
+        IDispatch * uiObj );
+    HRESULT Clear ( );
+    CallStackConnectionPtr FromControl (
+        IDispatch * uiObj );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long itemIndex,
+        /*[out,retval]*/ struct CallStackConnection * * val ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct CallStackConnection * * val ) = 0;
+      virtual HRESULT __stdcall raw_Remove (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall raw_FromControl (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct CallStackConnection * * val ) = 0;
+};
+
+struct __declspec(uuid("f399a842-0814-4efa-b20a-0f2a239838f0"))
+ThreadListConnection : IDispatch
+{};
+
+struct __declspec(uuid("4e3131b4-f0ab-4eeb-9f00-1fa8020f05ed"))
+ThreadListConnections : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    ThreadListConnectionPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    ThreadListConnectionPtr GetItem (
+        long itemIndex );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    ThreadListConnectionPtr Add (
+        IDispatch * uiObj );
+    VARIANT_BOOL Remove (
+        IDispatch * uiObj );
+    HRESULT Clear ( );
+    ThreadListConnectionPtr FromControl (
+        IDispatch * uiObj );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long itemIndex,
+        /*[out,retval]*/ struct ThreadListConnection * * val ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct ThreadListConnection * * val ) = 0;
+      virtual HRESULT __stdcall raw_Remove (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall raw_FromControl (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct ThreadListConnection * * val ) = 0;
+};
+
+struct __declspec(uuid("ca72867e-fb49-4d60-a209-1b09aaf87b42"))
+ExecutionListConnection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetShowHiddenExecutions,put=PutShowHiddenExecutions))
+    VARIANT_BOOL ShowHiddenExecutions;
+    __declspec(property(get=GetDisplayExpression,put=PutDisplayExpression))
+    _bstr_t DisplayExpression;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    void PutShowHiddenExecutions (
+        VARIANT_BOOL val );
+    VARIANT_BOOL GetShowHiddenExecutions ( );
+    void PutDisplayExpression (
+        _bstr_t val );
+    _bstr_t GetDisplayExpression ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_ShowHiddenExecutions (
+        /*[in]*/ VARIANT_BOOL val ) = 0;
+      virtual HRESULT __stdcall get_ShowHiddenExecutions (
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+      virtual HRESULT __stdcall put_DisplayExpression (
+        /*[in]*/ BSTR val ) = 0;
+      virtual HRESULT __stdcall get_DisplayExpression (
+        /*[out,retval]*/ BSTR * val ) = 0;
+};
+
+struct __declspec(uuid("d54de790-8f97-485c-ab90-9f785e2c33ce"))
+ExecutionListConnections : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    ExecutionListConnectionPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    ExecutionListConnectionPtr GetItem (
+        long itemIndex );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    ExecutionListConnectionPtr Add (
+        IDispatch * uiObj );
+    VARIANT_BOOL Remove (
+        IDispatch * uiObj );
+    HRESULT Clear ( );
+    ExecutionListConnectionPtr FromControl (
+        IDispatch * uiObj );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long itemIndex,
+        /*[out,retval]*/ struct ExecutionListConnection * * val ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct ExecutionListConnection * * val ) = 0;
+      virtual HRESULT __stdcall raw_Remove (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall raw_FromControl (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct ExecutionListConnection * * val ) = 0;
+};
+
+struct __declspec(uuid("3373db4c-85d3-4c8a-ae2b-f348cf685037"))
+ReportViewConnection : IDispatch
+{};
+
+struct __declspec(uuid("e61c0b28-185e-4d4b-a09a-e322efb87054"))
+ReportViewConnections : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    ReportViewConnectionPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    ReportViewConnectionPtr GetItem (
+        long itemIndex );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    ReportViewConnectionPtr Add (
+        IDispatch * uiObj );
+    VARIANT_BOOL Remove (
+        IDispatch * uiObj );
+    HRESULT Clear ( );
+    ReportViewConnectionPtr FromControl (
+        IDispatch * uiObj );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long itemIndex,
+        /*[out,retval]*/ struct ReportViewConnection * * val ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct ReportViewConnection * * val ) = 0;
+      virtual HRESULT __stdcall raw_Remove (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall raw_FromControl (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct ReportViewConnection * * val ) = 0;
+};
+
+struct __declspec(uuid("62adddcf-769a-4fab-9ed6-e405c71baa9e"))
+ExecutionViewMgrConnections : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetExecutionView))
+    ExecutionViewConnectionsPtr ExecutionView;
+    __declspec(property(get=GetReportView))
+    ReportViewConnectionsPtr ReportView;
+    __declspec(property(get=GetExecutionList))
+    ExecutionListConnectionsPtr ExecutionList;
+    __declspec(property(get=GetCommand))
+    CommandConnectionsPtr Command;
+    __declspec(property(get=GetCaption))
+    CaptionConnectionsPtr Caption;
+    __declspec(property(get=GetCallStack))
+    CallStackConnectionsPtr CallStack;
+    __declspec(property(get=GetThreadList))
+    ThreadListConnectionsPtr ThreadList;
+    __declspec(property(get=GetImage))
+    ImageConnectionsPtr Image;
+    __declspec(property(get=GetNumeric))
+    NumericConnectionsPtr Numeric;
+    __declspec(property(get=GetVariables))
+    VariablesConnectionsPtr Variables;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    ExecutionViewConnectionsPtr GetExecutionView ( );
+    ReportViewConnectionsPtr GetReportView ( );
+    ExecutionListConnectionsPtr GetExecutionList ( );
+    CommandConnectionsPtr GetCommand ( );
+    CaptionConnectionsPtr GetCaption ( );
+    CallStackConnectionsPtr GetCallStack ( );
+    ThreadListConnectionsPtr GetThreadList ( );
+    ImageConnectionsPtr GetImage ( );
+    NumericConnectionsPtr GetNumeric ( );
+    VariablesConnectionsPtr GetVariables ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ExecutionView (
+        /*[out,retval]*/ struct ExecutionViewConnections * * val ) = 0;
+      virtual HRESULT __stdcall get_ReportView (
+        /*[out,retval]*/ struct ReportViewConnections * * val ) = 0;
+      virtual HRESULT __stdcall get_ExecutionList (
+        /*[out,retval]*/ struct ExecutionListConnections * * val ) = 0;
+      virtual HRESULT __stdcall get_Command (
+        /*[out,retval]*/ struct CommandConnections * * val ) = 0;
+      virtual HRESULT __stdcall get_Caption (
+        /*[out,retval]*/ struct CaptionConnections * * val ) = 0;
+      virtual HRESULT __stdcall get_CallStack (
+        /*[out,retval]*/ struct CallStackConnections * * val ) = 0;
+      virtual HRESULT __stdcall get_ThreadList (
+        /*[out,retval]*/ struct ThreadListConnections * * val ) = 0;
+      virtual HRESULT __stdcall get_Image (
+        /*[out,retval]*/ struct ImageConnections * * val ) = 0;
+      virtual HRESULT __stdcall get_Numeric (
+        /*[out,retval]*/ struct NumericConnections * * val ) = 0;
+      virtual HRESULT __stdcall get_Variables (
+        /*[out,retval]*/ struct VariablesConnections * * val ) = 0;
+};
+
+struct __declspec(uuid("9e4bee6e-4a8c-41fc-9802-1f257932e531"))
+AdapterListConnection : IDispatch
+{};
+
+struct __declspec(uuid("cab0e969-d1e7-40c2-9139-7e3572a0449e"))
+AdapterListConnections : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    AdapterListConnectionPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    AdapterListConnectionPtr GetItem (
+        long itemIndex );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    AdapterListConnectionPtr Add (
+        IDispatch * uiObj );
+    VARIANT_BOOL Remove (
+        IDispatch * uiObj );
+    HRESULT Clear ( );
+    AdapterListConnectionPtr FromControl (
+        IDispatch * uiObj );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long itemIndex,
+        /*[out,retval]*/ struct AdapterListConnection * * val ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct AdapterListConnection * * val ) = 0;
+      virtual HRESULT __stdcall raw_Remove (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall raw_FromControl (
+        /*[in]*/ IDispatch * uiObj,
+        /*[out,retval]*/ struct AdapterListConnection * * val ) = 0;
+};
+
+struct __declspec(uuid("21e7503a-f2a5-4ed9-b265-d53d0261ccd9"))
+ApplicationMgrConnections : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetCommand))
+    CommandConnectionsPtr Command;
+    __declspec(property(get=GetCaption))
+    CaptionConnectionsPtr Caption;
+    __declspec(property(get=GetAdapterList))
+    AdapterListConnectionsPtr AdapterList;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    CommandConnectionsPtr GetCommand ( );
+    CaptionConnectionsPtr GetCaption ( );
+    AdapterListConnectionsPtr GetAdapterList ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Command (
+        /*[out,retval]*/ struct CommandConnections * * val ) = 0;
+      virtual HRESULT __stdcall get_Caption (
+        /*[out,retval]*/ struct CaptionConnections * * val ) = 0;
+      virtual HRESULT __stdcall get_AdapterList (
+        /*[out,retval]*/ struct AdapterListConnections * * val ) = 0;
+};
+
+struct __declspec(uuid("8170aeb6-2d67-453a-9eb4-708372cbaf95"))
+SelectedSequences : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    TS::SequencePtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    TS::SequencePtr GetItem (
+        long itemIndex );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    HRESULT Clear ( );
+    HRESULT AddSequence (
+        struct TS::Sequence * val );
+    HRESULT AddSequences (
+        SAFEARRAY * val );
+    HRESULT BeginUpdate ( );
+    HRESULT EndUpdate ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long itemIndex,
+        /*[out,retval]*/ struct TS::Sequence * * val ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall raw_AddSequence (
+        /*[in]*/ struct TS::Sequence * val ) = 0;
+      virtual HRESULT __stdcall raw_AddSequences (
+        /*[in]*/ SAFEARRAY * val ) = 0;
+      virtual HRESULT __stdcall raw_BeginUpdate ( ) = 0;
+      virtual HRESULT __stdcall raw_EndUpdate ( ) = 0;
+};
+
+struct __declspec(uuid("09d34751-5851-4af5-a27b-58e37dd7e29f"))
+SelectedPropertyObjects : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    TS::PropertyObjectPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    TS::PropertyObjectPtr GetItem (
+        long itemIndex );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    HRESULT Clear ( );
+    HRESULT AddPropertyObject (
+        struct TS::PropertyObject * val );
+    HRESULT AddPropertyObjects (
+        SAFEARRAY * val );
+    HRESULT BeginUpdate ( );
+    HRESULT EndUpdate ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long itemIndex,
+        /*[out,retval]*/ struct TS::PropertyObject * * val ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall raw_AddPropertyObject (
+        /*[in]*/ struct TS::PropertyObject * val ) = 0;
+      virtual HRESULT __stdcall raw_AddPropertyObjects (
+        /*[in]*/ SAFEARRAY * val ) = 0;
+      virtual HRESULT __stdcall raw_BeginUpdate ( ) = 0;
+      virtual HRESULT __stdcall raw_EndUpdate ( ) = 0;
+};
+
+} // namespace TSUI
+
+#pragma pack(pop)

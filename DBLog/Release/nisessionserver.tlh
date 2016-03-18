@@ -1,0 +1,384 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.40219.01 (27c4f35b).
+//
+// c:\program files (x86)\national instruments\teststand 4.2.1\components\models\teststandmodels\database\dblog\release\nisessionserver.tlh
+//
+// C++ source equivalent of Win32 type library C:\Program Files (x86)\National Instruments\Shared\Session Manager\NISessionServer.dll
+// compiler-generated file created 03/18/16 at 10:02:38 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace SM {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("8ab74ee0-6c57-11d3-8de1-006097053485"))
+/* LIBID */ __SM;
+struct /* coclass */ SEInstrSession;
+struct __declspec(uuid("8ab74eec-6c57-11d3-8de1-006097053485"))
+/* dual interface */ IInstrSession;
+enum InterfaceLevel;
+struct __declspec(uuid("ebf746a3-f4a9-4184-980b-fbf54d00cb44"))
+/* dual interface */ IVPPBase;
+struct /* coclass */ IVIInstrSession;
+struct /* coclass */ VXIPNPInstrSession;
+struct /* coclass */ VisaInstrSession;
+struct /* coclass */ InstrSessionMgr;
+struct __declspec(uuid("3bba9220-6d15-11d3-8de1-006097053485"))
+/* dual interface */ IInstrSessionMgr;
+enum GetNamesOptions;
+struct /* coclass */ VPPBase;
+struct /* coclass */ CustomInstrSession;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IVPPBase, __uuidof(IVPPBase));
+_COM_SMARTPTR_TYPEDEF(IInstrSession, __uuidof(IInstrSession));
+_COM_SMARTPTR_TYPEDEF(IInstrSessionMgr, __uuidof(IInstrSessionMgr));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("833509a0-6470-4aa3-8c78-dc015690795e"))
+SEInstrSession;
+    // [ default ] interface IInstrSession
+
+enum InterfaceLevel
+{
+    DefaultInterface = 0,
+    ClassDriver = 1,
+    SpecificDriver = 2,
+    IODriver = 3
+};
+
+struct __declspec(uuid("ebf746a3-f4a9-4184-980b-fbf54d00cb44"))
+IVPPBase : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long Error_Query (
+        long * errorCode,
+        BSTR * errorMessage );
+    long Error_Message (
+        long errorCode,
+        BSTR * errorMessage );
+    long Revision_Query (
+        BSTR * instrumentDriverRevision,
+        BSTR * firmwareRevision );
+    long Self_Test (
+        short * selfTestResult,
+        BSTR * selfTestMessage );
+    long Reset ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_Error_Query (
+        /*[out]*/ long * errorCode,
+        /*[out]*/ BSTR * errorMessage,
+        /*[out,retval]*/ long * status ) = 0;
+      virtual HRESULT __stdcall raw_Error_Message (
+        /*[in]*/ long errorCode,
+        /*[out]*/ BSTR * errorMessage,
+        /*[out,retval]*/ long * status ) = 0;
+      virtual HRESULT __stdcall raw_Revision_Query (
+        /*[out]*/ BSTR * instrumentDriverRevision,
+        /*[out]*/ BSTR * firmwareRevision,
+        /*[out,retval]*/ long * status ) = 0;
+      virtual HRESULT __stdcall raw_Self_Test (
+        /*[out]*/ short * selfTestResult,
+        /*[out]*/ BSTR * selfTestMessage,
+        /*[out,retval]*/ long * status ) = 0;
+      virtual HRESULT __stdcall raw_Reset (
+        /*[out,retval]*/ long * status ) = 0;
+};
+
+struct __declspec(uuid("8ab74eec-6c57-11d3-8de1-006097053485"))
+IInstrSession : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetName,put=PutName))
+    _bstr_t Name;
+    __declspec(property(get=GetInExternalProcess,put=PutInExternalProcess))
+    VARIANT_BOOL InExternalProcess;
+    __declspec(property(get=GetCategory,put=PutCategory))
+    _bstr_t Category;
+    __declspec(property(get=GetStateDescription))
+    _bstr_t StateDescription;
+    __declspec(property(get=GetCloseEnabled,put=PutCloseEnabled))
+    VARIANT_BOOL CloseEnabled;
+    __declspec(property(get=GetCloseFunction,put=PutCloseFunction))
+    long CloseFunction;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Initialize (
+        _bstr_t options );
+    VARIANT_BOOL IsInitialized ( );
+    _bstr_t GetName ( );
+    void PutName (
+        _bstr_t pVal );
+    long GetHandle (
+        enum InterfaceLevel level );
+    IUnknownPtr GetCOMDriver (
+        enum InterfaceLevel level );
+    HRESULT Close ( );
+    VARIANT_BOOL GetInExternalProcess ( );
+    void PutInExternalProcess (
+        VARIANT_BOOL pVal );
+    _bstr_t GetCategory ( );
+    void PutCategory (
+        _bstr_t pVal );
+    _bstr_t GetStateDescription ( );
+    _bstr_t GenerateUniqueID ( );
+    HRESULT AttachObject (
+        _bstr_t uniqueId,
+        IUnknown * iPtr,
+        _bstr_t clsid,
+        VARIANT_BOOL releaseOnClose );
+    HRESULT AttachLong (
+        _bstr_t uniqueId,
+        long value );
+    HRESULT AttachString (
+        _bstr_t uniqueId,
+        _bstr_t value );
+    IUnknownPtr TSRenamed_GetObject (
+        _bstr_t uniqueId );
+    long GetLong (
+        _bstr_t uniqueId );
+    _bstr_t GetString (
+        _bstr_t uniqueId );
+    HRESULT DetachData (
+        _bstr_t uniqueId );
+    VARIANT_BOOL GetCloseEnabled ( );
+    void PutCloseEnabled (
+        VARIANT_BOOL pVal );
+    IVPPBasePtr GetVPPBaseInterface ( );
+    HRESULT LockSession (
+        _bstr_t keyName,
+        double timeout,
+        long reserved );
+    HRESULT UnlockSession ( );
+    HRESULT GetLockState (
+        BSTR * ownerKey,
+        long * nestingLevel );
+    long GetCloseFunction ( );
+    void PutCloseFunction (
+        long pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_Initialize (
+        /*[in]*/ BSTR options ) = 0;
+      virtual HRESULT __stdcall raw_IsInitialized (
+        /*[out,retval]*/ VARIANT_BOOL * IsInitialized ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetHandle (
+        /*[in]*/ enum InterfaceLevel level,
+        /*[out,retval]*/ long * handle ) = 0;
+      virtual HRESULT __stdcall raw_GetCOMDriver (
+        /*[in]*/ enum InterfaceLevel level,
+        /*[out,retval]*/ IUnknown * * driver ) = 0;
+      virtual HRESULT __stdcall raw_Close ( ) = 0;
+      virtual HRESULT __stdcall get_InExternalProcess (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_InExternalProcess (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_Category (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Category (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_StateDescription (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GenerateUniqueID (
+        /*[out,retval]*/ BSTR * uniqueId ) = 0;
+      virtual HRESULT __stdcall raw_AttachObject (
+        /*[in]*/ BSTR uniqueId,
+        /*[in]*/ IUnknown * iPtr,
+        /*[in]*/ BSTR clsid,
+        /*[in]*/ VARIANT_BOOL releaseOnClose ) = 0;
+      virtual HRESULT __stdcall raw_AttachLong (
+        /*[in]*/ BSTR uniqueId,
+        /*[in]*/ long value ) = 0;
+      virtual HRESULT __stdcall raw_AttachString (
+        /*[in]*/ BSTR uniqueId,
+        /*[in]*/ BSTR value ) = 0;
+      virtual HRESULT __stdcall raw_TSRenamed_GetObject (
+        /*[in]*/ BSTR uniqueId,
+        /*[out,retval]*/ IUnknown * * iPtr ) = 0;
+      virtual HRESULT __stdcall raw_GetLong (
+        /*[in]*/ BSTR uniqueId,
+        /*[out,retval]*/ long * value ) = 0;
+      virtual HRESULT __stdcall raw_GetString (
+        /*[in]*/ BSTR uniqueId,
+        /*[out,retval]*/ BSTR * value ) = 0;
+      virtual HRESULT __stdcall raw_DetachData (
+        /*[in]*/ BSTR uniqueId ) = 0;
+      virtual HRESULT __stdcall get_CloseEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_CloseEnabled (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetVPPBaseInterface (
+        /*[out,retval]*/ struct IVPPBase * * vppBaseInterface ) = 0;
+      virtual HRESULT __stdcall raw_LockSession (
+        /*[in]*/ BSTR keyName,
+        /*[in]*/ double timeout,
+        /*[in]*/ long reserved ) = 0;
+      virtual HRESULT __stdcall raw_UnlockSession ( ) = 0;
+      virtual HRESULT __stdcall raw_GetLockState (
+        /*[out]*/ BSTR * ownerKey,
+        /*[out]*/ long * nestingLevel ) = 0;
+      virtual HRESULT __stdcall get_CloseFunction (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_CloseFunction (
+        /*[in]*/ long pVal ) = 0;
+};
+
+struct __declspec(uuid("8ab74eed-6c57-11d3-8de1-006097053485"))
+IVIInstrSession;
+    // [ default ] interface IInstrSession
+
+struct __declspec(uuid("8ab74eef-6c57-11d3-8de1-006097053485"))
+VXIPNPInstrSession;
+    // [ default ] interface IInstrSession
+
+struct __declspec(uuid("265dadca-8caf-430d-8a8d-bfe7822f8fcb"))
+VisaInstrSession;
+    // [ default ] interface IInstrSession
+
+struct __declspec(uuid("3bba9221-6d15-11d3-8de1-006097053485"))
+InstrSessionMgr;
+    // [ default ] interface IInstrSessionMgr
+
+enum GetNamesOptions
+{
+    ReturnLogicalNames = 1,
+    ReturnVirtualInstruments = 2,
+    ReturnHiddenNames = 4,
+    IncludeCategoryPrefix = 8,
+    ReturnRouteGroups = 16,
+    ReturnRoutes = 32
+};
+
+struct __declspec(uuid("3bba9220-6d15-11d3-8de1-006097053485"))
+IInstrSessionMgr : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetStateDescription))
+    _bstr_t StateDescription;
+    __declspec(property(get=GetInExternalProcess,put=PutInExternalProcess))
+    VARIANT_BOOL InExternalProcess;
+    __declspec(property(get=GetAudibleLifeTimeAlerts,put=PutAudibleLifeTimeAlerts))
+    VARIANT_BOOL AudibleLifeTimeAlerts;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT InstallInstrSession (
+        _bstr_t Name,
+        struct IInstrSession * instrSession );
+    IInstrSessionPtr GetInstrSession (
+        _bstr_t Name,
+        VARIANT_BOOL newSession );
+    SAFEARRAY * GetNames (
+        _bstr_t Category,
+        enum GetNamesOptions flags,
+        _bstr_t filter );
+    _bstr_t GetStateDescription ( );
+    VARIANT_BOOL GetInExternalProcess ( );
+    void PutInExternalProcess (
+        VARIANT_BOOL pVal );
+    SAFEARRAY * GetSessions (
+        _bstr_t Category );
+    SAFEARRAY * GetCategories (
+        _bstr_t baseCategory );
+    HRESULT HideCategory (
+        _bstr_t Category,
+        VARIANT_BOOL hide );
+    VARIANT_BOOL GetAudibleLifeTimeAlerts ( );
+    void PutAudibleLifeTimeAlerts (
+        VARIANT_BOOL pVal );
+    HRESULT InvalidateVisaResourceList ( );
+    HRESULT GetUniqueKeyName (
+        BSTR * keyName );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_InstallInstrSession (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ struct IInstrSession * instrSession ) = 0;
+      virtual HRESULT __stdcall raw_GetInstrSession (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ VARIANT_BOOL newSession,
+        /*[out,retval]*/ struct IInstrSession * * instrSession ) = 0;
+      virtual HRESULT __stdcall raw_GetNames (
+        /*[in]*/ BSTR Category,
+        /*[in]*/ enum GetNamesOptions flags,
+        /*[in]*/ BSTR filter,
+        /*[out,retval]*/ SAFEARRAY * * names ) = 0;
+      virtual HRESULT __stdcall get_StateDescription (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_InExternalProcess (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_InExternalProcess (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetSessions (
+        /*[in]*/ BSTR Category,
+        /*[out,retval]*/ SAFEARRAY * * sessions ) = 0;
+      virtual HRESULT __stdcall raw_GetCategories (
+        /*[in]*/ BSTR baseCategory,
+        /*[out,retval]*/ SAFEARRAY * * categories ) = 0;
+      virtual HRESULT __stdcall raw_HideCategory (
+        /*[in]*/ BSTR Category,
+        /*[in]*/ VARIANT_BOOL hide ) = 0;
+      virtual HRESULT __stdcall get_AudibleLifeTimeAlerts (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_AudibleLifeTimeAlerts (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall raw_InvalidateVisaResourceList ( ) = 0;
+      virtual HRESULT __stdcall raw_GetUniqueKeyName (
+        /*[out]*/ BSTR * keyName ) = 0;
+};
+
+struct __declspec(uuid("7e0f2f83-0b90-4395-9271-1e2de3edfee8"))
+VPPBase;
+    // [ default ] interface IVPPBase
+
+struct __declspec(uuid("90840e04-d99a-4db1-bbbc-bbaa91d1d34a"))
+CustomInstrSession;
+    // [ default ] interface IInstrSession
+
+} // namespace SM
+
+#pragma pack(pop)

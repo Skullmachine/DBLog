@@ -1,0 +1,3677 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.40219.01 (a73ae945).
+//
+// c:\program files (x86)\national instruments\teststand 4.2.1\components\models\teststandmodels\database\dblog\debug\tsadpapi.tli
+//
+// Wrapper implementations for Win32 type library ..\..\bin\TsAdpApi.tlb
+// compiler-generated file created 03/17/16 at 23:42:02 - DO NOT EDIT!
+
+#pragma once
+
+namespace TSAdp {
+
+//
+// interface ActiveXMember wrapper method implementations
+//
+
+long ActiveXMember::GetVTableOffset ( ) {
+    long _result = 0;
+    HRESULT _hr = get_VTableOffset(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+long ActiveXMember::GetDispatchId ( ) {
+    long _result = 0;
+    HRESULT _hr = get_DispatchId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+_bstr_t ActiveXMember::GetName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+_bstr_t ActiveXMember::GetDocumentation ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Documentation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+_bstr_t ActiveXMember::GetHelpFilePath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_HelpFilePath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+long ActiveXMember::GetHelpContext ( ) {
+    long _result = 0;
+    HRESULT _hr = get_HelpContext(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+long ActiveXMember::GetFunctionFlags ( ) {
+    long _result = 0;
+    HRESULT _hr = get_FunctionFlags(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+enum ActiveXModuleMemberTypes ActiveXMember::GetMemberType ( ) {
+    enum ActiveXModuleMemberTypes _result;
+    HRESULT _hr = get_MemberType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+_bstr_t ActiveXMember::GetParameterTypeWarnings ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ParameterTypeWarnings(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface ActiveXMembers wrapper method implementations
+//
+
+ActiveXMemberPtr ActiveXMembers::GetItem ( const _variant_t & index ) {
+    struct ActiveXMember * _result = 0;
+    HRESULT _hr = get_Item(index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ActiveXMemberPtr(_result, false);
+}
+
+IUnknownPtr ActiveXMembers::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long ActiveXMembers::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ActiveXInterface wrapper method implementations
+//
+
+_bstr_t ActiveXInterface::GetId ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Id(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+_bstr_t ActiveXInterface::GetName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+_bstr_t ActiveXInterface::GetDocumentation ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Documentation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+_bstr_t ActiveXInterface::GetHelpFilePath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_HelpFilePath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+long ActiveXInterface::GetHelpContext ( ) {
+    long _result = 0;
+    HRESULT _hr = get_HelpContext(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+long ActiveXInterface::GetTypeFlags ( ) {
+    long _result = 0;
+    HRESULT _hr = get_TypeFlags(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+VARIANT_BOOL ActiveXInterface::GetForTypedefOnly ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_ForTypedefOnly(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+ActiveXMembersPtr ActiveXInterface::GetVTableMembers ( ) {
+    struct ActiveXMembers * _result = 0;
+    HRESULT _hr = get_VTableMembers(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ActiveXMembersPtr(_result, false);
+}
+
+ActiveXMembersPtr ActiveXInterface::GetDispatchMembers ( ) {
+    struct ActiveXMembers * _result = 0;
+    HRESULT _hr = get_DispatchMembers(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ActiveXMembersPtr(_result, false);
+}
+
+//
+// interface ActiveXInterfaces wrapper method implementations
+//
+
+ActiveXInterfacePtr ActiveXInterfaces::GetItem ( const _variant_t & index ) {
+    struct ActiveXInterface * _result = 0;
+    HRESULT _hr = get_Item(index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ActiveXInterfacePtr(_result, false);
+}
+
+IUnknownPtr ActiveXInterfaces::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long ActiveXInterfaces::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ActiveXCoClass wrapper method implementations
+//
+
+_bstr_t ActiveXCoClass::GetId ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Id(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+_bstr_t ActiveXCoClass::GetName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+_bstr_t ActiveXCoClass::GetDocumentation ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Documentation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+_bstr_t ActiveXCoClass::GetHelpFilePath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_HelpFilePath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+long ActiveXCoClass::GetHelpContext ( ) {
+    long _result = 0;
+    HRESULT _hr = get_HelpContext(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+long ActiveXCoClass::GetTypeFlags ( ) {
+    long _result = 0;
+    HRESULT _hr = get_TypeFlags(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+ActiveXInterfacesPtr ActiveXCoClass::GetInterfaces ( ) {
+    struct ActiveXInterfaces * _result = 0;
+    HRESULT _hr = get_Interfaces(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ActiveXInterfacesPtr(_result, false);
+}
+
+long ActiveXCoClass::GetInterfaceImplementationTypeFlags ( long interfaceIndex ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetInterfaceImplementationTypeFlags(interfaceIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ActiveXCoClasses wrapper method implementations
+//
+
+ActiveXCoClassPtr ActiveXCoClasses::GetItem ( const _variant_t & index ) {
+    struct ActiveXCoClass * _result = 0;
+    HRESULT _hr = get_Item(index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ActiveXCoClassPtr(_result, false);
+}
+
+IUnknownPtr ActiveXCoClasses::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long ActiveXCoClasses::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ActiveXServer wrapper method implementations
+//
+
+_bstr_t ActiveXServer::GetPath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Path(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+_bstr_t ActiveXServer::GetId ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Id(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+_bstr_t ActiveXServer::GetName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+_bstr_t ActiveXServer::GetDisplayName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DisplayName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+long ActiveXServer::GetMajorVersion ( ) {
+    long _result = 0;
+    HRESULT _hr = get_MajorVersion(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+long ActiveXServer::GetMinorVersion ( ) {
+    long _result = 0;
+    HRESULT _hr = get_MinorVersion(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+_bstr_t ActiveXServer::GetVersionString ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_VersionString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+_bstr_t ActiveXServer::GetHelpFilePath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_HelpFilePath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+long ActiveXServer::GetHelpContext ( ) {
+    long _result = 0;
+    HRESULT _hr = get_HelpContext(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+long ActiveXServer::GetLibraryFlags ( ) {
+    long _result = 0;
+    HRESULT _hr = get_LibraryFlags(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+unsigned long ActiveXServer::GetLocaleId ( ) {
+    unsigned long _result = 0;
+    HRESULT _hr = get_LocaleId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+ActiveXCoClassesPtr ActiveXServer::GetCoClasses ( ) {
+    struct ActiveXCoClasses * _result = 0;
+    HRESULT _hr = get_CoClasses(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ActiveXCoClassesPtr(_result, false);
+}
+
+ActiveXInterfacesPtr ActiveXServer::GetInterfaces ( ) {
+    struct ActiveXInterfaces * _result = 0;
+    HRESULT _hr = get_Interfaces(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ActiveXInterfacesPtr(_result, false);
+}
+
+VARIANT_BOOL ActiveXServer::LoadTypeLibrary ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_LoadTypeLibrary(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ActiveXServers wrapper method implementations
+//
+
+ActiveXServerPtr ActiveXServers::GetItem ( const _variant_t & index ) {
+    struct ActiveXServer * _result = 0;
+    HRESULT _hr = get_Item(index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ActiveXServerPtr(_result, false);
+}
+
+IUnknownPtr ActiveXServers::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long ActiveXServers::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+_bstr_t ActiveXServers::RegisterTypeLibrary ( _bstr_t typeLibraryPath, VARIANT_BOOL * newerTypeLibraryAlreadyRegistered ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_RegisterTypeLibrary(typeLibraryPath, newerTypeLibraryAlreadyRegistered, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+HRESULT ActiveXServers::Refresh ( ) {
+    HRESULT _hr = raw_Refresh();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+long ActiveXServers::GetRefreshCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_RefreshCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ActiveXAdapter wrapper method implementations
+//
+
+TS::AdapterPtr ActiveXAdapter::AsAdapter ( ) {
+    struct TS::Adapter * _result = 0;
+    HRESULT _hr = raw_AsAdapter(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::AdapterPtr(_result, false);
+}
+
+VARIANT_BOOL ActiveXAdapter::GetUseLateBinding ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_UseLateBinding(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void ActiveXAdapter::PutUseLateBinding ( VARIANT_BOOL propertyValue ) {
+    HRESULT _hr = put_UseLateBinding(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL ActiveXAdapter::GetUnloadUnusedActiveXServersAfterExec ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_UnloadUnusedActiveXServersAfterExec(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void ActiveXAdapter::PutUnloadUnusedActiveXServersAfterExec ( VARIANT_BOOL propertyValue ) {
+    HRESULT _hr = put_UnloadUnusedActiveXServersAfterExec(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL ActiveXAdapter::GetShowActiveXControlsWhenSpecifyingModule ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_ShowActiveXControlsWhenSpecifyingModule(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void ActiveXAdapter::PutShowActiveXControlsWhenSpecifyingModule ( VARIANT_BOOL propertyValue ) {
+    HRESULT _hr = put_ShowActiveXControlsWhenSpecifyingModule(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+HRESULT ActiveXAdapter::UpdateAutomationIDs ( struct TS::SequenceFile * seqFileToUpdate, long * numStepsModified, long * numStepUpdatesFailed, BSTR * errorDescription ) {
+    HRESULT _hr = raw_UpdateAutomationIDs(seqFileToUpdate, numStepsModified, numStepUpdatesFailed, errorDescription);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+ActiveXServersPtr ActiveXAdapter::GetServers ( ) {
+    struct ActiveXServers * _result = 0;
+    HRESULT _hr = get_Servers(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ActiveXServersPtr(_result, false);
+}
+
+//
+// interface DllFunction wrapper method implementations
+//
+
+_bstr_t DllFunction::GetDisplayName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DisplayName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+_bstr_t DllFunction::GetUniqueDisplayName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_UniqueDisplayName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+_bstr_t DllFunction::GetSymbolName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_SymbolName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+_bstr_t DllFunction::GetHelpFilePath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_HelpFilePath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+long DllFunction::GetHelpContext ( ) {
+    long _result = 0;
+    HRESULT _hr = get_HelpContext(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+_bstr_t DllFunction::GetParameterTypeWarnings ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ParameterTypeWarnings(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+VARIANT_BOOL DllFunction::GetHasParameterInformation ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_HasParameterInformation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface DllFunctions wrapper method implementations
+//
+
+DllFunctionPtr DllFunctions::GetItem ( const _variant_t & index ) {
+    struct DllFunction * _result = 0;
+    HRESULT _hr = get_Item(index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return DllFunctionPtr(_result, false);
+}
+
+IUnknownPtr DllFunctions::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long DllFunctions::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface CommonCAdapter wrapper method implementations
+//
+
+TS::AdapterPtr CommonCAdapter::AsAdapter ( ) {
+    struct TS::Adapter * _result = 0;
+    HRESULT _hr = raw_AsAdapter(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::AdapterPtr(_result, false);
+}
+
+enum StructPassingOptions CommonCAdapter::GetDefaultStructPacking ( ) {
+    enum StructPassingOptions _result;
+    HRESULT _hr = get_DefaultStructPacking(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void CommonCAdapter::PutDefaultStructPacking ( enum StructPassingOptions propertyValue ) {
+    HRESULT _hr = put_DefaultStructPacking(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL CommonCAdapter::GetAllowStructPassing ( struct TS::PropertyObject * typeDefinition ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_GetAllowStructPassing(typeDefinition, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT CommonCAdapter::SetAllowStructPassing ( struct TS::PropertyObject * typeDefinition, VARIANT_BOOL allowStructPassing ) {
+    HRESULT _hr = raw_SetAllowStructPassing(typeDefinition, allowStructPassing);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+enum StructPassingOptions CommonCAdapter::GetStructPacking ( struct TS::PropertyObject * typeDefinition ) {
+    enum StructPassingOptions _result;
+    HRESULT _hr = raw_GetStructPacking(typeDefinition, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT CommonCAdapter::SetStructPacking ( struct TS::PropertyObject * typeDefinition, enum StructPassingOptions structPackingOption ) {
+    HRESULT _hr = raw_SetStructPacking(typeDefinition, structPackingOption);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+VARIANT_BOOL CommonCAdapter::GetExcludeFromStruct ( struct TS::PropertyObject * typeDefinition, _bstr_t propertyLookupString ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_GetExcludeFromStruct(typeDefinition, propertyLookupString, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT CommonCAdapter::SetExcludeFromStruct ( struct TS::PropertyObject * typeDefinition, _bstr_t propertyLookupString, VARIANT_BOOL excludeFromStruct ) {
+    HRESULT _hr = raw_SetExcludeFromStruct(typeDefinition, propertyLookupString, excludeFromStruct);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+enum StructMemberTypes CommonCAdapter::GetStructMemberType ( struct TS::PropertyObject * typeDefinition, _bstr_t propertyLookupString ) {
+    enum StructMemberTypes _result;
+    HRESULT _hr = raw_GetStructMemberType(typeDefinition, propertyLookupString, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT CommonCAdapter::SetStructMemberType ( struct TS::PropertyObject * typeDefinition, _bstr_t propertyLookupString, enum StructMemberTypes structMemberType ) {
+    HRESULT _hr = raw_SetStructMemberType(typeDefinition, propertyLookupString, structMemberType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+enum StructMemberStorageOptions CommonCAdapter::GetStructMemberStorage ( struct TS::PropertyObject * typeDefinition, _bstr_t propertyLookupString ) {
+    enum StructMemberStorageOptions _result;
+    HRESULT _hr = raw_GetStructMemberStorage(typeDefinition, propertyLookupString, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT CommonCAdapter::SetStructMemberStorage ( struct TS::PropertyObject * typeDefinition, _bstr_t propertyLookupString, enum StructMemberStorageOptions structMemberStorage ) {
+    HRESULT _hr = raw_SetStructMemberStorage(typeDefinition, propertyLookupString, structMemberStorage);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+enum StructMemberArrayStorageOptions CommonCAdapter::GetStructMemberArrayStorage ( struct TS::PropertyObject * typeDefinition, _bstr_t propertyLookupString ) {
+    enum StructMemberArrayStorageOptions _result;
+    HRESULT _hr = raw_GetStructMemberArrayStorage(typeDefinition, propertyLookupString, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT CommonCAdapter::SetStructMemberArrayStorage ( struct TS::PropertyObject * typeDefinition, _bstr_t propertyLookupString, enum StructMemberArrayStorageOptions structMemberArrayStorage ) {
+    HRESULT _hr = raw_SetStructMemberArrayStorage(typeDefinition, propertyLookupString, structMemberArrayStorage);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+long CommonCAdapter::GetStructMemberStringBufferSize ( struct TS::PropertyObject * typeDefinition, _bstr_t propertyLookupString ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetStructMemberStringBufferSize(typeDefinition, propertyLookupString, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT CommonCAdapter::SetStructMemberStringBufferSize ( struct TS::PropertyObject * typeDefinition, _bstr_t propertyLookupString, long structMemberStringBufferSize ) {
+    HRESULT _hr = raw_SetStructMemberStringBufferSize(typeDefinition, propertyLookupString, structMemberStringBufferSize);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+DllFunctionsPtr CommonCAdapter::GetDllFunctions ( _bstr_t dllPath ) {
+    struct DllFunctions * _result = 0;
+    HRESULT _hr = raw_GetDllFunctions(dllPath, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return DllFunctionsPtr(_result, false);
+}
+
+SAFEARRAY * CommonCAdapter::GetStructNames ( ) {
+    SAFEARRAY * _result = 0;
+    HRESULT _hr = raw_GetStructNames(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface CVIAdapter wrapper method implementations
+//
+
+CommonCAdapterPtr CVIAdapter::AsCommonCAdapter ( ) {
+    struct CommonCAdapter * _result = 0;
+    HRESULT _hr = raw_AsCommonCAdapter(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CommonCAdapterPtr(_result, false);
+}
+
+TS::AdapterPtr CVIAdapter::AsAdapter ( ) {
+    struct TS::Adapter * _result = 0;
+    HRESULT _hr = raw_AsAdapter(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::AdapterPtr(_result, false);
+}
+
+VARIANT_BOOL CVIAdapter::GetExecuteStepsInExternalInstance ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_ExecuteStepsInExternalInstance(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void CVIAdapter::PutExecuteStepsInExternalInstance ( VARIANT_BOOL propertyValue ) {
+    HRESULT _hr = put_ExecuteStepsInExternalInstance(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t CVIAdapter::GetExecutionServerProjectPathName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ExecutionServerProjectPathName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void CVIAdapter::PutExecutionServerProjectPathName ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_ExecutionServerProjectPathName(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+enum AdapterCodeTemplatePolicies CVIAdapter::GetCodeTemplatePolicy ( ) {
+    enum AdapterCodeTemplatePolicies _result;
+    HRESULT _hr = get_CodeTemplatePolicy(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void CVIAdapter::PutCodeTemplatePolicy ( enum AdapterCodeTemplatePolicies propertyValue ) {
+    HRESULT _hr = put_CodeTemplatePolicy(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface DllAdapter wrapper method implementations
+//
+
+CommonCAdapterPtr DllAdapter::AsCommonCAdapter ( ) {
+    struct CommonCAdapter * _result = 0;
+    HRESULT _hr = raw_AsCommonCAdapter(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CommonCAdapterPtr(_result, false);
+}
+
+TS::AdapterPtr DllAdapter::AsAdapter ( ) {
+    struct TS::Adapter * _result = 0;
+    HRESULT _hr = raw_AsAdapter(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::AdapterPtr(_result, false);
+}
+
+_bstr_t DllAdapter::GetVisualStudioDTEVersionForEditing ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_VisualStudioDTEVersionForEditing(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void DllAdapter::PutVisualStudioDTEVersionForEditing ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_VisualStudioDTEVersionForEditing(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t DllAdapter::GetVisualStudioDTEVersionForDebugging ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_VisualStudioDTEVersionForDebugging(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void DllAdapter::PutVisualStudioDTEVersionForDebugging ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_VisualStudioDTEVersionForDebugging(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface LabVIEWAdapter wrapper method implementations
+//
+
+TS::AdapterPtr LabVIEWAdapter::AsAdapter ( ) {
+    struct TS::Adapter * _result = 0;
+    HRESULT _hr = raw_AsAdapter(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::AdapterPtr(_result, false);
+}
+
+HRESULT LabVIEWAdapter::GetServerInfo ( enum LabVIEWServerTypes * serverType, BSTR * serverInfo ) {
+    HRESULT _hr = raw_GetServerInfo(serverType, serverInfo);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT LabVIEWAdapter::SetServerInfo ( enum LabVIEWServerTypes serverType, _bstr_t serverInfo ) {
+    HRESULT _hr = raw_SetServerInfo(serverType, serverInfo);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+_bstr_t LabVIEWAdapter::GetUUTIterationNumberExpression ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_UUTIterationNumberExpression(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void LabVIEWAdapter::PutUUTIterationNumberExpression ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_UUTIterationNumberExpression(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t LabVIEWAdapter::GetUUTSerialNumberExpression ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_UUTSerialNumberExpression(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void LabVIEWAdapter::PutUUTSerialNumberExpression ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_UUTSerialNumberExpression(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL LabVIEWAdapter::GetReserveLoadedVIsForExec ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_ReserveLoadedVIsForExec(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void LabVIEWAdapter::PutReserveLoadedVIsForExec ( VARIANT_BOOL propertyValue ) {
+    HRESULT _hr = put_ReserveLoadedVIsForExec(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+enum AdapterCodeTemplatePolicies LabVIEWAdapter::GetCodeTemplatePolicy ( ) {
+    enum AdapterCodeTemplatePolicies _result;
+    HRESULT _hr = get_CodeTemplatePolicy(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void LabVIEWAdapter::PutCodeTemplatePolicy ( enum AdapterCodeTemplatePolicies propertyValue ) {
+    HRESULT _hr = put_CodeTemplatePolicy(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL LabVIEWAdapter::GetClusterPassingEnabled ( struct TS::PropertyObject * typeDefinition ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_GetClusterPassingEnabled(typeDefinition, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT LabVIEWAdapter::SetClusterPassingEnabled ( struct TS::PropertyObject * typeDefinition, VARIANT_BOOL clusterPassingEnabled ) {
+    HRESULT _hr = raw_SetClusterPassingEnabled(typeDefinition, clusterPassingEnabled);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+VARIANT_BOOL LabVIEWAdapter::GetExcludeFromCluster ( struct TS::PropertyObject * typeDefinition, _bstr_t propertyLookupString ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_GetExcludeFromCluster(typeDefinition, propertyLookupString, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT LabVIEWAdapter::SetExcludeFromCluster ( struct TS::PropertyObject * typeDefinition, _bstr_t propertyLookupString, VARIANT_BOOL excludeFromCluster ) {
+    HRESULT _hr = raw_SetExcludeFromCluster(typeDefinition, propertyLookupString, excludeFromCluster);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+_bstr_t LabVIEWAdapter::GetClusterMemberLabel ( struct TS::PropertyObject * typeDefinition, _bstr_t propertyLookupString ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetClusterMemberLabel(typeDefinition, propertyLookupString, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+HRESULT LabVIEWAdapter::SetClusterMemberLabel ( struct TS::PropertyObject * typeDefinition, _bstr_t propertyLookupString, _bstr_t clusterMemberLabel ) {
+    HRESULT _hr = raw_SetClusterMemberLabel(typeDefinition, propertyLookupString, clusterMemberLabel);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT LabVIEWAdapter::DeployProjectLibrary ( _bstr_t targetIPAddress, _bstr_t libraryPath, enum DeployProjectLibraryOptions options ) {
+    HRESULT _hr = raw_DeployProjectLibrary(targetIPAddress, libraryPath, options);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+VARIANT_BOOL LabVIEWAdapter::CheckRemoteSystemStatus ( _bstr_t targetIPAddress, long portNumber, long timeout, BSTR * statusMessage ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_CheckRemoteSystemStatus(targetIPAddress, portNumber, timeout, statusMessage, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT LabVIEWAdapter::Initialize ( ) {
+    HRESULT _hr = raw_Initialize();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+VARIANT_BOOL LabVIEWAdapter::GetIsCurrentLabVIEWServerAnEditor ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsCurrentLabVIEWServerAnEditor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+_bstr_t LabVIEWAdapter::GetCurrentLabVIEWServerVersion ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_CurrentLabVIEWServerVersion(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+_bstr_t LabVIEWAdapter::GetVIVersion ( _bstr_t Path ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetVIVersion(Path, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+TS::PropertyObjectPtr LabVIEWAdapter::GetExpressVIMenuStructure ( VARIANT_BOOL refreshMenu, long parentHWnd ) {
+    struct TS::PropertyObject * _result = 0;
+    HRESULT _hr = raw_GetExpressVIMenuStructure(refreshMenu, parentHWnd, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::PropertyObjectPtr(_result, false);
+}
+
+VARIANT_BOOL LabVIEWAdapter::IsExpressVI ( _bstr_t Path, BSTR * displayVIName ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsExpressVI(Path, displayVIName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+VARIANT_BOOL LabVIEWAdapter::FileExistsInLLB ( _bstr_t Path ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_FileExistsInLLB(Path, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface HTBasicAdapter wrapper method implementations
+//
+
+TS::AdapterPtr HTBasicAdapter::AsAdapter ( ) {
+    struct TS::Adapter * _result = 0;
+    HRESULT _hr = raw_AsAdapter(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::AdapterPtr(_result, false);
+}
+
+VARIANT_BOOL HTBasicAdapter::GetUseDevelopmentServer ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_UseDevelopmentServer(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void HTBasicAdapter::PutUseDevelopmentServer ( VARIANT_BOOL propertyValue ) {
+    HRESULT _hr = put_UseDevelopmentServer(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t HTBasicAdapter::GetRunTimeServerPath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_RunTimeServerPath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void HTBasicAdapter::PutRunTimeServerPath ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_RunTimeServerPath(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t HTBasicAdapter::GetDevelopmentServerPath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DevelopmentServerPath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void HTBasicAdapter::PutDevelopmentServerPath ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_DevelopmentServerPath(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+enum HTBasicDefaultWorkingDirTypes HTBasicAdapter::GetDefaultWorkingDirectory ( ) {
+    enum HTBasicDefaultWorkingDirTypes _result;
+    HRESULT _hr = get_DefaultWorkingDirectory(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void HTBasicAdapter::PutDefaultWorkingDirectory ( enum HTBasicDefaultWorkingDirTypes propertyValue ) {
+    HRESULT _hr = put_DefaultWorkingDirectory(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t HTBasicAdapter::GetSpecWorkingDirectoryPath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_SpecWorkingDirectoryPath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void HTBasicAdapter::PutSpecWorkingDirectoryPath ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_SpecWorkingDirectoryPath(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface SequenceAdapter wrapper method implementations
+//
+
+TS::AdapterPtr SequenceAdapter::AsAdapter ( ) {
+    struct TS::Adapter * _result = 0;
+    HRESULT _hr = raw_AsAdapter(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::AdapterPtr(_result, false);
+}
+
+TS::SequenceFilePtr SequenceAdapter::GetSequenceFile ( _bstr_t Path ) {
+    struct TS::SequenceFile * _result = 0;
+    HRESULT _hr = raw_GetSequenceFile(Path, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::SequenceFilePtr(_result, false);
+}
+
+//
+// interface DotNetAdapter wrapper method implementations
+//
+
+TS::AdapterPtr DotNetAdapter::AsAdapter ( ) {
+    struct TS::Adapter * _result = 0;
+    HRESULT _hr = raw_AsAdapter(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::AdapterPtr(_result, false);
+}
+
+VARIANT_BOOL DotNetAdapter::GetStructurePassingEnabled ( struct TS::PropertyObject * typeDefinition ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_GetStructurePassingEnabled(typeDefinition, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT DotNetAdapter::SetStructurePassingEnabled ( struct TS::PropertyObject * typeDefinition, VARIANT_BOOL structPassingEnabled ) {
+    HRESULT _hr = raw_SetStructurePassingEnabled(typeDefinition, structPassingEnabled);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+VARIANT_BOOL DotNetAdapter::GetExcludeFromStructure ( struct TS::PropertyObject * typeDefinition, _bstr_t propertyLookupString ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_GetExcludeFromStructure(typeDefinition, propertyLookupString, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT DotNetAdapter::SetExcludeFromStructure ( struct TS::PropertyObject * typeDefinition, _bstr_t propertyLookupString, VARIANT_BOOL excludeFromStructure ) {
+    HRESULT _hr = raw_SetExcludeFromStructure(typeDefinition, propertyLookupString, excludeFromStructure);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+_bstr_t DotNetAdapter::GetStructureMemberLabel ( struct TS::PropertyObject * typeDefinition, _bstr_t propertyLookupString ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetStructureMemberLabel(typeDefinition, propertyLookupString, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+HRESULT DotNetAdapter::SetStructureMemberLabel ( struct TS::PropertyObject * typeDefinition, _bstr_t propertyLookupString, _bstr_t structureMemberLabel ) {
+    HRESULT _hr = raw_SetStructureMemberLabel(typeDefinition, propertyLookupString, structureMemberLabel);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+_bstr_t DotNetAdapter::GetVisualStudioDTEVersionForEditing ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_VisualStudioDTEVersionForEditing(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void DotNetAdapter::PutVisualStudioDTEVersionForEditing ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_VisualStudioDTEVersionForEditing(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t DotNetAdapter::GetVisualStudioDTEVersionForDebugging ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_VisualStudioDTEVersionForDebugging(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void DotNetAdapter::PutVisualStudioDTEVersionForDebugging ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_VisualStudioDTEVersionForDebugging(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface ActiveXParameter wrapper method implementations
+//
+
+TS::PropertyObjectPtr ActiveXParameter::AsPropertyObject ( ) {
+    struct TS::PropertyObject * _result = 0;
+    HRESULT _hr = raw_AsPropertyObject(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::PropertyObjectPtr(_result, false);
+}
+
+_bstr_t ActiveXParameter::GetValueExpr ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ValueExpr(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void ActiveXParameter::PutValueExpr ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_ValueExpr(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t ActiveXParameter::GetParameterName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ParameterName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+unsigned short ActiveXParameter::GetType ( ) {
+    unsigned short _result = 0;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+_bstr_t ActiveXParameter::GetDisplayType ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DisplayType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+long ActiveXParameter::GetDirection ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Direction(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+VARIANT_BOOL ActiveXParameter::GetUseDefault ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_UseDefault(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void ActiveXParameter::PutUseDefault ( VARIANT_BOOL propertyValue ) {
+    HRESULT _hr = put_UseDefault(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+TS::PropertyObjectPtr ActiveXParameter::GetUserData ( ) {
+    struct TS::PropertyObject * _result = 0;
+    HRESULT _hr = get_UserData(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::PropertyObjectPtr(_result, false);
+}
+
+TS::EvaluationTypesPtr ActiveXParameter::GetValidEvaluationTypes ( ) {
+    struct TS::EvaluationTypes * _result = 0;
+    HRESULT _hr = get_ValidEvaluationTypes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::EvaluationTypesPtr(_result, false);
+}
+
+_bstr_t ActiveXParameter::GetEnumTypeName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_EnumTypeName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+SAFEARRAY * ActiveXParameter::GetEnumValues ( ) {
+    SAFEARRAY * _result = 0;
+    HRESULT _hr = raw_GetEnumValues(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+_bstr_t ActiveXParameter::GetDefaultValue ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DefaultValue(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+VARIANT_BOOL ActiveXParameter::GetIsOptional ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsOptional(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ActiveXParameters wrapper method implementations
+//
+
+ActiveXParameterPtr ActiveXParameters::GetItem ( const _variant_t & index ) {
+    struct ActiveXParameter * _result = 0;
+    HRESULT _hr = get_Item(index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ActiveXParameterPtr(_result, false);
+}
+
+IUnknownPtr ActiveXParameters::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long ActiveXParameters::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ActiveXModule wrapper method implementations
+//
+
+TS::ModulePtr ActiveXModule::AsModule ( ) {
+    struct TS::Module * _result = 0;
+    HRESULT _hr = raw_AsModule(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::ModulePtr(_result, false);
+}
+
+_bstr_t ActiveXModule::GetActiveXReferenceExpr ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ActiveXReferenceExpr(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void ActiveXModule::PutActiveXReferenceExpr ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_ActiveXReferenceExpr(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t ActiveXModule::GetServerId ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ServerId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void ActiveXModule::PutServerId ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_ServerId(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t ActiveXModule::GetCoClassName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_CoClassName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void ActiveXModule::PutCoClassName ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_CoClassName(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t ActiveXModule::GetInterfaceName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_InterfaceName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void ActiveXModule::PutInterfaceName ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_InterfaceName(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+enum ActiveXModuleCreateOptions ActiveXModule::GetCreateOption ( ) {
+    enum ActiveXModuleCreateOptions _result;
+    HRESULT _hr = get_CreateOption(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void ActiveXModule::PutCreateOption ( enum ActiveXModuleCreateOptions propertyValue ) {
+    HRESULT _hr = put_CreateOption(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL ActiveXModule::GetUseStepLoadOptions ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_UseStepLoadOptions(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void ActiveXModule::PutUseStepLoadOptions ( VARIANT_BOOL propertyValue ) {
+    HRESULT _hr = put_UseStepLoadOptions(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t ActiveXModule::GetRemoteHost ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_RemoteHost(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void ActiveXModule::PutRemoteHost ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_RemoteHost(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL ActiveXModule::GetSpecifyHostByExpression ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_SpecifyHostByExpression(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void ActiveXModule::PutSpecifyHostByExpression ( VARIANT_BOOL propertyValue ) {
+    HRESULT _hr = put_SpecifyHostByExpression(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t ActiveXModule::GetFilePath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_FilePath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void ActiveXModule::PutFilePath ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_FilePath(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+enum ActiveXModuleMemberTypes ActiveXModule::GetMemberType ( ) {
+    enum ActiveXModuleMemberTypes _result;
+    HRESULT _hr = get_MemberType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void ActiveXModule::PutMemberType ( enum ActiveXModuleMemberTypes propertyValue ) {
+    HRESULT _hr = put_MemberType(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t ActiveXModule::GetMemberName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_MemberName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void ActiveXModule::PutMemberName ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_MemberName(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL ActiveXModule::LoadMemberInfo ( VARIANT_BOOL discardParameterValues ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_LoadMemberInfo(discardParameterValues, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+ActiveXParametersPtr ActiveXModule::GetParameters ( ) {
+    struct ActiveXParameters * _result = 0;
+    HRESULT _hr = get_Parameters(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ActiveXParametersPtr(_result, false);
+}
+
+VARIANT_BOOL ActiveXModule::ReloadServer ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_ReloadServer(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface CommonCModule wrapper method implementations
+//
+
+TS::ModulePtr CommonCModule::AsModule ( ) {
+    struct TS::Module * _result = 0;
+    HRESULT _hr = raw_AsModule(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::ModulePtr(_result, false);
+}
+
+_bstr_t CommonCModule::GetModulePath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ModulePath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void CommonCModule::PutModulePath ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_ModulePath(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t CommonCModule::GetFunctionName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_FunctionName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void CommonCModule::PutFunctionName ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_FunctionName(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL CommonCModule::LoadPrototype ( VARIANT_BOOL discardParameterValues ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_LoadPrototype(discardParameterValues, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+_bstr_t CommonCModule::GetSourceFilePath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_SourceFilePath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void CommonCModule::PutSourceFilePath ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_SourceFilePath(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t CommonCModule::GetProjectFilePath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ProjectFilePath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void CommonCModule::PutProjectFilePath ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_ProjectFilePath(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t CommonCModule::GetWorkspaceFilePath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_WorkspaceFilePath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void CommonCModule::PutWorkspaceFilePath ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_WorkspaceFilePath(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL CommonCModule::VerifyPrototypeFromSource ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_VerifyPrototypeFromSource(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT CommonCModule::UpdatePrototypeFromSource ( VARIANT_BOOL keepParameterValues ) {
+    HRESULT _hr = raw_UpdatePrototypeFromSource(keepParameterValues);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+_bstr_t CommonCModule::GetFunctionCall ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_FunctionCall(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+VARIANT_BOOL CommonCModule::AcceptFunctionCall ( struct TS::PropertyObject * evaluationContext, _bstr_t funcCall, VARIANT_BOOL allowEditingPrototype, VARIANT_BOOL * prototypeModified, VARIANT_BOOL * cancelled ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_AcceptFunctionCall(evaluationContext, funcCall, allowEditingPrototype, prototypeModified, cancelled, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+_bstr_t CommonCModule::GetCodeTemplateName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_CodeTemplateName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void CommonCModule::PutCodeTemplateName ( _bstr_t val ) {
+    HRESULT _hr = put_CodeTemplateName(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL CommonCModule::LoadPrototypeFromCodeTemplate ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_LoadPrototypeFromCodeTemplate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+VARIANT_BOOL CommonCModule::VerifyPrototype ( enum CommonCVerifyPrototypeResults * result ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_VerifyPrototype(result, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface CommonCParameter wrapper method implementations
+//
+
+TS::PropertyObjectPtr CommonCParameter::AsPropertyObject ( ) {
+    struct TS::PropertyObject * _result = 0;
+    HRESULT _hr = raw_AsPropertyObject(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::PropertyObjectPtr(_result, false);
+}
+
+_bstr_t CommonCParameter::GetParameterName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ParameterName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void CommonCParameter::PutParameterName ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_ParameterName(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t CommonCParameter::GetValueExpr ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ValueExpr(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void CommonCParameter::PutValueExpr ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_ValueExpr(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t CommonCParameter::GetDescription ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetDescription(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+enum CommonCParameterPassOptions CommonCParameter::GetPass ( ) {
+    enum CommonCParameterPassOptions _result;
+    HRESULT _hr = get_Pass(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void CommonCParameter::PutPass ( enum CommonCParameterPassOptions propertyValue ) {
+    HRESULT _hr = put_Pass(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+enum CommonCParameterResultActions CommonCParameter::GetResultAction ( ) {
+    enum CommonCParameterResultActions _result;
+    HRESULT _hr = get_ResultAction(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void CommonCParameter::PutResultAction ( enum CommonCParameterResultActions propertyValue ) {
+    HRESULT _hr = put_ResultAction(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+long CommonCParameter::GetFlags ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Flags(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void CommonCParameter::PutFlags ( long propertyValue ) {
+    HRESULT _hr = put_Flags(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+long CommonCParameter::GetStringBufferSize ( ) {
+    long _result = 0;
+    HRESULT _hr = get_StringBufferSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void CommonCParameter::PutStringBufferSize ( long propertyValue ) {
+    HRESULT _hr = put_StringBufferSize(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t CommonCParameter::GetStructType ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_StructType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void CommonCParameter::PutStructType ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_StructType(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+long CommonCParameter::GetArrayDimensions ( ) {
+    long _result = 0;
+    HRESULT _hr = get_ArrayDimensions(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void CommonCParameter::PutArrayDimensions ( long propertyValue ) {
+    HRESULT _hr = put_ArrayDimensions(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+long CommonCParameter::GetArrayDimensionSize ( long dimension ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetArrayDimensionSize(dimension, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT CommonCParameter::SetArrayDimensionSize ( long dimension, long arrayDimensionSize ) {
+    HRESULT _hr = raw_SetArrayDimensionSize(dimension, arrayDimensionSize);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+enum CommonCParameterUnknownInfoFlags CommonCParameter::GetUnknownInfo ( ) {
+    enum CommonCParameterUnknownInfoFlags _result;
+    HRESULT _hr = get_UnknownInfo(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+TS::PropertyObjectPtr CommonCParameter::GetUserData ( ) {
+    struct TS::PropertyObject * _result = 0;
+    HRESULT _hr = get_UserData(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::PropertyObjectPtr(_result, false);
+}
+
+enum CommonCParameterPassOptions CommonCParameter::GetPassArrayElementBy ( ) {
+    enum CommonCParameterPassOptions _result;
+    HRESULT _hr = get_PassArrayElementBy(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void CommonCParameter::PutPassArrayElementBy ( enum CommonCParameterPassOptions propertyValue ) {
+    HRESULT _hr = put_PassArrayElementBy(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t CommonCParameter::GetArrayDimensionSizeExpr ( long dimension ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetArrayDimensionSizeExpr(dimension, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+HRESULT CommonCParameter::SetArrayDimensionSizeExpr ( long dimension, _bstr_t arrayDimensionSizeExpr ) {
+    HRESULT _hr = raw_SetArrayDimensionSizeExpr(dimension, arrayDimensionSizeExpr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+TS::EvaluationTypesPtr CommonCParameter::GetValidEvaluationTypes ( ) {
+    struct TS::EvaluationTypes * _result = 0;
+    HRESULT _hr = get_ValidEvaluationTypes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::EvaluationTypesPtr(_result, false);
+}
+
+_bstr_t CommonCParameter::GetStringBufferSizeExpr ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_StringBufferSizeExpr(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void CommonCParameter::PutStringBufferSizeExpr ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_StringBufferSizeExpr(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t CommonCParameter::GetEnumTypeName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_EnumTypeName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+SAFEARRAY * CommonCParameter::GetEnumValues ( ) {
+    SAFEARRAY * _result = 0;
+    HRESULT _hr = raw_GetEnumValues(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+_bstr_t CommonCParameter::GetDisplayValueExpr ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DisplayValueExpr(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void CommonCParameter::PutUnknownInfo ( enum CommonCParameterUnknownInfoFlags propertyValue ) {
+    HRESULT _hr = put_UnknownInfo(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface CVIParameter wrapper method implementations
+//
+
+CommonCParameterPtr CVIParameter::AsCommonCParameter ( ) {
+    struct CommonCParameter * _result = 0;
+    HRESULT _hr = raw_AsCommonCParameter(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CommonCParameterPtr(_result, false);
+}
+
+enum CVIParameterCategories CVIParameter::GetCategory ( ) {
+    enum CVIParameterCategories _result;
+    HRESULT _hr = get_Category(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void CVIParameter::PutCategory ( enum CVIParameterCategories propertyValue ) {
+    HRESULT _hr = put_Category(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+enum CommonCParameterTypes CVIParameter::GetType ( ) {
+    enum CommonCParameterTypes _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void CVIParameter::PutType ( enum CommonCParameterTypes propertyValue ) {
+    HRESULT _hr = put_Type(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface CVIParameters wrapper method implementations
+//
+
+CVIParameterPtr CVIParameters::GetItem ( const _variant_t & index ) {
+    struct CVIParameter * _result = 0;
+    HRESULT _hr = get_Item(index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CVIParameterPtr(_result, false);
+}
+
+IUnknownPtr CVIParameters::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long CVIParameters::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT CVIParameters::New ( long index, _bstr_t ParameterName, _bstr_t parameterValueExpr, enum CVIParameterCategories parameterCategory, enum CommonCParameterPassOptions parameterPass, enum CommonCParameterTypes parameterType ) {
+    HRESULT _hr = raw_New(index, ParameterName, parameterValueExpr, parameterCategory, parameterPass, parameterType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT CVIParameters::Delete ( long index ) {
+    HRESULT _hr = raw_Delete(index);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT CVIParameters::Move ( long index, long newIndex ) {
+    HRESULT _hr = raw_Move(index, newIndex);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface CVIModule wrapper method implementations
+//
+
+CommonCModulePtr CVIModule::AsCommonCModule ( ) {
+    struct CommonCModule * _result = 0;
+    HRESULT _hr = raw_AsCommonCModule(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CommonCModulePtr(_result, false);
+}
+
+enum CVIModuleTypes CVIModule::GetModuleType ( ) {
+    enum CVIModuleTypes _result;
+    HRESULT _hr = get_ModuleType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void CVIModule::PutModuleType ( enum CVIModuleTypes propertyValue ) {
+    HRESULT _hr = put_ModuleType(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL CVIModule::GetAlwaysRunInProcess ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_AlwaysRunInProcess(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void CVIModule::PutAlwaysRunInProcess ( VARIANT_BOOL propertyValue ) {
+    HRESULT _hr = put_AlwaysRunInProcess(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+CVIParametersPtr CVIModule::GetParameters ( ) {
+    struct CVIParameters * _result = 0;
+    HRESULT _hr = get_Parameters(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CVIParametersPtr(_result, false);
+}
+
+//
+// interface DllParameter wrapper method implementations
+//
+
+CommonCParameterPtr DllParameter::AsCommonCParameter ( ) {
+    struct CommonCParameter * _result = 0;
+    HRESULT _hr = raw_AsCommonCParameter(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CommonCParameterPtr(_result, false);
+}
+
+_bstr_t DllParameter::GetTSObjectParameterType ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_TSObjectParameterType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void DllParameter::PutTSObjectParameterType ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_TSObjectParameterType(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+enum DllParameterCategories DllParameter::GetCategory ( ) {
+    enum DllParameterCategories _result;
+    HRESULT _hr = get_Category(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void DllParameter::PutCategory ( enum DllParameterCategories propertyValue ) {
+    HRESULT _hr = put_Category(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+enum CommonCParameterTypes DllParameter::GetType ( ) {
+    enum CommonCParameterTypes _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void DllParameter::PutType ( enum CommonCParameterTypes propertyValue ) {
+    HRESULT _hr = put_Type(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t DllParameter::GetImaginaryPartValueExpr ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ImaginaryPartValueExpr(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void DllParameter::PutImaginaryPartValueExpr ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_ImaginaryPartValueExpr(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface DllParameters wrapper method implementations
+//
+
+DllParameterPtr DllParameters::GetItem ( const _variant_t & index ) {
+    struct DllParameter * _result = 0;
+    HRESULT _hr = get_Item(index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return DllParameterPtr(_result, false);
+}
+
+IUnknownPtr DllParameters::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long DllParameters::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT DllParameters::New ( long index, _bstr_t ParameterName, _bstr_t parameterValueExpr, enum DllParameterCategories parameterCategory, enum CommonCParameterPassOptions parameterPass, enum CommonCParameterTypes parameterType ) {
+    HRESULT _hr = raw_New(index, ParameterName, parameterValueExpr, parameterCategory, parameterPass, parameterType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT DllParameters::Delete ( long index ) {
+    HRESULT _hr = raw_Delete(index);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT DllParameters::Move ( long index, long newIndex ) {
+    HRESULT _hr = raw_Move(index, newIndex);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface DllModule wrapper method implementations
+//
+
+CommonCModulePtr DllModule::AsCommonCModule ( ) {
+    struct CommonCModule * _result = 0;
+    HRESULT _hr = raw_AsCommonCModule(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CommonCModulePtr(_result, false);
+}
+
+DllParametersPtr DllModule::GetParameters ( ) {
+    struct DllParameters * _result = 0;
+    HRESULT _hr = get_Parameters(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return DllParametersPtr(_result, false);
+}
+
+enum DllCodeCreationTargets DllModule::GetCodeCreationTarget ( ) {
+    enum DllCodeCreationTargets _result;
+    HRESULT _hr = get_CodeCreationTarget(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void DllModule::PutCodeCreationTarget ( enum DllCodeCreationTargets val ) {
+    HRESULT _hr = put_CodeCreationTarget(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface HTBasicModule wrapper method implementations
+//
+
+TS::ModulePtr HTBasicModule::AsModule ( ) {
+    struct TS::Module * _result = 0;
+    HRESULT _hr = raw_AsModule(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::ModulePtr(_result, false);
+}
+
+_bstr_t HTBasicModule::GetSubroutineFilePath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_SubroutineFilePath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void HTBasicModule::PutSubroutineFilePath ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_SubroutineFilePath(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t HTBasicModule::GetSubroutineName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_SubroutineName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void HTBasicModule::PutSubroutineName ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_SubroutineName(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL HTBasicModule::GetShowHTBasicApp ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_ShowHTBasicApp(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void HTBasicModule::PutShowHTBasicApp ( VARIANT_BOOL propertyValue ) {
+    HRESULT _hr = put_ShowHTBasicApp(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+enum HTBasicWorkingDirTypes HTBasicModule::GetWorkingDirectory ( ) {
+    enum HTBasicWorkingDirTypes _result;
+    HRESULT _hr = get_WorkingDirectory(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void HTBasicModule::PutWorkingDirectory ( enum HTBasicWorkingDirTypes propertyValue ) {
+    HRESULT _hr = put_WorkingDirectory(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t HTBasicModule::GetWorkingDirectorySpecifiedPath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_WorkingDirectorySpecifiedPath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void HTBasicModule::PutWorkingDirectorySpecifiedPath ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_WorkingDirectorySpecifiedPath(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface SequenceCallParameter wrapper method implementations
+//
+
+TS::PropertyObjectPtr SequenceCallParameter::AsPropertyObject ( ) {
+    struct TS::PropertyObject * _result = 0;
+    HRESULT _hr = raw_AsPropertyObject(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::PropertyObjectPtr(_result, false);
+}
+
+VARIANT_BOOL SequenceCallParameter::GetUseDefaultValue ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_UseDefaultValue(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void SequenceCallParameter::PutUseDefaultValue ( VARIANT_BOOL propertyValue ) {
+    HRESULT _hr = put_UseDefaultValue(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t SequenceCallParameter::GetValueExpr ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ValueExpr(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void SequenceCallParameter::PutValueExpr ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_ValueExpr(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+TS::PropertyObjectPtr SequenceCallParameter::GetUserData ( ) {
+    struct TS::PropertyObject * _result = 0;
+    HRESULT _hr = get_UserData(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::PropertyObjectPtr(_result, false);
+}
+
+TS::EvaluationTypesPtr SequenceCallParameter::GetValidEvaluationTypes ( ) {
+    struct TS::EvaluationTypes * _result = 0;
+    HRESULT _hr = get_ValidEvaluationTypes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::EvaluationTypesPtr(_result, false);
+}
+
+enum TS::PropertyValueTypes SequenceCallParameter::GetType ( ) {
+    enum TS::PropertyValueTypes _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+_bstr_t SequenceCallParameter::GetName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+VARIANT_BOOL SequenceCallParameter::GetPassByReference ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_PassByReference(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+_bstr_t SequenceCallParameter::GetTypeDisplayString ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_TypeDisplayString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface SequenceCallParameters wrapper method implementations
+//
+
+SequenceCallParameterPtr SequenceCallParameters::GetItem ( const _variant_t & index ) {
+    struct SequenceCallParameter * _result = 0;
+    HRESULT _hr = get_Item(index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return SequenceCallParameterPtr(_result, false);
+}
+
+IUnknownPtr SequenceCallParameters::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long SequenceCallParameters::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface SequenceCallModule wrapper method implementations
+//
+
+TS::ModulePtr SequenceCallModule::AsModule ( ) {
+    struct TS::Module * _result = 0;
+    HRESULT _hr = raw_AsModule(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::ModulePtr(_result, false);
+}
+
+_bstr_t SequenceCallModule::GetSequenceFilePath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_SequenceFilePath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void SequenceCallModule::PutSequenceFilePath ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_SequenceFilePath(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t SequenceCallModule::GetSequenceName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_SequenceName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void SequenceCallModule::PutSequenceName ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_SequenceName(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL SequenceCallModule::GetSpecifyByExpression ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_SpecifyByExpression(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void SequenceCallModule::PutSpecifyByExpression ( VARIANT_BOOL propertyValue ) {
+    HRESULT _hr = put_SpecifyByExpression(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL SequenceCallModule::GetUseCurrentFile ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_UseCurrentFile(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void SequenceCallModule::PutUseCurrentFile ( VARIANT_BOOL propertyValue ) {
+    HRESULT _hr = put_UseCurrentFile(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+enum SeqCallTraceSettings SequenceCallModule::GetTraceSetting ( ) {
+    enum SeqCallTraceSettings _result;
+    HRESULT _hr = get_TraceSetting(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void SequenceCallModule::PutTraceSetting ( enum SeqCallTraceSettings propertyValue ) {
+    HRESULT _hr = put_TraceSetting(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL SequenceCallModule::GetIgnoreTermination ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IgnoreTermination(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void SequenceCallModule::PutIgnoreTermination ( VARIANT_BOOL propertyValue ) {
+    HRESULT _hr = put_IgnoreTermination(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL SequenceCallModule::GetUseSequenceParameterPrototype ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_UseSequenceParameterPrototype(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void SequenceCallModule::PutUseSequenceParameterPrototype ( VARIANT_BOOL propertyValue ) {
+    HRESULT _hr = put_UseSequenceParameterPrototype(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+HRESULT SequenceCallModule::LoadParameters ( VARIANT_BOOL useCurrentSeqFile, _bstr_t seqFilePath, _bstr_t seqName ) {
+    HRESULT _hr = raw_LoadParameters(useCurrentSeqFile, seqFilePath, seqName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+SequenceCallParametersPtr SequenceCallModule::GetParameters ( ) {
+    struct SequenceCallParameters * _result = 0;
+    HRESULT _hr = get_Parameters(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return SequenceCallParametersPtr(_result, false);
+}
+
+TS::PropertyObjectPtr SequenceCallModule::GetParameterPrototype ( ) {
+    struct TS::PropertyObject * _result = 0;
+    HRESULT _hr = get_ParameterPrototype(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::PropertyObjectPtr(_result, false);
+}
+
+enum SeqCallMultithreadOptions SequenceCallModule::GetMultithreadingAndRemoteExecOption ( ) {
+    enum SeqCallMultithreadOptions _result;
+    HRESULT _hr = get_MultithreadingAndRemoteExecOption(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void SequenceCallModule::PutMultithreadingAndRemoteExecOption ( enum SeqCallMultithreadOptions propertyValue ) {
+    HRESULT _hr = put_MultithreadingAndRemoteExecOption(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t SequenceCallModule::GetStoreActiveXReferenceExpr ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_StoreActiveXReferenceExpr(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void SequenceCallModule::PutStoreActiveXReferenceExpr ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_StoreActiveXReferenceExpr(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+long SequenceCallModule::GetNewThreadOptions ( ) {
+    long _result = 0;
+    HRESULT _hr = get_NewThreadOptions(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void SequenceCallModule::PutNewThreadOptions ( long propertyValue ) {
+    HRESULT _hr = put_NewThreadOptions(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+long SequenceCallModule::GetNewExecutionTypeMask ( ) {
+    long _result = 0;
+    HRESULT _hr = get_NewExecutionTypeMask(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void SequenceCallModule::PutNewExecutionTypeMask ( long propertyValue ) {
+    HRESULT _hr = put_NewExecutionTypeMask(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t SequenceCallModule::GetNewExecutionTypeMaskExpr ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_NewExecutionTypeMaskExpr(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void SequenceCallModule::PutNewExecutionTypeMaskExpr ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_NewExecutionTypeMaskExpr(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+enum SeqCallNewExecModelOptions SequenceCallModule::GetNewExecutionModelOption ( ) {
+    enum SeqCallNewExecModelOptions _result;
+    HRESULT _hr = get_NewExecutionModelOption(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void SequenceCallModule::PutNewExecutionModelOption ( enum SeqCallNewExecModelOptions propertyValue ) {
+    HRESULT _hr = put_NewExecutionModelOption(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t SequenceCallModule::GetNewExecutionModelPath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_NewExecutionModelPath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void SequenceCallModule::PutNewExecutionModelPath ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_NewExecutionModelPath(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t SequenceCallModule::GetNewExecutionBreakOnEntryExpr ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_NewExecutionBreakOnEntryExpr(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void SequenceCallModule::PutNewExecutionBreakOnEntryExpr ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_NewExecutionBreakOnEntryExpr(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+enum SeqCallWaitForExecOptions SequenceCallModule::GetNewExecutionWaitForCompletion ( ) {
+    enum SeqCallWaitForExecOptions _result;
+    HRESULT _hr = get_NewExecutionWaitForCompletion(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void SequenceCallModule::PutNewExecutionWaitForCompletion ( enum SeqCallWaitForExecOptions propertyValue ) {
+    HRESULT _hr = put_NewExecutionWaitForCompletion(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t SequenceCallModule::GetRemoteHost ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_RemoteHost(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void SequenceCallModule::PutRemoteHost ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_RemoteHost(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL SequenceCallModule::GetSpecifyHostByExpression ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_SpecifyHostByExpression(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void SequenceCallModule::PutSpecifyHostByExpression ( VARIANT_BOOL propertyValue ) {
+    HRESULT _hr = put_SpecifyHostByExpression(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+HRESULT SequenceCallModule::LoadParametersFromSequence ( struct TS::Sequence * sequence ) {
+    HRESULT _hr = raw_LoadParametersFromSequence(sequence);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+VARIANT_BOOL SequenceCallModule::LoadPrototypeFromSequence ( struct TS::Sequence * sequence, long options ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_LoadPrototypeFromSequence(sequence, options, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+enum TS::CPUAffinityForNewThreadOptions SequenceCallModule::GetCPUAffinityForNewThreadOption ( ) {
+    enum TS::CPUAffinityForNewThreadOptions _result;
+    HRESULT _hr = get_CPUAffinityForNewThreadOption(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void SequenceCallModule::PutCPUAffinityForNewThreadOption ( enum TS::CPUAffinityForNewThreadOptions val ) {
+    HRESULT _hr = put_CPUAffinityForNewThreadOption(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t SequenceCallModule::GetCustomCPUAffinityForNewThread ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_CustomCPUAffinityForNewThread(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void SequenceCallModule::PutCustomCPUAffinityForNewThread ( _bstr_t val ) {
+    HRESULT _hr = put_CustomCPUAffinityForNewThread(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface LabVIEWModule wrapper method implementations
+//
+
+TS::ModulePtr LabVIEWModule::AsModule ( ) {
+    struct TS::Module * _result = 0;
+    HRESULT _hr = raw_AsModule(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::ModulePtr(_result, false);
+}
+
+_bstr_t LabVIEWModule::GetVIPath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_VIPath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void LabVIEWModule::PutVIPath ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_VIPath(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+long LabVIEWModule::GetVICallOptions ( ) {
+    long _result = 0;
+    HRESULT _hr = get_VICallOptions(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void LabVIEWModule::PutVICallOptions ( long propertyValue ) {
+    HRESULT _hr = put_VICallOptions(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t LabVIEWModule::GetRemoteHost ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_RemoteHost(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void LabVIEWModule::PutRemoteHost ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_RemoteHost(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL LabVIEWModule::GetSpecifyHostByExpression ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_SpecifyHostByExpression(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void LabVIEWModule::PutSpecifyHostByExpression ( VARIANT_BOOL propertyValue ) {
+    HRESULT _hr = put_SpecifyHostByExpression(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t LabVIEWModule::GetRemoteVIPath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_RemoteVIPath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void LabVIEWModule::PutRemoteVIPath ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_RemoteVIPath(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+long LabVIEWModule::GetRemotePortNumber ( ) {
+    long _result = 0;
+    HRESULT _hr = get_RemotePortNumber(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void LabVIEWModule::PutRemotePortNumber ( long propertyValue ) {
+    HRESULT _hr = put_RemotePortNumber(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+long LabVIEWModule::GetRemoteConnectionTimeout ( ) {
+    long _result = 0;
+    HRESULT _hr = get_RemoteConnectionTimeout(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void LabVIEWModule::PutRemoteConnectionTimeout ( long propertyValue ) {
+    HRESULT _hr = put_RemoteConnectionTimeout(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t LabVIEWModule::GetVIDescription ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_VIDescription(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+VARIANT_BOOL LabVIEWModule::LoadPrototype ( VARIANT_BOOL discardParameterValues ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_LoadPrototype(discardParameterValues, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+LabVIEWParametersPtr LabVIEWModule::GetParameters ( ) {
+    struct LabVIEWParameters * _result = 0;
+    HRESULT _hr = get_Parameters(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return LabVIEWParametersPtr(_result, false);
+}
+
+enum LabVIEWVITypes LabVIEWModule::GetVIType ( ) {
+    enum LabVIEWVITypes _result;
+    HRESULT _hr = get_VIType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void LabVIEWModule::PutVIType ( enum LabVIEWVITypes propertyValue ) {
+    HRESULT _hr = put_VIType(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t LabVIEWModule::GetExpressVIName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ExpressVIName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+VARIANT_BOOL LabVIEWModule::GetVIAttached ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_VIAttached(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT LabVIEWModule::ExportVI ( BSTR * pathString, long options ) {
+    HRESULT _hr = raw_ExportVI(pathString, options);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT LabVIEWModule::ImportVI ( _bstr_t pathString, enum ImportVITypes Type, long options ) {
+    HRESULT _hr = raw_ImportVI(pathString, Type, options);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+VARIANT_BOOL LabVIEWModule::ConvertExpressVIToStandardVI ( _bstr_t newVIPath ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_ConvertExpressVIToStandardVI(newVIPath, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+VARIANT_BOOL LabVIEWModule::LoadVIInfo ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_LoadVIInfo(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+IPictureDisp * LabVIEWModule::GetHelpPicture ( ) {
+    IPictureDisp * _result = 0;
+    HRESULT _hr = get_HelpPicture(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+TS::PropertyObjectPtr LabVIEWModule::GetHelpPictureRects ( ) {
+    struct TS::PropertyObject * _result = 0;
+    HRESULT _hr = get_HelpPictureRects(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::PropertyObjectPtr(_result, false);
+}
+
+_bstr_t LabVIEWModule::GetHelpFilePath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_HelpFilePath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+_bstr_t LabVIEWModule::GetHelpContext ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_HelpContext(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface LabVIEWParameters wrapper method implementations
+//
+
+LabVIEWParameterPtr LabVIEWParameters::GetItem ( const _variant_t & index ) {
+    struct LabVIEWParameter * _result = 0;
+    HRESULT _hr = get_Item(index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return LabVIEWParameterPtr(_result, false);
+}
+
+IUnknownPtr LabVIEWParameters::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long LabVIEWParameters::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface LabVIEWParameter wrapper method implementations
+//
+
+TS::PropertyObjectPtr LabVIEWParameter::AsPropertyObject ( ) {
+    struct TS::PropertyObject * _result = 0;
+    HRESULT _hr = raw_AsPropertyObject(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::PropertyObjectPtr(_result, false);
+}
+
+VARIANT_BOOL LabVIEWParameter::GetUseDefaultValue ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_UseDefaultValue(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void LabVIEWParameter::PutUseDefaultValue ( VARIANT_BOOL propertyValue ) {
+    HRESULT _hr = put_UseDefaultValue(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t LabVIEWParameter::GetValueExpr ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ValueExpr(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void LabVIEWParameter::PutValueExpr ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_ValueExpr(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+enum LabVIEWParameterCategories LabVIEWParameter::GetCategory ( ) {
+    enum LabVIEWParameterCategories _result;
+    HRESULT _hr = get_Category(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+enum LabVIEWParameterDirections LabVIEWParameter::GetDirection ( ) {
+    enum LabVIEWParameterDirections _result;
+    HRESULT _hr = get_Direction(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+enum LabVIEWParameterTypes LabVIEWParameter::GetType ( ) {
+    enum LabVIEWParameterTypes _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+enum LabVIEWParameterWireRequirements LabVIEWParameter::GetWireRequirement ( ) {
+    enum LabVIEWParameterWireRequirements _result;
+    HRESULT _hr = get_WireRequirement(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+_bstr_t LabVIEWParameter::GetParameterName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ParameterName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+_bstr_t LabVIEWParameter::GetDefaultValue ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DefaultValue(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+VARIANT_BOOL LabVIEWParameter::GetPassAsBinaryString ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_PassAsBinaryString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void LabVIEWParameter::PutPassAsBinaryString ( VARIANT_BOOL propertyValue ) {
+    HRESULT _hr = put_PassAsBinaryString(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+LabVIEWParameterElementsPtr LabVIEWParameter::GetElements ( ) {
+    struct LabVIEWParameterElements * _result = 0;
+    HRESULT _hr = get_Elements(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return LabVIEWParameterElementsPtr(_result, false);
+}
+
+long LabVIEWParameter::GetArrayDimensions ( ) {
+    long _result = 0;
+    HRESULT _hr = get_ArrayDimensions(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+long LabVIEWParameter::GetDefaultArrayDimensionSize ( long dimension ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetDefaultArrayDimensionSize(dimension, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+_bstr_t LabVIEWParameter::GetArrayIndex ( long offset, long options ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetArrayIndex(offset, options, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+TS::PropertyObjectPtr LabVIEWParameter::GetUserData ( ) {
+    struct TS::PropertyObject * _result = 0;
+    HRESULT _hr = get_UserData(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::PropertyObjectPtr(_result, false);
+}
+
+_bstr_t LabVIEWParameter::GetDisplayType ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DisplayType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+LabVIEWParameterElementPtr LabVIEWParameter::GetArrayElementPrototype ( ) {
+    struct LabVIEWParameterElement * _result = 0;
+    HRESULT _hr = get_ArrayElementPrototype(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return LabVIEWParameterElementPtr(_result, false);
+}
+
+_bstr_t LabVIEWParameter::GetParameterCaption ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ParameterCaption(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+_bstr_t LabVIEWParameter::GetTypeDisplayString ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_TypeDisplayString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+TS::EvaluationTypesPtr LabVIEWParameter::GetValidEvaluationTypes ( ) {
+    struct TS::EvaluationTypes * _result = 0;
+    HRESULT _hr = get_ValidEvaluationTypes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::EvaluationTypesPtr(_result, false);
+}
+
+SAFEARRAY * LabVIEWParameter::GetEnumValues ( ) {
+    SAFEARRAY * _result = 0;
+    HRESULT _hr = raw_GetEnumValues(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+VARIANT_BOOL LabVIEWParameter::UpdateClusterMapping ( struct TS::SequenceContext * sequenceContext ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_UpdateClusterMapping(sequenceContext, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+VARIANT_BOOL LabVIEWParameter::DisplayCreateCustomDataTypeDialog ( struct TS::SequenceContext * sequenceContext ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_DisplayCreateCustomDataTypeDialog(sequenceContext, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+VARIANT_BOOL LabVIEWParameter::GetPartiallySpecified ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_PartiallySpecified(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+VARIANT_BOOL LabVIEWParameter::CreateDefaultArrayElements ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_CreateDefaultArrayElements(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+VARIANT_BOOL LabVIEWParameter::DeleteArrayElements ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_DeleteArrayElements(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT LabVIEWParameter::InsertArrayElement ( long index ) {
+    HRESULT _hr = raw_InsertArrayElement(index);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT LabVIEWParameter::DeleteArrayElement ( long index ) {
+    HRESULT _hr = raw_DeleteArrayElement(index);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+LabVIEWParameterElementPtr LabVIEWParameter::GetComplexRealPartElement ( ) {
+    struct LabVIEWParameterElement * _result = 0;
+    HRESULT _hr = get_ComplexRealPartElement(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return LabVIEWParameterElementPtr(_result, false);
+}
+
+LabVIEWParameterElementPtr LabVIEWParameter::GetComplexImaginaryPartElement ( ) {
+    struct LabVIEWParameterElement * _result = 0;
+    HRESULT _hr = get_ComplexImaginaryPartElement(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return LabVIEWParameterElementPtr(_result, false);
+}
+
+VARIANT_BOOL LabVIEWParameter::ExprClusterTypeMismatch ( struct TS::SequenceContext * sequenceContext ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_ExprClusterTypeMismatch(sequenceContext, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface LabVIEWParameterElements wrapper method implementations
+//
+
+LabVIEWParameterElementPtr LabVIEWParameterElements::GetItem ( const _variant_t & index ) {
+    struct LabVIEWParameterElement * _result = 0;
+    HRESULT _hr = get_Item(index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return LabVIEWParameterElementPtr(_result, false);
+}
+
+IUnknownPtr LabVIEWParameterElements::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long LabVIEWParameterElements::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface LabVIEWParameterElement wrapper method implementations
+//
+
+TS::PropertyObjectPtr LabVIEWParameterElement::AsPropertyObject ( ) {
+    struct TS::PropertyObject * _result = 0;
+    HRESULT _hr = raw_AsPropertyObject(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::PropertyObjectPtr(_result, false);
+}
+
+_bstr_t LabVIEWParameterElement::GetValueExpr ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ValueExpr(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void LabVIEWParameterElement::PutValueExpr ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_ValueExpr(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+enum LabVIEWParameterCategories LabVIEWParameterElement::GetCategory ( ) {
+    enum LabVIEWParameterCategories _result;
+    HRESULT _hr = get_Category(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+enum LabVIEWParameterTypes LabVIEWParameterElement::GetType ( ) {
+    enum LabVIEWParameterTypes _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+_bstr_t LabVIEWParameterElement::GetElementName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ElementName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+VARIANT_BOOL LabVIEWParameterElement::GetPassAsBinaryString ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_PassAsBinaryString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void LabVIEWParameterElement::PutPassAsBinaryString ( VARIANT_BOOL propertyValue ) {
+    HRESULT _hr = put_PassAsBinaryString(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+LabVIEWParameterElementsPtr LabVIEWParameterElement::GetElements ( ) {
+    struct LabVIEWParameterElements * _result = 0;
+    HRESULT _hr = get_Elements(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return LabVIEWParameterElementsPtr(_result, false);
+}
+
+long LabVIEWParameterElement::GetArrayDimensions ( ) {
+    long _result = 0;
+    HRESULT _hr = get_ArrayDimensions(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+long LabVIEWParameterElement::GetDefaultArrayDimensionSize ( long dimension ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetDefaultArrayDimensionSize(dimension, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+_bstr_t LabVIEWParameterElement::GetArrayIndex ( long offset, long options ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetArrayIndex(offset, options, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+TS::PropertyObjectPtr LabVIEWParameterElement::GetUserData ( ) {
+    struct TS::PropertyObject * _result = 0;
+    HRESULT _hr = get_UserData(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::PropertyObjectPtr(_result, false);
+}
+
+_bstr_t LabVIEWParameterElement::GetDisplayType ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DisplayType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+LabVIEWParameterElementPtr LabVIEWParameterElement::GetArrayElementPrototype ( ) {
+    struct LabVIEWParameterElement * _result = 0;
+    HRESULT _hr = get_ArrayElementPrototype(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return LabVIEWParameterElementPtr(_result, false);
+}
+
+_bstr_t LabVIEWParameterElement::GetElementCaption ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ElementCaption(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+VARIANT_BOOL LabVIEWParameterElement::GetUseDefaultValue ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_UseDefaultValue(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void LabVIEWParameterElement::PutUseDefaultValue ( VARIANT_BOOL propertyValue ) {
+    HRESULT _hr = put_UseDefaultValue(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t LabVIEWParameterElement::GetDefaultValue ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DefaultValue(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+enum LabVIEWParameterDirections LabVIEWParameterElement::GetDirection ( ) {
+    enum LabVIEWParameterDirections _result;
+    HRESULT _hr = get_Direction(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+enum LabVIEWParameterWireRequirements LabVIEWParameterElement::GetWireRequirement ( ) {
+    enum LabVIEWParameterWireRequirements _result;
+    HRESULT _hr = get_WireRequirement(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+_bstr_t LabVIEWParameterElement::GetTypeDisplayString ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_TypeDisplayString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+TS::EvaluationTypesPtr LabVIEWParameterElement::GetValidEvaluationTypes ( ) {
+    struct TS::EvaluationTypes * _result = 0;
+    HRESULT _hr = get_ValidEvaluationTypes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::EvaluationTypesPtr(_result, false);
+}
+
+SAFEARRAY * LabVIEWParameterElement::GetEnumValues ( ) {
+    SAFEARRAY * _result = 0;
+    HRESULT _hr = raw_GetEnumValues(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+VARIANT_BOOL LabVIEWParameterElement::UpdateClusterMapping ( struct TS::SequenceContext * sequenceContext ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_UpdateClusterMapping(sequenceContext, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+VARIANT_BOOL LabVIEWParameterElement::DisplayCreateCustomDataTypeDialog ( struct TS::SequenceContext * sequenceContext ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_DisplayCreateCustomDataTypeDialog(sequenceContext, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+VARIANT_BOOL LabVIEWParameterElement::GetPartiallySpecified ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_PartiallySpecified(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+VARIANT_BOOL LabVIEWParameterElement::CreateDefaultArrayElements ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_CreateDefaultArrayElements(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+VARIANT_BOOL LabVIEWParameterElement::DeleteArrayElements ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_DeleteArrayElements(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT LabVIEWParameterElement::InsertArrayElement ( long index ) {
+    HRESULT _hr = raw_InsertArrayElement(index);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT LabVIEWParameterElement::DeleteArrayElement ( long index ) {
+    HRESULT _hr = raw_DeleteArrayElement(index);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+_bstr_t LabVIEWParameterElement::GetIndexString ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_IndexString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+LabVIEWParameterElementPtr LabVIEWParameterElement::GetComplexRealPartElement ( ) {
+    struct LabVIEWParameterElement * _result = 0;
+    HRESULT _hr = get_ComplexRealPartElement(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return LabVIEWParameterElementPtr(_result, false);
+}
+
+LabVIEWParameterElementPtr LabVIEWParameterElement::GetComplexImaginaryPartElement ( ) {
+    struct LabVIEWParameterElement * _result = 0;
+    HRESULT _hr = get_ComplexImaginaryPartElement(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return LabVIEWParameterElementPtr(_result, false);
+}
+
+VARIANT_BOOL LabVIEWParameterElement::ExprClusterTypeMismatch ( struct TS::SequenceContext * sequenceContext ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_ExprClusterTypeMismatch(sequenceContext, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface DotNetModule wrapper method implementations
+//
+
+TS::ModulePtr DotNetModule::AsModule ( ) {
+    struct TS::Module * _result = 0;
+    HRESULT _hr = raw_AsModule(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::ModulePtr(_result, false);
+}
+
+HRESULT DotNetModule::GetAssembly ( enum DotNetModuleAssemblyLocations * assemblyLocationParam, BSTR * assemblyPathParam ) {
+    HRESULT _hr = raw_GetAssembly(assemblyLocationParam, assemblyPathParam);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT DotNetModule::SetAssembly ( enum DotNetModuleAssemblyLocations assemblyLocationParam, _bstr_t assemblyPathParam ) {
+    HRESULT _hr = raw_SetAssembly(assemblyLocationParam, assemblyPathParam);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+_bstr_t DotNetModule::GetClassReference ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ClassReference(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void DotNetModule::PutClassReference ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_ClassReference(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t DotNetModule::GetClassName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ClassName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void DotNetModule::PutClassName ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_ClassName(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL DotNetModule::GetCreateObject ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_CreateObject(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void DotNetModule::PutCreateObject ( VARIANT_BOOL propertyValue ) {
+    HRESULT _hr = put_CreateObject(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+void DotNetModule::PutConstructorIndex ( long _arg1 ) {
+    HRESULT _hr = put_ConstructorIndex(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL DotNetModule::LoadConstructorInfo ( VARIANT_BOOL discardParameterValues ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_LoadConstructorInfo(discardParameterValues, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+DotNetParametersPtr DotNetModule::GetConstructorParameters ( ) {
+    struct DotNetParameters * _result = 0;
+    HRESULT _hr = get_ConstructorParameters(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return DotNetParametersPtr(_result, false);
+}
+
+VARIANT_BOOL DotNetModule::GetDisposeObject ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_DisposeObject(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void DotNetModule::PutDisposeObject ( VARIANT_BOOL propertyValue ) {
+    HRESULT _hr = put_DisposeObject(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL DotNetModule::GetUseStepLoadOptions ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_UseStepLoadOptions(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void DotNetModule::PutUseStepLoadOptions ( VARIANT_BOOL propertyValue ) {
+    HRESULT _hr = put_UseStepLoadOptions(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t DotNetModule::GetRemoteHost ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_RemoteHost(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void DotNetModule::PutRemoteHost ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_RemoteHost(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL DotNetModule::GetSpecifyHostByExpression ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_SpecifyHostByExpression(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void DotNetModule::PutSpecifyHostByExpression ( VARIANT_BOOL propertyValue ) {
+    HRESULT _hr = put_SpecifyHostByExpression(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+enum DotNetModuleMemberTypes DotNetModule::GetMemberType ( ) {
+    enum DotNetModuleMemberTypes _result;
+    HRESULT _hr = get_MemberType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void DotNetModule::PutMemberType ( enum DotNetModuleMemberTypes propertyValue ) {
+    HRESULT _hr = put_MemberType(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+long DotNetModule::GetMemberFlags ( ) {
+    long _result = 0;
+    HRESULT _hr = get_MemberFlags(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void DotNetModule::PutMemberFlags ( long propertyValue ) {
+    HRESULT _hr = put_MemberFlags(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t DotNetModule::GetMemberName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_MemberName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void DotNetModule::PutMemberName ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_MemberName(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+void DotNetModule::PutMemberIndex ( long _arg1 ) {
+    HRESULT _hr = put_MemberIndex(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL DotNetModule::LoadMemberInfo ( VARIANT_BOOL discardParameterValues ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_LoadMemberInfo(discardParameterValues, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+DotNetParametersPtr DotNetModule::GetParameters ( ) {
+    struct DotNetParameters * _result = 0;
+    HRESULT _hr = get_Parameters(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return DotNetParametersPtr(_result, false);
+}
+
+_bstr_t DotNetModule::GetConstructorPrototype ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ConstructorPrototype(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+VARIANT_BOOL DotNetModule::DisplayCreateCustomDataTypeDialog ( struct TS::SequenceContext * sequenceContext ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_DisplayCreateCustomDataTypeDialog(sequenceContext, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+_bstr_t DotNetModule::GetSourceFilePath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_SourceFilePath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void DotNetModule::PutSourceFilePath ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_SourceFilePath(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t DotNetModule::GetProjectFilePath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ProjectFilePath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void DotNetModule::PutProjectFilePath ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_ProjectFilePath(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t DotNetModule::GetSolutionFilePath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_SolutionFilePath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void DotNetModule::PutSolutionFilePath ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_SolutionFilePath(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL DotNetModule::GetIsStruct ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsStruct(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+_bstr_t DotNetModule::GetNameOfMethodToCreate ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_NameOfMethodToCreate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void DotNetModule::PutNameOfMethodToCreate ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_NameOfMethodToCreate(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL DotNetModule::LoadConstructorPrototypeFromMetadataToken ( long metadataToken, long options ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_LoadConstructorPrototypeFromMetadataToken(metadataToken, options, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+VARIANT_BOOL DotNetModule::GetIsConstructorPrototypeIncompatible ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsConstructorPrototypeIncompatible(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+long DotNetModule::GetMetadataToken ( ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetMetadataToken(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+long DotNetModule::GetConstructorMetadataToken ( ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetConstructorMetadataToken(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+VARIANT_BOOL DotNetModule::LoadPrototypeFromMetadataToken ( long metadataToken, long options ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_LoadPrototypeFromMetadataToken(metadataToken, options, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+_bstr_t DotNetModule::GetMemberHelpString ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_MemberHelpString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+_bstr_t DotNetModule::GetClassHelpString ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ClassHelpString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+TS::UnmappedArgumentValuesPtr DotNetModule::GetUnmappedConstructorArgumentValues ( ) {
+    struct TS::UnmappedArgumentValues * _result = 0;
+    HRESULT _hr = get_UnmappedConstructorArgumentValues(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::UnmappedArgumentValuesPtr(_result, false);
+}
+
+HRESULT DotNetModule::ClearUnmappedConstructorArgumentValues ( ) {
+    HRESULT _hr = raw_ClearUnmappedConstructorArgumentValues();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface DotNetParameters wrapper method implementations
+//
+
+DotNetParameterPtr DotNetParameters::GetItem ( const _variant_t & index ) {
+    struct DotNetParameter * _result = 0;
+    HRESULT _hr = get_Item(index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return DotNetParameterPtr(_result, false);
+}
+
+IUnknownPtr DotNetParameters::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long DotNetParameters::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface DotNetParameter wrapper method implementations
+//
+
+TS::PropertyObjectPtr DotNetParameter::AsPropertyObject ( ) {
+    struct TS::PropertyObject * _result = 0;
+    HRESULT _hr = raw_AsPropertyObject(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::PropertyObjectPtr(_result, false);
+}
+
+VARIANT_BOOL DotNetParameter::GetUseDefaultValue ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_UseDefaultValue(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void DotNetParameter::PutUseDefaultValue ( VARIANT_BOOL propertyValue ) {
+    HRESULT _hr = put_UseDefaultValue(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t DotNetParameter::GetValueExpr ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ValueExpr(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void DotNetParameter::PutValueExpr ( _bstr_t propertyValue ) {
+    HRESULT _hr = put_ValueExpr(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL DotNetParameter::GetDisposeObject ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_DisposeObject(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void DotNetParameter::PutDisposeObject ( VARIANT_BOOL propertyValue ) {
+    HRESULT _hr = put_DisposeObject(propertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t DotNetParameter::GetParameterName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ParameterName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+enum DotNetParameterTypes DotNetParameter::GetType ( ) {
+    enum DotNetParameterTypes _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+_bstr_t DotNetParameter::GetDisplayType ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DisplayType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+long DotNetParameter::GetFlags ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Flags(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+long DotNetParameter::GetDirection ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Direction(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+_bstr_t DotNetParameter::GetDefaultValue ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DefaultValue(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+DotNetParametersPtr DotNetParameter::GetElements ( ) {
+    struct DotNetParameters * _result = 0;
+    HRESULT _hr = get_Elements(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return DotNetParametersPtr(_result, false);
+}
+
+long DotNetParameter::GetArrayDimensions ( ) {
+    long _result = 0;
+    HRESULT _hr = get_ArrayDimensions(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+TS::PropertyObjectPtr DotNetParameter::GetUserData ( ) {
+    struct TS::PropertyObject * _result = 0;
+    HRESULT _hr = get_UserData(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::PropertyObjectPtr(_result, false);
+}
+
+TS::EvaluationTypesPtr DotNetParameter::GetValidEvaluationTypes ( ) {
+    struct TS::EvaluationTypes * _result = 0;
+    HRESULT _hr = get_ValidEvaluationTypes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::EvaluationTypesPtr(_result, false);
+}
+
+SAFEARRAY * DotNetParameter::GetEnumValues ( ) {
+    SAFEARRAY * _result = 0;
+    HRESULT _hr = raw_GetEnumValues(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+VARIANT_BOOL DotNetParameter::DisplayCreateCustomDataTypeDialog ( struct TS::SequenceContext * sequenceContext ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_DisplayCreateCustomDataTypeDialog(sequenceContext, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT DotNetParameter::InsertArrayElement ( long index ) {
+    HRESULT _hr = raw_InsertArrayElement(index);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT DotNetParameter::DeleteArrayElement ( long index ) {
+    HRESULT _hr = raw_DeleteArrayElement(index);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+_bstr_t DotNetParameter::GetHelpString ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_HelpString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+} // namespace TSAdp

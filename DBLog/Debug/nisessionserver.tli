@@ -1,0 +1,319 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.40219.01 (45c93cee).
+//
+// c:\program files (x86)\national instruments\teststand 4.2.1\components\models\teststandmodels\database\dblog\debug\nisessionserver.tli
+//
+// Wrapper implementations for Win32 type library C:\Program Files (x86)\National Instruments\Shared\Session Manager\NISessionServer.dll
+// compiler-generated file created 03/17/16 at 23:42:03 - DO NOT EDIT!
+
+#pragma once
+
+namespace SM {
+
+//
+// interface IVPPBase wrapper method implementations
+//
+
+long IVPPBase::Error_Query ( long * errorCode, BSTR * errorMessage ) {
+    long _result = 0;
+    HRESULT _hr = raw_Error_Query(errorCode, errorMessage, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+long IVPPBase::Error_Message ( long errorCode, BSTR * errorMessage ) {
+    long _result = 0;
+    HRESULT _hr = raw_Error_Message(errorCode, errorMessage, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+long IVPPBase::Revision_Query ( BSTR * instrumentDriverRevision, BSTR * firmwareRevision ) {
+    long _result = 0;
+    HRESULT _hr = raw_Revision_Query(instrumentDriverRevision, firmwareRevision, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+long IVPPBase::Self_Test ( short * selfTestResult, BSTR * selfTestMessage ) {
+    long _result = 0;
+    HRESULT _hr = raw_Self_Test(selfTestResult, selfTestMessage, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+long IVPPBase::Reset ( ) {
+    long _result = 0;
+    HRESULT _hr = raw_Reset(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IInstrSession wrapper method implementations
+//
+
+HRESULT IInstrSession::Initialize ( _bstr_t options ) {
+    HRESULT _hr = raw_Initialize(options);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+VARIANT_BOOL IInstrSession::IsInitialized ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsInitialized(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+_bstr_t IInstrSession::GetName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void IInstrSession::PutName ( _bstr_t pVal ) {
+    HRESULT _hr = put_Name(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+long IInstrSession::GetHandle ( enum InterfaceLevel level ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetHandle(level, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+IUnknownPtr IInstrSession::GetCOMDriver ( enum InterfaceLevel level ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = raw_GetCOMDriver(level, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+HRESULT IInstrSession::Close ( ) {
+    HRESULT _hr = raw_Close();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+VARIANT_BOOL IInstrSession::GetInExternalProcess ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_InExternalProcess(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void IInstrSession::PutInExternalProcess ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_InExternalProcess(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t IInstrSession::GetCategory ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Category(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void IInstrSession::PutCategory ( _bstr_t pVal ) {
+    HRESULT _hr = put_Category(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t IInstrSession::GetStateDescription ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_StateDescription(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+_bstr_t IInstrSession::GenerateUniqueID ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GenerateUniqueID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+HRESULT IInstrSession::AttachObject ( _bstr_t uniqueId, IUnknown * iPtr, _bstr_t clsid, VARIANT_BOOL releaseOnClose ) {
+    HRESULT _hr = raw_AttachObject(uniqueId, iPtr, clsid, releaseOnClose);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT IInstrSession::AttachLong ( _bstr_t uniqueId, long value ) {
+    HRESULT _hr = raw_AttachLong(uniqueId, value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT IInstrSession::AttachString ( _bstr_t uniqueId, _bstr_t value ) {
+    HRESULT _hr = raw_AttachString(uniqueId, value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+IUnknownPtr IInstrSession::TSRenamed_GetObject ( _bstr_t uniqueId ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = raw_TSRenamed_GetObject(uniqueId, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long IInstrSession::GetLong ( _bstr_t uniqueId ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetLong(uniqueId, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+_bstr_t IInstrSession::GetString ( _bstr_t uniqueId ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetString(uniqueId, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+HRESULT IInstrSession::DetachData ( _bstr_t uniqueId ) {
+    HRESULT _hr = raw_DetachData(uniqueId);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+VARIANT_BOOL IInstrSession::GetCloseEnabled ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_CloseEnabled(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void IInstrSession::PutCloseEnabled ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_CloseEnabled(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+IVPPBasePtr IInstrSession::GetVPPBaseInterface ( ) {
+    struct IVPPBase * _result = 0;
+    HRESULT _hr = raw_GetVPPBaseInterface(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IVPPBasePtr(_result, false);
+}
+
+HRESULT IInstrSession::LockSession ( _bstr_t keyName, double timeout, long reserved ) {
+    HRESULT _hr = raw_LockSession(keyName, timeout, reserved);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT IInstrSession::UnlockSession ( ) {
+    HRESULT _hr = raw_UnlockSession();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT IInstrSession::GetLockState ( BSTR * ownerKey, long * nestingLevel ) {
+    HRESULT _hr = raw_GetLockState(ownerKey, nestingLevel);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+long IInstrSession::GetCloseFunction ( ) {
+    long _result = 0;
+    HRESULT _hr = get_CloseFunction(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void IInstrSession::PutCloseFunction ( long pVal ) {
+    HRESULT _hr = put_CloseFunction(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IInstrSessionMgr wrapper method implementations
+//
+
+HRESULT IInstrSessionMgr::InstallInstrSession ( _bstr_t Name, struct IInstrSession * instrSession ) {
+    HRESULT _hr = raw_InstallInstrSession(Name, instrSession);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+IInstrSessionPtr IInstrSessionMgr::GetInstrSession ( _bstr_t Name, VARIANT_BOOL newSession ) {
+    struct IInstrSession * _result = 0;
+    HRESULT _hr = raw_GetInstrSession(Name, newSession, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IInstrSessionPtr(_result, false);
+}
+
+SAFEARRAY * IInstrSessionMgr::GetNames ( _bstr_t Category, enum GetNamesOptions flags, _bstr_t filter ) {
+    SAFEARRAY * _result = 0;
+    HRESULT _hr = raw_GetNames(Category, flags, filter, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+_bstr_t IInstrSessionMgr::GetStateDescription ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_StateDescription(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+VARIANT_BOOL IInstrSessionMgr::GetInExternalProcess ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_InExternalProcess(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void IInstrSessionMgr::PutInExternalProcess ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_InExternalProcess(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+SAFEARRAY * IInstrSessionMgr::GetSessions ( _bstr_t Category ) {
+    SAFEARRAY * _result = 0;
+    HRESULT _hr = raw_GetSessions(Category, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+SAFEARRAY * IInstrSessionMgr::GetCategories ( _bstr_t baseCategory ) {
+    SAFEARRAY * _result = 0;
+    HRESULT _hr = raw_GetCategories(baseCategory, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT IInstrSessionMgr::HideCategory ( _bstr_t Category, VARIANT_BOOL hide ) {
+    HRESULT _hr = raw_HideCategory(Category, hide);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+VARIANT_BOOL IInstrSessionMgr::GetAudibleLifeTimeAlerts ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_AudibleLifeTimeAlerts(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void IInstrSessionMgr::PutAudibleLifeTimeAlerts ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_AudibleLifeTimeAlerts(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+HRESULT IInstrSessionMgr::InvalidateVisaResourceList ( ) {
+    HRESULT _hr = raw_InvalidateVisaResourceList();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT IInstrSessionMgr::GetUniqueKeyName ( BSTR * keyName ) {
+    HRESULT _hr = raw_GetUniqueKeyName(keyName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+} // namespace SM

@@ -1,0 +1,3968 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.40219.01 (7d529c07).
+//
+// c:\program files (x86)\national instruments\teststand 4.2.1\components\models\teststandmodels\database\dblog\release\tsadpapi.tlh
+//
+// C++ source equivalent of Win32 type library ..\..\bin\TsAdpApi.tlb
+// compiler-generated file created 03/18/16 at 10:02:38 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace TSAdp {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("ef21fe18-ac69-42da-afba-673d73b93c2f"))
+/* LIBID */ __TSAdp;
+enum StructPassingOptions;
+enum StructMemberTypes;
+enum StructMemberStorageOptions;
+enum StructMemberArrayStorageOptions;
+enum HTBasicDefaultWorkingDirTypes;
+enum LabVIEWServerTypes;
+enum AdapterCodeTemplatePolicies;
+enum ActiveXModuleCreateOptions;
+enum ActiveXModuleMemberTypes;
+enum CommonCParameterPassOptions;
+enum CommonCParameterTypes;
+enum CommonCParameterResultActions;
+enum CommonCParameterUnknownInfoFlags;
+enum CVIModuleTypes;
+enum CVIParameterCategories;
+enum DllParameterCategories;
+enum LabVIEWParameterCategories;
+enum LabVIEWParameterTypes;
+enum LabVIEWParameterDirections;
+enum LabVIEWParameterWireRequirements;
+enum SeqCallTraceSettings;
+enum SeqCallMultithreadOptions;
+enum SeqCallNewExecModelOptions;
+enum SeqCallWaitForExecOptions;
+enum HTBasicWorkingDirTypes;
+enum DotNetModuleAssemblyLocations;
+enum DotNetModuleMemberTypes;
+enum DotNetParameterTypes;
+enum LabVIEWVITypes;
+enum ImportVITypes;
+enum DeployProjectLibraryOptions;
+enum DllCodeCreationTargets;
+enum CommonCVerifyPrototypeResults;
+struct __declspec(uuid("e360bdcd-721b-4760-9536-eceef9e28c06"))
+/* dual interface */ ActiveXAdapter;
+struct __declspec(uuid("95d5c9bd-d8fc-4e0c-84fc-5c78c4540a1c"))
+/* dual interface */ ActiveXServers;
+struct __declspec(uuid("d45f76a1-32cc-4b19-a88f-164e8e87a33e"))
+/* dual interface */ ActiveXServer;
+struct __declspec(uuid("d3661796-b2d4-4885-b383-efc9e12111f6"))
+/* dual interface */ ActiveXCoClasses;
+struct __declspec(uuid("886a762d-a4ae-4e7a-8745-6ffc21274f7b"))
+/* dual interface */ ActiveXCoClass;
+struct __declspec(uuid("a8d68c70-2b1e-4275-8c8d-73e292e818f0"))
+/* dual interface */ ActiveXInterfaces;
+struct __declspec(uuid("f64e56f3-9916-48e2-be4b-5deeee51b983"))
+/* dual interface */ ActiveXInterface;
+struct __declspec(uuid("d74feda9-f940-458c-b319-51bc36fb355e"))
+/* dual interface */ ActiveXMembers;
+struct __declspec(uuid("1fe0e90f-5bc4-4a91-b478-f276e5af2bd0"))
+/* dual interface */ ActiveXMember;
+struct __declspec(uuid("ce388ca5-86da-43a9-9802-db2f244b808e"))
+/* dual interface */ CommonCAdapter;
+struct __declspec(uuid("1fd727d5-de89-4d3a-ad9c-13efddf1c225"))
+/* dual interface */ DllFunctions;
+struct __declspec(uuid("be84aad1-e08b-4d40-bacc-8cbfb16d7869"))
+/* dual interface */ DllFunction;
+struct __declspec(uuid("89f0ad15-8906-4989-9dfe-7bd45d28dc1c"))
+/* dual interface */ CVIAdapter;
+struct __declspec(uuid("bbd04c31-c768-4cfc-ab35-104b75d36e28"))
+/* dual interface */ DllAdapter;
+struct __declspec(uuid("a7be5ad7-5cf0-4c5f-a9fc-b1828a4bdd37"))
+/* dual interface */ LabVIEWAdapter;
+struct __declspec(uuid("1cec9c33-3b7c-4961-a689-cddf16e9bb02"))
+/* dual interface */ HTBasicAdapter;
+struct __declspec(uuid("e90a5cab-c0bb-4904-b7be-f90ae50cb0af"))
+/* dual interface */ SequenceAdapter;
+struct __declspec(uuid("745fc851-11d0-40ed-ae63-ece0e7753424"))
+/* dual interface */ DotNetAdapter;
+struct __declspec(uuid("bb6a2e80-b2e4-4574-bbfe-2c0a33ebd16e"))
+/* dual interface */ ActiveXModule;
+struct __declspec(uuid("229f6aaf-8a75-4dca-8852-f845bac4c9f8"))
+/* dual interface */ ActiveXParameters;
+struct __declspec(uuid("65ad2684-99d8-455c-8686-151367979ad9"))
+/* dual interface */ ActiveXParameter;
+struct __declspec(uuid("2a5a2c8a-cd53-410f-9f43-0f90015f6957"))
+/* dual interface */ CommonCModule;
+struct __declspec(uuid("55560cec-f1d8-4740-873c-d00cb8c351fb"))
+/* dual interface */ CommonCParameter;
+struct __declspec(uuid("56460000-7d59-47e5-bbea-0773c9dbba5c"))
+/* dual interface */ CVIModule;
+struct __declspec(uuid("5026e32e-d18c-45cc-8927-a92dc6bdeab6"))
+/* dual interface */ CVIParameters;
+struct __declspec(uuid("5ea166e1-22ad-4364-a106-e219ae2dc658"))
+/* dual interface */ CVIParameter;
+struct __declspec(uuid("0910656a-38ec-4033-91b5-e6efa1982c22"))
+/* dual interface */ DllModule;
+struct __declspec(uuid("b7ba2780-540f-46c4-b9f3-fd2726ff7a92"))
+/* dual interface */ DllParameters;
+struct __declspec(uuid("03ed7ba5-4cb0-413b-a7a5-33a6caeb5e4c"))
+/* dual interface */ DllParameter;
+struct __declspec(uuid("8c307958-d67d-4d08-8559-782493809b3a"))
+/* dual interface */ LabVIEWModule;
+struct __declspec(uuid("2906c8d9-82e7-4512-b920-f932a87de0d2"))
+/* dual interface */ LabVIEWParameters;
+struct __declspec(uuid("4a9044c2-b2c7-40c2-aaab-b6eede6bb190"))
+/* dual interface */ LabVIEWParameter;
+struct __declspec(uuid("b9db7ca4-fe77-4ad4-8843-d94cf44ede0e"))
+/* dual interface */ LabVIEWParameterElements;
+struct __declspec(uuid("c33f70ef-7e29-460a-8534-b658532b92d1"))
+/* dual interface */ LabVIEWParameterElement;
+struct __declspec(uuid("539f8691-9d5a-4714-ab81-06ea9fb2472c"))
+/* dual interface */ HTBasicModule;
+struct __declspec(uuid("b874cd3d-f183-4c01-8f5a-3964b18d2caa"))
+/* dual interface */ SequenceCallModule;
+struct __declspec(uuid("e2a80887-03bd-4a84-afc1-48af74ac1dad"))
+/* dual interface */ SequenceCallParameters;
+struct __declspec(uuid("da92a9c7-4952-4c60-b965-870c5174295f"))
+/* dual interface */ SequenceCallParameter;
+struct __declspec(uuid("92b7ef28-64ec-40ea-8ae1-bf76a7fd91c5"))
+/* dual interface */ DotNetModule;
+struct __declspec(uuid("a8863ce0-fab3-4bf8-8bae-4bb78b9e1298"))
+/* dual interface */ DotNetParameters;
+struct __declspec(uuid("990a94d5-3acf-448f-9c30-76bcfab19500"))
+/* dual interface */ DotNetParameter;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(ActiveXMember, __uuidof(ActiveXMember));
+_COM_SMARTPTR_TYPEDEF(ActiveXMembers, __uuidof(ActiveXMembers));
+_COM_SMARTPTR_TYPEDEF(ActiveXInterface, __uuidof(ActiveXInterface));
+_COM_SMARTPTR_TYPEDEF(ActiveXInterfaces, __uuidof(ActiveXInterfaces));
+_COM_SMARTPTR_TYPEDEF(ActiveXCoClass, __uuidof(ActiveXCoClass));
+_COM_SMARTPTR_TYPEDEF(ActiveXCoClasses, __uuidof(ActiveXCoClasses));
+_COM_SMARTPTR_TYPEDEF(ActiveXServer, __uuidof(ActiveXServer));
+_COM_SMARTPTR_TYPEDEF(ActiveXServers, __uuidof(ActiveXServers));
+_COM_SMARTPTR_TYPEDEF(ActiveXAdapter, __uuidof(ActiveXAdapter));
+_COM_SMARTPTR_TYPEDEF(DllFunction, __uuidof(DllFunction));
+_COM_SMARTPTR_TYPEDEF(DllFunctions, __uuidof(DllFunctions));
+_COM_SMARTPTR_TYPEDEF(CommonCAdapter, __uuidof(CommonCAdapter));
+_COM_SMARTPTR_TYPEDEF(CVIAdapter, __uuidof(CVIAdapter));
+_COM_SMARTPTR_TYPEDEF(DllAdapter, __uuidof(DllAdapter));
+_COM_SMARTPTR_TYPEDEF(LabVIEWAdapter, __uuidof(LabVIEWAdapter));
+_COM_SMARTPTR_TYPEDEF(HTBasicAdapter, __uuidof(HTBasicAdapter));
+_COM_SMARTPTR_TYPEDEF(SequenceAdapter, __uuidof(SequenceAdapter));
+_COM_SMARTPTR_TYPEDEF(DotNetAdapter, __uuidof(DotNetAdapter));
+_COM_SMARTPTR_TYPEDEF(ActiveXParameter, __uuidof(ActiveXParameter));
+_COM_SMARTPTR_TYPEDEF(ActiveXParameters, __uuidof(ActiveXParameters));
+_COM_SMARTPTR_TYPEDEF(ActiveXModule, __uuidof(ActiveXModule));
+_COM_SMARTPTR_TYPEDEF(CommonCModule, __uuidof(CommonCModule));
+_COM_SMARTPTR_TYPEDEF(CommonCParameter, __uuidof(CommonCParameter));
+_COM_SMARTPTR_TYPEDEF(CVIParameter, __uuidof(CVIParameter));
+_COM_SMARTPTR_TYPEDEF(CVIParameters, __uuidof(CVIParameters));
+_COM_SMARTPTR_TYPEDEF(CVIModule, __uuidof(CVIModule));
+_COM_SMARTPTR_TYPEDEF(DllParameter, __uuidof(DllParameter));
+_COM_SMARTPTR_TYPEDEF(DllParameters, __uuidof(DllParameters));
+_COM_SMARTPTR_TYPEDEF(DllModule, __uuidof(DllModule));
+_COM_SMARTPTR_TYPEDEF(HTBasicModule, __uuidof(HTBasicModule));
+_COM_SMARTPTR_TYPEDEF(SequenceCallParameter, __uuidof(SequenceCallParameter));
+_COM_SMARTPTR_TYPEDEF(SequenceCallParameters, __uuidof(SequenceCallParameters));
+_COM_SMARTPTR_TYPEDEF(SequenceCallModule, __uuidof(SequenceCallModule));
+_COM_SMARTPTR_TYPEDEF(LabVIEWModule, __uuidof(LabVIEWModule));
+_COM_SMARTPTR_TYPEDEF(LabVIEWParameters, __uuidof(LabVIEWParameters));
+_COM_SMARTPTR_TYPEDEF(LabVIEWParameter, __uuidof(LabVIEWParameter));
+_COM_SMARTPTR_TYPEDEF(LabVIEWParameterElements, __uuidof(LabVIEWParameterElements));
+_COM_SMARTPTR_TYPEDEF(LabVIEWParameterElement, __uuidof(LabVIEWParameterElement));
+_COM_SMARTPTR_TYPEDEF(DotNetModule, __uuidof(DotNetModule));
+_COM_SMARTPTR_TYPEDEF(DotNetParameters, __uuidof(DotNetParameters));
+_COM_SMARTPTR_TYPEDEF(DotNetParameter, __uuidof(DotNetParameter));
+
+//
+// Type library items
+//
+
+enum StructPassingOptions
+{
+    StructPassing_AdapterDefault = 0,
+    StructPassing_OneByte = 1,
+    StructPassing_TwoByte = 2,
+    StructPassing_FourByte = 4,
+    StructPassing_EightByte = 8,
+    StructPassing_SixteenByte = 16
+};
+
+enum StructMemberTypes
+{
+    StructMemberType_Int8 = 2,
+    StructMemberType_UInt8 = 3,
+    StructMemberType_Int16 = 4,
+    StructMemberType_UInt16 = 5,
+    StructMemberType_Int32 = 6,
+    StructMemberType_UInt32 = 7,
+    StructMemberType_Float32 = 0,
+    StructMemberType_Float64 = 1,
+    StructMemberType_CString = 32,
+    StructMemberType_UnicodeString = 33,
+    StructMemberType_CStringBuffer = 34,
+    StructMemberType_UnicodeStringBuffer = 35,
+    StructMemberType_IDispatch = 64,
+    StructMemberType_CVIHandle = 65,
+    StructMemberType_IUnknown = 66
+};
+
+enum StructMemberStorageOptions
+{
+    StructMemberStorage_InlineString = 0,
+    StructMemberStorage_StringPointer = 1,
+    StructMemberStorage_LabVIEWString = 2,
+    StructMemberStorage_EmbeddedStruct = 32,
+    StructMemberStorage_StructPointer = 33
+};
+
+enum StructMemberArrayStorageOptions
+{
+    StructMemberStorage_InlineArray = 256,
+    StructMemberStorage_ArrayPointer = 257,
+    StructMemberStorage_LabVIEWArray = 258
+};
+
+enum HTBasicDefaultWorkingDirTypes
+{
+    HTBasicDefaultWorkingDir_DoNotChange = 1,
+    HTBasicDefaultWorkingDir_HTBasicServer = 2,
+    HTBasicDefaultWorkingDir_SubroutineFile = 3,
+    HTBasicDefaultWorkingDir_Specific = 4
+};
+
+enum LabVIEWServerTypes
+{
+    LabVIEWServer_ExecServer = 0,
+    LabVIEWServer_RTEServer = 1
+};
+
+enum AdapterCodeTemplatePolicies
+{
+    AdapterCodeTemplatePolicy_UseOnlyNew = 0,
+    AdapterCodeTemplatePolicy_UseOnlyLegacy = 1,
+    AdapterCodeTemplatePolicy_UseNewAndLegacy = 2
+};
+
+enum ActiveXModuleCreateOptions
+{
+    ActiveXCreate_New = 0,
+    ActiveXCreate_AttachToActive = 1,
+    ActiveXCreate_FromFile = 2,
+    ActiveXCreate_DoNotCreate = 3
+};
+
+enum ActiveXModuleMemberTypes
+{
+    ActiveXMember_DoNotCall = -1,
+    ActiveXMember_CallMethod = 1,
+    ActiveXMember_GetProperty = 2,
+    ActiveXMember_SetProperty = 4,
+    ActiveXMember_SetPropertyByRef = 8
+};
+    const long ActiveXParamDirection_Unknown = 0;
+    const long ActiveXParamDirection_In = 1;
+    const long ActiveXParamDirection_Out = 2;
+    const long ActiveXParamDirection_Min = 0;
+    const long ActiveXParamDirection_Max = 2;
+
+enum CommonCParameterPassOptions
+{
+    CParamPass_ByVal = 0,
+    CParamPass_ByPointer = 1,
+    CParamPass_ByReference = 16,
+    CParamPass_ByConstPointer = 65,
+    CParamPass_ByConstReference = 80
+};
+
+enum CommonCParameterTypes
+{
+    CParamType_Int8 = 0,
+    CParamType_UInt8 = 1,
+    CParamType_Int16 = 2,
+    CParamType_UInt16 = 3,
+    CParamType_Int32 = 4,
+    CParamType_UInt32 = 5,
+    CParamType_Float32 = 6,
+    CParamType_Float64 = 7,
+    CParamType_CString = 32,
+    CParamType_UnicodeString = 33,
+    CParamType_CStringBuffer = 34,
+    CParamType_UnicodeStringBuffer = 35,
+    CParamType_IDispatch = 64,
+    CParamType_CVIHandle = 65,
+    CParamType_IUnknown = 66,
+    CParamType_NotUsed = 200
+};
+
+enum CommonCParameterResultActions
+{
+    CParamResult_NoAction = 0,
+    CParamResult_SetErrorIfNegative = 1,
+    CParamResult_SetErrorIfPositive = 2,
+    CParamResult_SetErrorIfZero = 3,
+    CParamResult_SetErrorIfNotZero = 4
+};
+    const long CParamFlags_SetErrorCodeToReturnValue = 1;
+
+enum CommonCParameterUnknownInfoFlags
+{
+    CParamInfo_EveryThingKnown = 0,
+    CParamInfo_DontKnowNumElements = 1,
+    CParamInfo_DontKnowIfArrayOrPointer = 2,
+    CParamInfo_DontKnowFirstDimensionSize = 3
+};
+
+enum CVIModuleTypes
+{
+    CVIModuleType_Obj = 0,
+    CVIModuleType_Source = 1,
+    CVIModuleType_DLL = 2,
+    CVIModuleType_Lib = 3
+};
+
+enum CVIParameterCategories
+{
+    CVIParamCategory_Numeric = 0,
+    CVIParamCategory_String = 2,
+    CVIParamCategory_Void = 3,
+    CVIParamCategory_Object = 4,
+    CVIParamCategory_CStruct = 5,
+    CVIParamCategory_NumericArray = 1,
+    CVIParamCategory_StringArray = 6,
+    CVIParamCategory_ObjectArray = 7,
+    CVIParamCategory_CStructArray = 8,
+    CVIParamCategory_TestData = 100,
+    CVIParamCategory_TestError = 101
+};
+
+enum DllParameterCategories
+{
+    DllParamCategory_Numeric = 0,
+    DllParamCategory_String = 2,
+    DllParamCategory_Void = 3,
+    DllParamCategory_Object = 4,
+    DllParamCategory_CStruct = 5,
+    DllParamCategory_NumericArray = 1,
+    DllParamCategory_StringArray = 6,
+    DllParamCategory_ObjectArray = 7,
+    DllParamCategory_CStructArray = 8,
+    DllParamCategory_Boolean = 100,
+    DllParamCategory_BooleanArray = 101,
+    DllParamCategory_TSObject = 205,
+    DllParamCategory_CNiVector = 200,
+    DllParamCategory_CNiMatrix = 201,
+    DllParamCategory_CNiString = 203,
+    DllParamCategory_CNiComplex = 202,
+    DllParamCategory_CNiComplexVector = 204,
+    DllParamCategory_CNiBoolVector = 206,
+    DllParamCategory_CString = 207,
+    DllParamCategory_CStringArray = 208,
+    DllParamCategory_bstr_t = 209,
+    DllParamCategory_CNiStringVector = 210
+};
+    const long LVModuleOptions_ShowFrontPanel = 1;
+    const long LVModuleOptions_AutoDetectLVRT = 2;
+
+enum LabVIEWParameterCategories
+{
+    LVParamCategory_Numeric = 0,
+    LVParamCategory_String = 1,
+    LVParamCategory_Boolean = 2,
+    LVParamCategory_Cluster = 3,
+    LVParamCategory_Reference = 4,
+    LVParamCategory_Complex = 6,
+    LVParamCategory_Variant = 7,
+    LVParamCategory_NumericArray = 50,
+    LVParamCategory_StringArray = 51,
+    LVParamCategory_BooleanArray = 52,
+    LVParamCategory_ClusterArray = 53,
+    LVParamCategory_ReferenceArray = 54,
+    LVParamCategory_ComplexArray = 55,
+    LVParamCategory_VariantArray = 56,
+    LVParamCategory_Unknown = 8
+};
+
+enum LabVIEWParameterTypes
+{
+    LVParamType_Int8 = 0,
+    LVParamType_UInt8 = 1,
+    LVParamType_Int16 = 2,
+    LVParamType_UInt16 = 3,
+    LVParamType_Int32 = 4,
+    LVParamType_UInt32 = 5,
+    LVParamType_Real32 = 6,
+    LVParamType_Real64 = 7,
+    LVParamType_Ext = 8,
+    LVParamType_Complex64 = 9,
+    LVParamType_Complex128 = 10,
+    LVParamType_ComplexExt = 11,
+    LVParamType_ActiveXRef = 64,
+    LVParamType_DotNetRef = 65,
+    LVParamType_LVObjectRef = 66,
+    LVParamType_OtherRef = 65,
+    LVParamType_String = 96,
+    LVParamType_PathString = 98,
+    LVParamType_TimestampString = 99,
+    LVParamType_StandardCluster = 20,
+    LVParamType_IO = 21,
+    LVParamType_DigitalData = 22,
+    LVParamType_AnalogWaveform = 23,
+    LVParamType_DigitalWaveform = 24,
+    LVParamType_DynamicData = 25,
+    LVParamType_TestData = 33,
+    LVParamType_ErrorOut = 34,
+    LVParamType_Unspecified = 200
+};
+
+enum LabVIEWParameterDirections
+{
+    LVParamDirection_In = 0,
+    LVParamDirection_Out = 1
+};
+
+enum LabVIEWParameterWireRequirements
+{
+    LVParamWireReq_Required = 0,
+    LVParamWireReq_Recommended = 1,
+    LVParamWireReq_Optional = 2
+};
+
+enum SeqCallTraceSettings
+{
+    SeqCallTrace_UseCurrent = 1,
+    SeqCallTrace_Enable = 2,
+    SeqCallTrace_Disable = 3,
+    SeqCallTrace_UseExecutionSetting = 4
+};
+
+enum SeqCallMultithreadOptions
+{
+    SeqCallMultithread_None = 0,
+    SeqCallMultithread_NewThread = 1,
+    SeqCallMultithread_NewExecution = 2,
+    SeqCallMultithread_Remote = 256
+};
+    const long SeqCallThread_WaitForThreadCompletion = 1;
+    const long SeqCallThread_InitiallySuspended = 2;
+    const long SeqCallThread_UseSingleThreadedApartment = 4;
+
+enum SeqCallNewExecModelOptions
+{
+    SeqCallNewExecModel_None = 0,
+    SeqCallNewExecModel_UseModelOfCurrentFile = 1,
+    SeqCallNewExecModel_SpecifyModel = 2
+};
+
+enum SeqCallWaitForExecOptions
+{
+    SeqCallWait_DoNotWait = 0,
+    SeqCallWait_BeforeNextStep = 1,
+    SeqCallWait_EndOfSequence = 2
+};
+
+enum HTBasicWorkingDirTypes
+{
+    HTBasicWorkingDir_AdapterDefault = 0,
+    HTBasicWorkingDir_DoNotChange = 1,
+    HTBasicWorkingDir_HTBasicServer = 2,
+    HTBasicWorkingDir_SubroutineFileDir = 3,
+    HTBasicWorkingDir_Specify = 4
+};
+
+enum DotNetModuleAssemblyLocations
+{
+    DotNetModule_AssemblyLocation_File = 0,
+    DotNetModule_AssemblyLocation_GAC = 1
+};
+
+enum DotNetModuleMemberTypes
+{
+    DotNetMember_DoNotCall = 0,
+    DotNetMember_CallMethod = 1,
+    DotNetMember_GetProperty = 2,
+    DotNetMember_SetProperty = 3
+};
+    const long DotNetMemberFlags_Static = 1;
+    const long DotNetMemberFlags_TopLevel = 2;
+    const long DotNetParamFlags_Lcid = 4;
+    const long DotNetParamFlags_Optional = 16;
+    const long DotNetParamFlags_IsArray = 256;
+
+enum DotNetParameterTypes
+{
+    DotNetParamType_Class = 0,
+    DotNetParamType_String = 1,
+    DotNetParamType_Boolean = 2,
+    DotNetParamType_Byte = 3,
+    DotNetParamType_SByte = 4,
+    DotNetParamType_Int16 = 5,
+    DotNetParamType_Int32 = 6,
+    DotNetParamType_Int64 = 7,
+    DotNetParamType_UInt16 = 8,
+    DotNetParamType_UInt32 = 9,
+    DotNetParamType_UInt64 = 10,
+    DotNetParamType_Single = 11,
+    DotNetParamType_Double = 12,
+    DotNetParamType_Decimal = 13,
+    DotNetParamType_Char = 14,
+    DotNetParamType_IntPtr = 15,
+    DotNetParamType_Enum = 16,
+    DotNetParamType_Object = 17,
+    DotNetParamType_Struct = 18,
+    DotNetParamType_Void = 19
+};
+    const long DotNetParamDirection_In = 1;
+    const long DotNetParamDirection_Out = 2;
+    const long DotNetParamDirection_Return = 4;
+
+enum LabVIEWVITypes
+{
+    LVVIType_Standard = 0,
+    LVVIType_Express = 1
+};
+
+enum ImportVITypes
+{
+    ImportVIType_ExpressVIWrapper = 0,
+    ImportVIType_ExpressVITemplate = 1
+};
+
+enum DeployProjectLibraryOptions
+{
+    DeployProjectLibraryOption_Deploy = 0,
+    DeployProjectLibraryOption_Undeploy = 1
+};
+    const LPSTR ExpressVIMenu_NameProp = (char*) "ItemName";
+    const LPSTR ExpressVIMenu_PathProp = (char*) "ItemPath";
+    const LPSTR ExpressVIMenu_IconProp = (char*) "IconHandle";
+    const LPSTR ExpressVIMenu_IsSubmenuProp = (char*) "IsSubMenu";
+    const LPSTR ExpressVIMenu_SeparatorAboveProp = (char*) "SeparatorAbove";
+    const LPSTR ExpressVIMenu_MenuItemsProp = (char*) "MenuItems";
+
+enum DllCodeCreationTargets
+{
+    DllCodeCreationTarget_TextFile = 0,
+    DllCodeCreationTarget_VisualStudio = 1
+};
+
+enum CommonCVerifyPrototypeResults
+{
+    CommonCVerifyPrototypeResult_PrototypesMatch = 0,
+    CommonCVerifyPrototypeResult_ModuleUpdated = 1,
+    CommonCVerifyPrototypeResult_SourceUpdated = 2,
+    CommonCVerifyPrototypeResult_UserCancelled = 3
+};
+    const LPSTR VisualStudioDTEVersion_AlwaysPrompt = (char*) "AlwaysPrompt";
+    const LPSTR VisualStudioDTEVersion_MatchProject = (char*) "MatchProject";
+    const LPSTR VisualStudioDTEVersion_2005 = (char*) "VisualStudio.DTE.8.0";
+    const LPSTR VisualStudioDTEVersion_2008 = (char*) "VisualStudio.DTE.9.0";
+
+struct __declspec(uuid("1fe0e90f-5bc4-4a91-b478-f276e5af2bd0"))
+ActiveXMember : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetVTableOffset))
+    long VTableOffset;
+    __declspec(property(get=GetDispatchId))
+    long DispatchId;
+    __declspec(property(get=GetName))
+    _bstr_t Name;
+    __declspec(property(get=GetDocumentation))
+    _bstr_t Documentation;
+    __declspec(property(get=GetHelpFilePath))
+    _bstr_t HelpFilePath;
+    __declspec(property(get=GetHelpContext))
+    long HelpContext;
+    __declspec(property(get=GetFunctionFlags))
+    long FunctionFlags;
+    __declspec(property(get=GetMemberType))
+    enum ActiveXModuleMemberTypes MemberType;
+    __declspec(property(get=GetParameterTypeWarnings))
+    _bstr_t ParameterTypeWarnings;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetVTableOffset ( );
+    long GetDispatchId ( );
+    _bstr_t GetName ( );
+    _bstr_t GetDocumentation ( );
+    _bstr_t GetHelpFilePath ( );
+    long GetHelpContext ( );
+    long GetFunctionFlags ( );
+    enum ActiveXModuleMemberTypes GetMemberType ( );
+    _bstr_t GetParameterTypeWarnings ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_VTableOffset (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall get_DispatchId (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall get_Documentation (
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall get_HelpFilePath (
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall get_HelpContext (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall get_FunctionFlags (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall get_MemberType (
+        /*[out,retval]*/ enum ActiveXModuleMemberTypes * val ) = 0;
+      virtual HRESULT __stdcall get_ParameterTypeWarnings (
+        /*[out,retval]*/ BSTR * val ) = 0;
+};
+
+struct __declspec(uuid("d74feda9-f940-458c-b319-51bc36fb355e"))
+ActiveXMembers : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    ActiveXMemberPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    ActiveXMemberPtr GetItem (
+        const _variant_t & index );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ VARIANT index,
+        /*[out,retval]*/ struct ActiveXMember * * val ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * val ) = 0;
+};
+
+struct __declspec(uuid("f64e56f3-9916-48e2-be4b-5deeee51b983"))
+ActiveXInterface : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetId))
+    _bstr_t Id;
+    __declspec(property(get=GetName))
+    _bstr_t Name;
+    __declspec(property(get=GetDocumentation))
+    _bstr_t Documentation;
+    __declspec(property(get=GetHelpFilePath))
+    _bstr_t HelpFilePath;
+    __declspec(property(get=GetHelpContext))
+    long HelpContext;
+    __declspec(property(get=GetTypeFlags))
+    long TypeFlags;
+    __declspec(property(get=GetForTypedefOnly))
+    VARIANT_BOOL ForTypedefOnly;
+    __declspec(property(get=GetVTableMembers))
+    ActiveXMembersPtr VTableMembers;
+    __declspec(property(get=GetDispatchMembers))
+    ActiveXMembersPtr DispatchMembers;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetId ( );
+    _bstr_t GetName ( );
+    _bstr_t GetDocumentation ( );
+    _bstr_t GetHelpFilePath ( );
+    long GetHelpContext ( );
+    long GetTypeFlags ( );
+    VARIANT_BOOL GetForTypedefOnly ( );
+    ActiveXMembersPtr GetVTableMembers ( );
+    ActiveXMembersPtr GetDispatchMembers ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Id (
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall get_Documentation (
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall get_HelpFilePath (
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall get_HelpContext (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall get_TypeFlags (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall get_ForTypedefOnly (
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+      virtual HRESULT __stdcall get_VTableMembers (
+        /*[out,retval]*/ struct ActiveXMembers * * val ) = 0;
+      virtual HRESULT __stdcall get_DispatchMembers (
+        /*[out,retval]*/ struct ActiveXMembers * * val ) = 0;
+};
+
+struct __declspec(uuid("a8d68c70-2b1e-4275-8c8d-73e292e818f0"))
+ActiveXInterfaces : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    ActiveXInterfacePtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    ActiveXInterfacePtr GetItem (
+        const _variant_t & index );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ VARIANT index,
+        /*[out,retval]*/ struct ActiveXInterface * * val ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * val ) = 0;
+};
+
+struct __declspec(uuid("886a762d-a4ae-4e7a-8745-6ffc21274f7b"))
+ActiveXCoClass : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetId))
+    _bstr_t Id;
+    __declspec(property(get=GetName))
+    _bstr_t Name;
+    __declspec(property(get=GetDocumentation))
+    _bstr_t Documentation;
+    __declspec(property(get=GetHelpFilePath))
+    _bstr_t HelpFilePath;
+    __declspec(property(get=GetHelpContext))
+    long HelpContext;
+    __declspec(property(get=GetTypeFlags))
+    long TypeFlags;
+    __declspec(property(get=GetInterfaces))
+    ActiveXInterfacesPtr Interfaces;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetId ( );
+    _bstr_t GetName ( );
+    _bstr_t GetDocumentation ( );
+    _bstr_t GetHelpFilePath ( );
+    long GetHelpContext ( );
+    long GetTypeFlags ( );
+    ActiveXInterfacesPtr GetInterfaces ( );
+    long GetInterfaceImplementationTypeFlags (
+        long interfaceIndex );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Id (
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall get_Documentation (
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall get_HelpFilePath (
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall get_HelpContext (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall get_TypeFlags (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall get_Interfaces (
+        /*[out,retval]*/ struct ActiveXInterfaces * * val ) = 0;
+      virtual HRESULT __stdcall raw_GetInterfaceImplementationTypeFlags (
+        /*[in]*/ long interfaceIndex,
+        /*[out,retval]*/ long * val ) = 0;
+};
+
+struct __declspec(uuid("d3661796-b2d4-4885-b383-efc9e12111f6"))
+ActiveXCoClasses : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    ActiveXCoClassPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    ActiveXCoClassPtr GetItem (
+        const _variant_t & index );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ VARIANT index,
+        /*[out,retval]*/ struct ActiveXCoClass * * val ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * val ) = 0;
+};
+
+struct __declspec(uuid("d45f76a1-32cc-4b19-a88f-164e8e87a33e"))
+ActiveXServer : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetPath))
+    _bstr_t Path;
+    __declspec(property(get=GetId))
+    _bstr_t Id;
+    __declspec(property(get=GetName))
+    _bstr_t Name;
+    __declspec(property(get=GetDisplayName))
+    _bstr_t DisplayName;
+    __declspec(property(get=GetMajorVersion))
+    long MajorVersion;
+    __declspec(property(get=GetMinorVersion))
+    long MinorVersion;
+    __declspec(property(get=GetVersionString))
+    _bstr_t VersionString;
+    __declspec(property(get=GetHelpFilePath))
+    _bstr_t HelpFilePath;
+    __declspec(property(get=GetHelpContext))
+    long HelpContext;
+    __declspec(property(get=GetLibraryFlags))
+    long LibraryFlags;
+    __declspec(property(get=GetLocaleId))
+    unsigned long LocaleId;
+    __declspec(property(get=GetCoClasses))
+    ActiveXCoClassesPtr CoClasses;
+    __declspec(property(get=GetInterfaces))
+    ActiveXInterfacesPtr Interfaces;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetPath ( );
+    _bstr_t GetId ( );
+    _bstr_t GetName ( );
+    _bstr_t GetDisplayName ( );
+    long GetMajorVersion ( );
+    long GetMinorVersion ( );
+    _bstr_t GetVersionString ( );
+    _bstr_t GetHelpFilePath ( );
+    long GetHelpContext ( );
+    long GetLibraryFlags ( );
+    unsigned long GetLocaleId ( );
+    ActiveXCoClassesPtr GetCoClasses ( );
+    ActiveXInterfacesPtr GetInterfaces ( );
+    VARIANT_BOOL LoadTypeLibrary ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Path (
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall get_Id (
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall get_DisplayName (
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall get_MajorVersion (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall get_MinorVersion (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall get_VersionString (
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall get_HelpFilePath (
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall get_HelpContext (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall get_LibraryFlags (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall get_LocaleId (
+        /*[out,retval]*/ unsigned long * val ) = 0;
+      virtual HRESULT __stdcall get_CoClasses (
+        /*[out,retval]*/ struct ActiveXCoClasses * * val ) = 0;
+      virtual HRESULT __stdcall get_Interfaces (
+        /*[out,retval]*/ struct ActiveXInterfaces * * val ) = 0;
+      virtual HRESULT __stdcall raw_LoadTypeLibrary (
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+};
+
+struct __declspec(uuid("95d5c9bd-d8fc-4e0c-84fc-5c78c4540a1c"))
+ActiveXServers : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    ActiveXServerPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=GetRefreshCount))
+    long RefreshCount;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    ActiveXServerPtr GetItem (
+        const _variant_t & index );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    _bstr_t RegisterTypeLibrary (
+        _bstr_t typeLibraryPath,
+        VARIANT_BOOL * newerTypeLibraryAlreadyRegistered );
+    HRESULT Refresh ( );
+    long GetRefreshCount ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ VARIANT index,
+        /*[out,retval]*/ struct ActiveXServer * * val ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall raw_RegisterTypeLibrary (
+        /*[in]*/ BSTR typeLibraryPath,
+        /*[out]*/ VARIANT_BOOL * newerTypeLibraryAlreadyRegistered,
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall raw_Refresh ( ) = 0;
+      virtual HRESULT __stdcall get_RefreshCount (
+        /*[out,retval]*/ long * val ) = 0;
+};
+
+struct __declspec(uuid("e360bdcd-721b-4760-9536-eceef9e28c06"))
+ActiveXAdapter : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetUseLateBinding,put=PutUseLateBinding))
+    VARIANT_BOOL UseLateBinding;
+    __declspec(property(get=GetUnloadUnusedActiveXServersAfterExec,put=PutUnloadUnusedActiveXServersAfterExec))
+    VARIANT_BOOL UnloadUnusedActiveXServersAfterExec;
+    __declspec(property(get=GetShowActiveXControlsWhenSpecifyingModule,put=PutShowActiveXControlsWhenSpecifyingModule))
+    VARIANT_BOOL ShowActiveXControlsWhenSpecifyingModule;
+    __declspec(property(get=GetServers))
+    ActiveXServersPtr Servers;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    TS::AdapterPtr AsAdapter ( );
+    VARIANT_BOOL GetUseLateBinding ( );
+    void PutUseLateBinding (
+        VARIANT_BOOL propertyValue );
+    VARIANT_BOOL GetUnloadUnusedActiveXServersAfterExec ( );
+    void PutUnloadUnusedActiveXServersAfterExec (
+        VARIANT_BOOL propertyValue );
+    VARIANT_BOOL GetShowActiveXControlsWhenSpecifyingModule ( );
+    void PutShowActiveXControlsWhenSpecifyingModule (
+        VARIANT_BOOL propertyValue );
+    HRESULT UpdateAutomationIDs (
+        struct TS::SequenceFile * seqFileToUpdate,
+        long * numStepsModified,
+        long * numStepUpdatesFailed,
+        BSTR * errorDescription );
+    ActiveXServersPtr GetServers ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_AsAdapter (
+        /*[out,retval]*/ struct TS::Adapter * * adapterObject ) = 0;
+      virtual HRESULT __stdcall get_UseLateBinding (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_UseLateBinding (
+        /*[in]*/ VARIANT_BOOL propertyValue ) = 0;
+      virtual HRESULT __stdcall get_UnloadUnusedActiveXServersAfterExec (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_UnloadUnusedActiveXServersAfterExec (
+        /*[in]*/ VARIANT_BOOL propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ShowActiveXControlsWhenSpecifyingModule (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_ShowActiveXControlsWhenSpecifyingModule (
+        /*[in]*/ VARIANT_BOOL propertyValue ) = 0;
+      virtual HRESULT __stdcall raw_UpdateAutomationIDs (
+        /*[in]*/ struct TS::SequenceFile * seqFileToUpdate,
+        /*[out]*/ long * numStepsModified,
+        /*[out]*/ long * numStepUpdatesFailed,
+        /*[out]*/ BSTR * errorDescription ) = 0;
+      virtual HRESULT __stdcall get_Servers (
+        /*[out,retval]*/ struct ActiveXServers * * val ) = 0;
+};
+
+struct __declspec(uuid("be84aad1-e08b-4d40-bacc-8cbfb16d7869"))
+DllFunction : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetDisplayName))
+    _bstr_t DisplayName;
+    __declspec(property(get=GetUniqueDisplayName))
+    _bstr_t UniqueDisplayName;
+    __declspec(property(get=GetSymbolName))
+    _bstr_t SymbolName;
+    __declspec(property(get=GetHelpFilePath))
+    _bstr_t HelpFilePath;
+    __declspec(property(get=GetHelpContext))
+    long HelpContext;
+    __declspec(property(get=GetParameterTypeWarnings))
+    _bstr_t ParameterTypeWarnings;
+    __declspec(property(get=GetHasParameterInformation))
+    VARIANT_BOOL HasParameterInformation;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetDisplayName ( );
+    _bstr_t GetUniqueDisplayName ( );
+    _bstr_t GetSymbolName ( );
+    _bstr_t GetHelpFilePath ( );
+    long GetHelpContext ( );
+    _bstr_t GetParameterTypeWarnings ( );
+    VARIANT_BOOL GetHasParameterInformation ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_DisplayName (
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall get_UniqueDisplayName (
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall get_SymbolName (
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall get_HelpFilePath (
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall get_HelpContext (
+        /*[out,retval]*/ long * val ) = 0;
+      virtual HRESULT __stdcall get_ParameterTypeWarnings (
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall get_HasParameterInformation (
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+};
+
+struct __declspec(uuid("1fd727d5-de89-4d3a-ad9c-13efddf1c225"))
+DllFunctions : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    DllFunctionPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    DllFunctionPtr GetItem (
+        const _variant_t & index );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ VARIANT index,
+        /*[out,retval]*/ struct DllFunction * * val ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * val ) = 0;
+};
+
+struct __declspec(uuid("ce388ca5-86da-43a9-9802-db2f244b808e"))
+CommonCAdapter : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetDefaultStructPacking,put=PutDefaultStructPacking))
+    enum StructPassingOptions DefaultStructPacking;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    TS::AdapterPtr AsAdapter ( );
+    enum StructPassingOptions GetDefaultStructPacking ( );
+    void PutDefaultStructPacking (
+        enum StructPassingOptions propertyValue );
+    VARIANT_BOOL GetAllowStructPassing (
+        struct TS::PropertyObject * typeDefinition );
+    HRESULT SetAllowStructPassing (
+        struct TS::PropertyObject * typeDefinition,
+        VARIANT_BOOL allowStructPassing );
+    enum StructPassingOptions GetStructPacking (
+        struct TS::PropertyObject * typeDefinition );
+    HRESULT SetStructPacking (
+        struct TS::PropertyObject * typeDefinition,
+        enum StructPassingOptions structPackingOption );
+    VARIANT_BOOL GetExcludeFromStruct (
+        struct TS::PropertyObject * typeDefinition,
+        _bstr_t propertyLookupString );
+    HRESULT SetExcludeFromStruct (
+        struct TS::PropertyObject * typeDefinition,
+        _bstr_t propertyLookupString,
+        VARIANT_BOOL excludeFromStruct );
+    enum StructMemberTypes GetStructMemberType (
+        struct TS::PropertyObject * typeDefinition,
+        _bstr_t propertyLookupString );
+    HRESULT SetStructMemberType (
+        struct TS::PropertyObject * typeDefinition,
+        _bstr_t propertyLookupString,
+        enum StructMemberTypes structMemberType );
+    enum StructMemberStorageOptions GetStructMemberStorage (
+        struct TS::PropertyObject * typeDefinition,
+        _bstr_t propertyLookupString );
+    HRESULT SetStructMemberStorage (
+        struct TS::PropertyObject * typeDefinition,
+        _bstr_t propertyLookupString,
+        enum StructMemberStorageOptions structMemberStorage );
+    enum StructMemberArrayStorageOptions GetStructMemberArrayStorage (
+        struct TS::PropertyObject * typeDefinition,
+        _bstr_t propertyLookupString );
+    HRESULT SetStructMemberArrayStorage (
+        struct TS::PropertyObject * typeDefinition,
+        _bstr_t propertyLookupString,
+        enum StructMemberArrayStorageOptions structMemberArrayStorage );
+    long GetStructMemberStringBufferSize (
+        struct TS::PropertyObject * typeDefinition,
+        _bstr_t propertyLookupString );
+    HRESULT SetStructMemberStringBufferSize (
+        struct TS::PropertyObject * typeDefinition,
+        _bstr_t propertyLookupString,
+        long structMemberStringBufferSize );
+    DllFunctionsPtr GetDllFunctions (
+        _bstr_t dllPath );
+    SAFEARRAY * GetStructNames ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_AsAdapter (
+        /*[out,retval]*/ struct TS::Adapter * * adapterObject ) = 0;
+      virtual HRESULT __stdcall get_DefaultStructPacking (
+        /*[out,retval]*/ enum StructPassingOptions * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_DefaultStructPacking (
+        /*[in]*/ enum StructPassingOptions propertyValue ) = 0;
+      virtual HRESULT __stdcall raw_GetAllowStructPassing (
+        /*[in]*/ struct TS::PropertyObject * typeDefinition,
+        /*[out,retval]*/ VARIANT_BOOL * allowStructPassing ) = 0;
+      virtual HRESULT __stdcall raw_SetAllowStructPassing (
+        /*[in]*/ struct TS::PropertyObject * typeDefinition,
+        /*[in]*/ VARIANT_BOOL allowStructPassing ) = 0;
+      virtual HRESULT __stdcall raw_GetStructPacking (
+        /*[in]*/ struct TS::PropertyObject * typeDefinition,
+        /*[out,retval]*/ enum StructPassingOptions * structPackingOption ) = 0;
+      virtual HRESULT __stdcall raw_SetStructPacking (
+        /*[in]*/ struct TS::PropertyObject * typeDefinition,
+        /*[in]*/ enum StructPassingOptions structPackingOption ) = 0;
+      virtual HRESULT __stdcall raw_GetExcludeFromStruct (
+        /*[in]*/ struct TS::PropertyObject * typeDefinition,
+        /*[in]*/ BSTR propertyLookupString,
+        /*[out,retval]*/ VARIANT_BOOL * excludeFromStruct ) = 0;
+      virtual HRESULT __stdcall raw_SetExcludeFromStruct (
+        /*[in]*/ struct TS::PropertyObject * typeDefinition,
+        /*[in]*/ BSTR propertyLookupString,
+        /*[in]*/ VARIANT_BOOL excludeFromStruct ) = 0;
+      virtual HRESULT __stdcall raw_GetStructMemberType (
+        /*[in]*/ struct TS::PropertyObject * typeDefinition,
+        /*[in]*/ BSTR propertyLookupString,
+        /*[out,retval]*/ enum StructMemberTypes * structMemberType ) = 0;
+      virtual HRESULT __stdcall raw_SetStructMemberType (
+        /*[in]*/ struct TS::PropertyObject * typeDefinition,
+        /*[in]*/ BSTR propertyLookupString,
+        /*[in]*/ enum StructMemberTypes structMemberType ) = 0;
+      virtual HRESULT __stdcall raw_GetStructMemberStorage (
+        /*[in]*/ struct TS::PropertyObject * typeDefinition,
+        /*[in]*/ BSTR propertyLookupString,
+        /*[out,retval]*/ enum StructMemberStorageOptions * structMemberStorage ) = 0;
+      virtual HRESULT __stdcall raw_SetStructMemberStorage (
+        /*[in]*/ struct TS::PropertyObject * typeDefinition,
+        /*[in]*/ BSTR propertyLookupString,
+        /*[in]*/ enum StructMemberStorageOptions structMemberStorage ) = 0;
+      virtual HRESULT __stdcall raw_GetStructMemberArrayStorage (
+        /*[in]*/ struct TS::PropertyObject * typeDefinition,
+        /*[in]*/ BSTR propertyLookupString,
+        /*[out,retval]*/ enum StructMemberArrayStorageOptions * structMemberArrayStorage ) = 0;
+      virtual HRESULT __stdcall raw_SetStructMemberArrayStorage (
+        /*[in]*/ struct TS::PropertyObject * typeDefinition,
+        /*[in]*/ BSTR propertyLookupString,
+        /*[in]*/ enum StructMemberArrayStorageOptions structMemberArrayStorage ) = 0;
+      virtual HRESULT __stdcall raw_GetStructMemberStringBufferSize (
+        /*[in]*/ struct TS::PropertyObject * typeDefinition,
+        /*[in]*/ BSTR propertyLookupString,
+        /*[out,retval]*/ long * structMemberStringBufferSize ) = 0;
+      virtual HRESULT __stdcall raw_SetStructMemberStringBufferSize (
+        /*[in]*/ struct TS::PropertyObject * typeDefinition,
+        /*[in]*/ BSTR propertyLookupString,
+        /*[in]*/ long structMemberStringBufferSize ) = 0;
+      virtual HRESULT __stdcall raw_GetDllFunctions (
+        /*[in]*/ BSTR dllPath,
+        /*[out,retval]*/ struct DllFunctions * * functions ) = 0;
+      virtual HRESULT __stdcall raw_GetStructNames (
+        /*[out,retval]*/ SAFEARRAY * * structNames ) = 0;
+};
+
+struct __declspec(uuid("89f0ad15-8906-4989-9dfe-7bd45d28dc1c"))
+CVIAdapter : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetExecuteStepsInExternalInstance,put=PutExecuteStepsInExternalInstance))
+    VARIANT_BOOL ExecuteStepsInExternalInstance;
+    __declspec(property(get=GetExecutionServerProjectPathName,put=PutExecutionServerProjectPathName))
+    _bstr_t ExecutionServerProjectPathName;
+    __declspec(property(get=GetCodeTemplatePolicy,put=PutCodeTemplatePolicy))
+    enum AdapterCodeTemplatePolicies CodeTemplatePolicy;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    CommonCAdapterPtr AsCommonCAdapter ( );
+    TS::AdapterPtr AsAdapter ( );
+    VARIANT_BOOL GetExecuteStepsInExternalInstance ( );
+    void PutExecuteStepsInExternalInstance (
+        VARIANT_BOOL propertyValue );
+    _bstr_t GetExecutionServerProjectPathName ( );
+    void PutExecutionServerProjectPathName (
+        _bstr_t propertyValue );
+    enum AdapterCodeTemplatePolicies GetCodeTemplatePolicy ( );
+    void PutCodeTemplatePolicy (
+        enum AdapterCodeTemplatePolicies propertyValue );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_AsCommonCAdapter (
+        /*[out,retval]*/ struct CommonCAdapter * * commonCAdapterObject ) = 0;
+      virtual HRESULT __stdcall raw_AsAdapter (
+        /*[out,retval]*/ struct TS::Adapter * * adapterObject ) = 0;
+      virtual HRESULT __stdcall get_ExecuteStepsInExternalInstance (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_ExecuteStepsInExternalInstance (
+        /*[in]*/ VARIANT_BOOL propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ExecutionServerProjectPathName (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_ExecutionServerProjectPathName (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_CodeTemplatePolicy (
+        /*[out,retval]*/ enum AdapterCodeTemplatePolicies * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_CodeTemplatePolicy (
+        /*[in]*/ enum AdapterCodeTemplatePolicies propertyValue ) = 0;
+};
+
+struct __declspec(uuid("bbd04c31-c768-4cfc-ab35-104b75d36e28"))
+DllAdapter : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetVisualStudioDTEVersionForEditing,put=PutVisualStudioDTEVersionForEditing))
+    _bstr_t VisualStudioDTEVersionForEditing;
+    __declspec(property(get=GetVisualStudioDTEVersionForDebugging,put=PutVisualStudioDTEVersionForDebugging))
+    _bstr_t VisualStudioDTEVersionForDebugging;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    CommonCAdapterPtr AsCommonCAdapter ( );
+    TS::AdapterPtr AsAdapter ( );
+    _bstr_t GetVisualStudioDTEVersionForEditing ( );
+    void PutVisualStudioDTEVersionForEditing (
+        _bstr_t propertyValue );
+    _bstr_t GetVisualStudioDTEVersionForDebugging ( );
+    void PutVisualStudioDTEVersionForDebugging (
+        _bstr_t propertyValue );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_AsCommonCAdapter (
+        /*[out,retval]*/ struct CommonCAdapter * * commonCAdapterObject ) = 0;
+      virtual HRESULT __stdcall raw_AsAdapter (
+        /*[out,retval]*/ struct TS::Adapter * * adapterObject ) = 0;
+      virtual HRESULT __stdcall get_VisualStudioDTEVersionForEditing (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_VisualStudioDTEVersionForEditing (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_VisualStudioDTEVersionForDebugging (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_VisualStudioDTEVersionForDebugging (
+        /*[in]*/ BSTR propertyValue ) = 0;
+};
+
+struct __declspec(uuid("a7be5ad7-5cf0-4c5f-a9fc-b1828a4bdd37"))
+LabVIEWAdapter : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetIsCurrentLabVIEWServerAnEditor))
+    VARIANT_BOOL IsCurrentLabVIEWServerAnEditor;
+    __declspec(property(get=GetCurrentLabVIEWServerVersion))
+    _bstr_t CurrentLabVIEWServerVersion;
+    __declspec(property(get=GetUUTIterationNumberExpression,put=PutUUTIterationNumberExpression))
+    _bstr_t UUTIterationNumberExpression;
+    __declspec(property(get=GetUUTSerialNumberExpression,put=PutUUTSerialNumberExpression))
+    _bstr_t UUTSerialNumberExpression;
+    __declspec(property(get=GetReserveLoadedVIsForExec,put=PutReserveLoadedVIsForExec))
+    VARIANT_BOOL ReserveLoadedVIsForExec;
+    __declspec(property(get=GetCodeTemplatePolicy,put=PutCodeTemplatePolicy))
+    enum AdapterCodeTemplatePolicies CodeTemplatePolicy;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    TS::AdapterPtr AsAdapter ( );
+    HRESULT GetServerInfo (
+        enum LabVIEWServerTypes * serverType,
+        BSTR * serverInfo );
+    HRESULT SetServerInfo (
+        enum LabVIEWServerTypes serverType,
+        _bstr_t serverInfo );
+    _bstr_t GetUUTIterationNumberExpression ( );
+    void PutUUTIterationNumberExpression (
+        _bstr_t propertyValue );
+    _bstr_t GetUUTSerialNumberExpression ( );
+    void PutUUTSerialNumberExpression (
+        _bstr_t propertyValue );
+    VARIANT_BOOL GetReserveLoadedVIsForExec ( );
+    void PutReserveLoadedVIsForExec (
+        VARIANT_BOOL propertyValue );
+    enum AdapterCodeTemplatePolicies GetCodeTemplatePolicy ( );
+    void PutCodeTemplatePolicy (
+        enum AdapterCodeTemplatePolicies propertyValue );
+    VARIANT_BOOL GetClusterPassingEnabled (
+        struct TS::PropertyObject * typeDefinition );
+    HRESULT SetClusterPassingEnabled (
+        struct TS::PropertyObject * typeDefinition,
+        VARIANT_BOOL clusterPassingEnabled );
+    VARIANT_BOOL GetExcludeFromCluster (
+        struct TS::PropertyObject * typeDefinition,
+        _bstr_t propertyLookupString );
+    HRESULT SetExcludeFromCluster (
+        struct TS::PropertyObject * typeDefinition,
+        _bstr_t propertyLookupString,
+        VARIANT_BOOL excludeFromCluster );
+    _bstr_t GetClusterMemberLabel (
+        struct TS::PropertyObject * typeDefinition,
+        _bstr_t propertyLookupString );
+    HRESULT SetClusterMemberLabel (
+        struct TS::PropertyObject * typeDefinition,
+        _bstr_t propertyLookupString,
+        _bstr_t clusterMemberLabel );
+    HRESULT DeployProjectLibrary (
+        _bstr_t targetIPAddress,
+        _bstr_t libraryPath,
+        enum DeployProjectLibraryOptions options );
+    VARIANT_BOOL CheckRemoteSystemStatus (
+        _bstr_t targetIPAddress,
+        long portNumber,
+        long timeout,
+        BSTR * statusMessage );
+    HRESULT Initialize ( );
+    VARIANT_BOOL GetIsCurrentLabVIEWServerAnEditor ( );
+    _bstr_t GetCurrentLabVIEWServerVersion ( );
+    _bstr_t GetVIVersion (
+        _bstr_t Path );
+    TS::PropertyObjectPtr GetExpressVIMenuStructure (
+        VARIANT_BOOL refreshMenu,
+        long parentHWnd );
+    VARIANT_BOOL IsExpressVI (
+        _bstr_t Path,
+        BSTR * displayVIName );
+    VARIANT_BOOL FileExistsInLLB (
+        _bstr_t Path );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_AsAdapter (
+        /*[out,retval]*/ struct TS::Adapter * * adapterObject ) = 0;
+      virtual HRESULT __stdcall raw_GetServerInfo (
+        /*[out]*/ enum LabVIEWServerTypes * serverType,
+        /*[out]*/ BSTR * serverInfo ) = 0;
+      virtual HRESULT __stdcall raw_SetServerInfo (
+        /*[in]*/ enum LabVIEWServerTypes serverType,
+        /*[in]*/ BSTR serverInfo ) = 0;
+      virtual HRESULT __stdcall get_UUTIterationNumberExpression (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_UUTIterationNumberExpression (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_UUTSerialNumberExpression (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_UUTSerialNumberExpression (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ReserveLoadedVIsForExec (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_ReserveLoadedVIsForExec (
+        /*[in]*/ VARIANT_BOOL propertyValue ) = 0;
+      virtual HRESULT __stdcall get_CodeTemplatePolicy (
+        /*[out,retval]*/ enum AdapterCodeTemplatePolicies * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_CodeTemplatePolicy (
+        /*[in]*/ enum AdapterCodeTemplatePolicies propertyValue ) = 0;
+      virtual HRESULT __stdcall raw_GetClusterPassingEnabled (
+        /*[in]*/ struct TS::PropertyObject * typeDefinition,
+        /*[out,retval]*/ VARIANT_BOOL * clusterPassingEnabled ) = 0;
+      virtual HRESULT __stdcall raw_SetClusterPassingEnabled (
+        /*[in]*/ struct TS::PropertyObject * typeDefinition,
+        /*[in]*/ VARIANT_BOOL clusterPassingEnabled ) = 0;
+      virtual HRESULT __stdcall raw_GetExcludeFromCluster (
+        /*[in]*/ struct TS::PropertyObject * typeDefinition,
+        /*[in]*/ BSTR propertyLookupString,
+        /*[out,retval]*/ VARIANT_BOOL * excludeFromCluster ) = 0;
+      virtual HRESULT __stdcall raw_SetExcludeFromCluster (
+        /*[in]*/ struct TS::PropertyObject * typeDefinition,
+        /*[in]*/ BSTR propertyLookupString,
+        /*[in]*/ VARIANT_BOOL excludeFromCluster ) = 0;
+      virtual HRESULT __stdcall raw_GetClusterMemberLabel (
+        /*[in]*/ struct TS::PropertyObject * typeDefinition,
+        /*[in]*/ BSTR propertyLookupString,
+        /*[out,retval]*/ BSTR * clusterMemberLabel ) = 0;
+      virtual HRESULT __stdcall raw_SetClusterMemberLabel (
+        /*[in]*/ struct TS::PropertyObject * typeDefinition,
+        /*[in]*/ BSTR propertyLookupString,
+        /*[in]*/ BSTR clusterMemberLabel ) = 0;
+      virtual HRESULT __stdcall raw_DeployProjectLibrary (
+        /*[in]*/ BSTR targetIPAddress,
+        /*[in]*/ BSTR libraryPath,
+        /*[in]*/ enum DeployProjectLibraryOptions options ) = 0;
+      virtual HRESULT __stdcall raw_CheckRemoteSystemStatus (
+        /*[in]*/ BSTR targetIPAddress,
+        /*[in]*/ long portNumber,
+        /*[in]*/ long timeout,
+        /*[out]*/ BSTR * statusMessage,
+        /*[out,retval]*/ VARIANT_BOOL * hostOK ) = 0;
+      virtual HRESULT __stdcall raw_Initialize ( ) = 0;
+      virtual HRESULT __stdcall get_IsCurrentLabVIEWServerAnEditor (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_CurrentLabVIEWServerVersion (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall raw_GetVIVersion (
+        /*[in]*/ BSTR Path,
+        /*[out,retval]*/ BSTR * viVersion ) = 0;
+      virtual HRESULT __stdcall raw_GetExpressVIMenuStructure (
+        /*[in]*/ VARIANT_BOOL refreshMenu,
+        /*[in]*/ long parentHWnd,
+        /*[out,retval]*/ struct TS::PropertyObject * * returnValue ) = 0;
+      virtual HRESULT __stdcall raw_IsExpressVI (
+        /*[in]*/ BSTR Path,
+        /*[out]*/ BSTR * displayVIName,
+        /*[out,retval]*/ VARIANT_BOOL * returnValue ) = 0;
+      virtual HRESULT __stdcall raw_FileExistsInLLB (
+        /*[in]*/ BSTR Path,
+        /*[out,retval]*/ VARIANT_BOOL * existsInLLB ) = 0;
+};
+
+struct __declspec(uuid("1cec9c33-3b7c-4961-a689-cddf16e9bb02"))
+HTBasicAdapter : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetUseDevelopmentServer,put=PutUseDevelopmentServer))
+    VARIANT_BOOL UseDevelopmentServer;
+    __declspec(property(get=GetRunTimeServerPath,put=PutRunTimeServerPath))
+    _bstr_t RunTimeServerPath;
+    __declspec(property(get=GetDevelopmentServerPath,put=PutDevelopmentServerPath))
+    _bstr_t DevelopmentServerPath;
+    __declspec(property(get=GetDefaultWorkingDirectory,put=PutDefaultWorkingDirectory))
+    enum HTBasicDefaultWorkingDirTypes DefaultWorkingDirectory;
+    __declspec(property(get=GetSpecWorkingDirectoryPath,put=PutSpecWorkingDirectoryPath))
+    _bstr_t SpecWorkingDirectoryPath;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    TS::AdapterPtr AsAdapter ( );
+    VARIANT_BOOL GetUseDevelopmentServer ( );
+    void PutUseDevelopmentServer (
+        VARIANT_BOOL propertyValue );
+    _bstr_t GetRunTimeServerPath ( );
+    void PutRunTimeServerPath (
+        _bstr_t propertyValue );
+    _bstr_t GetDevelopmentServerPath ( );
+    void PutDevelopmentServerPath (
+        _bstr_t propertyValue );
+    enum HTBasicDefaultWorkingDirTypes GetDefaultWorkingDirectory ( );
+    void PutDefaultWorkingDirectory (
+        enum HTBasicDefaultWorkingDirTypes propertyValue );
+    _bstr_t GetSpecWorkingDirectoryPath ( );
+    void PutSpecWorkingDirectoryPath (
+        _bstr_t propertyValue );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_AsAdapter (
+        /*[out,retval]*/ struct TS::Adapter * * adapterObject ) = 0;
+      virtual HRESULT __stdcall get_UseDevelopmentServer (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_UseDevelopmentServer (
+        /*[in]*/ VARIANT_BOOL propertyValue ) = 0;
+      virtual HRESULT __stdcall get_RunTimeServerPath (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_RunTimeServerPath (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_DevelopmentServerPath (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_DevelopmentServerPath (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_DefaultWorkingDirectory (
+        /*[out,retval]*/ enum HTBasicDefaultWorkingDirTypes * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_DefaultWorkingDirectory (
+        /*[in]*/ enum HTBasicDefaultWorkingDirTypes propertyValue ) = 0;
+      virtual HRESULT __stdcall get_SpecWorkingDirectoryPath (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_SpecWorkingDirectoryPath (
+        /*[in]*/ BSTR propertyValue ) = 0;
+};
+
+struct __declspec(uuid("e90a5cab-c0bb-4904-b7be-f90ae50cb0af"))
+SequenceAdapter : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    TS::AdapterPtr AsAdapter ( );
+    TS::SequenceFilePtr GetSequenceFile (
+        _bstr_t Path );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_AsAdapter (
+        /*[out,retval]*/ struct TS::Adapter * * adapterObject ) = 0;
+      virtual HRESULT __stdcall raw_GetSequenceFile (
+        /*[in]*/ BSTR Path,
+        /*[out,retval]*/ struct TS::SequenceFile * * sequenceFile ) = 0;
+};
+
+struct __declspec(uuid("745fc851-11d0-40ed-ae63-ece0e7753424"))
+DotNetAdapter : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetVisualStudioDTEVersionForDebugging,put=PutVisualStudioDTEVersionForDebugging))
+    _bstr_t VisualStudioDTEVersionForDebugging;
+    __declspec(property(get=GetVisualStudioDTEVersionForEditing,put=PutVisualStudioDTEVersionForEditing))
+    _bstr_t VisualStudioDTEVersionForEditing;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    TS::AdapterPtr AsAdapter ( );
+    VARIANT_BOOL GetStructurePassingEnabled (
+        struct TS::PropertyObject * typeDefinition );
+    HRESULT SetStructurePassingEnabled (
+        struct TS::PropertyObject * typeDefinition,
+        VARIANT_BOOL structPassingEnabled );
+    VARIANT_BOOL GetExcludeFromStructure (
+        struct TS::PropertyObject * typeDefinition,
+        _bstr_t propertyLookupString );
+    HRESULT SetExcludeFromStructure (
+        struct TS::PropertyObject * typeDefinition,
+        _bstr_t propertyLookupString,
+        VARIANT_BOOL excludeFromStructure );
+    _bstr_t GetStructureMemberLabel (
+        struct TS::PropertyObject * typeDefinition,
+        _bstr_t propertyLookupString );
+    HRESULT SetStructureMemberLabel (
+        struct TS::PropertyObject * typeDefinition,
+        _bstr_t propertyLookupString,
+        _bstr_t structureMemberLabel );
+    _bstr_t GetVisualStudioDTEVersionForEditing ( );
+    void PutVisualStudioDTEVersionForEditing (
+        _bstr_t propertyValue );
+    _bstr_t GetVisualStudioDTEVersionForDebugging ( );
+    void PutVisualStudioDTEVersionForDebugging (
+        _bstr_t propertyValue );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_AsAdapter (
+        /*[out,retval]*/ struct TS::Adapter * * adapterObject ) = 0;
+      virtual HRESULT __stdcall raw_GetStructurePassingEnabled (
+        /*[in]*/ struct TS::PropertyObject * typeDefinition,
+        /*[out,retval]*/ VARIANT_BOOL * structPassingEnabled ) = 0;
+      virtual HRESULT __stdcall raw_SetStructurePassingEnabled (
+        /*[in]*/ struct TS::PropertyObject * typeDefinition,
+        /*[in]*/ VARIANT_BOOL structPassingEnabled ) = 0;
+      virtual HRESULT __stdcall raw_GetExcludeFromStructure (
+        /*[in]*/ struct TS::PropertyObject * typeDefinition,
+        /*[in]*/ BSTR propertyLookupString,
+        /*[out,retval]*/ VARIANT_BOOL * excludeFromStructure ) = 0;
+      virtual HRESULT __stdcall raw_SetExcludeFromStructure (
+        /*[in]*/ struct TS::PropertyObject * typeDefinition,
+        /*[in]*/ BSTR propertyLookupString,
+        /*[in]*/ VARIANT_BOOL excludeFromStructure ) = 0;
+      virtual HRESULT __stdcall raw_GetStructureMemberLabel (
+        /*[in]*/ struct TS::PropertyObject * typeDefinition,
+        /*[in]*/ BSTR propertyLookupString,
+        /*[out,retval]*/ BSTR * structureMemberLabel ) = 0;
+      virtual HRESULT __stdcall raw_SetStructureMemberLabel (
+        /*[in]*/ struct TS::PropertyObject * typeDefinition,
+        /*[in]*/ BSTR propertyLookupString,
+        /*[in]*/ BSTR structureMemberLabel ) = 0;
+      virtual HRESULT __stdcall get_VisualStudioDTEVersionForEditing (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_VisualStudioDTEVersionForEditing (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_VisualStudioDTEVersionForDebugging (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_VisualStudioDTEVersionForDebugging (
+        /*[in]*/ BSTR propertyValue ) = 0;
+};
+
+struct __declspec(uuid("65ad2684-99d8-455c-8686-151367979ad9"))
+ActiveXParameter : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetIsOptional))
+    VARIANT_BOOL IsOptional;
+    __declspec(property(get=GetValueExpr,put=PutValueExpr))
+    _bstr_t ValueExpr;
+    __declspec(property(get=GetParameterName))
+    _bstr_t ParameterName;
+    __declspec(property(get=GetType))
+    unsigned short Type;
+    __declspec(property(get=GetDisplayType))
+    _bstr_t DisplayType;
+    __declspec(property(get=GetDirection))
+    long Direction;
+    __declspec(property(get=GetUseDefault,put=PutUseDefault))
+    VARIANT_BOOL UseDefault;
+    __declspec(property(get=GetUserData))
+    TS::PropertyObjectPtr UserData;
+    __declspec(property(get=GetValidEvaluationTypes))
+    TS::EvaluationTypesPtr ValidEvaluationTypes;
+    __declspec(property(get=GetEnumTypeName))
+    _bstr_t EnumTypeName;
+    __declspec(property(get=GetDefaultValue))
+    _bstr_t DefaultValue;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    TS::PropertyObjectPtr AsPropertyObject ( );
+    _bstr_t GetValueExpr ( );
+    void PutValueExpr (
+        _bstr_t propertyValue );
+    _bstr_t GetParameterName ( );
+    unsigned short GetType ( );
+    _bstr_t GetDisplayType ( );
+    long GetDirection ( );
+    VARIANT_BOOL GetUseDefault ( );
+    void PutUseDefault (
+        VARIANT_BOOL propertyValue );
+    TS::PropertyObjectPtr GetUserData ( );
+    TS::EvaluationTypesPtr GetValidEvaluationTypes ( );
+    _bstr_t GetEnumTypeName ( );
+    SAFEARRAY * GetEnumValues ( );
+    _bstr_t GetDefaultValue ( );
+    VARIANT_BOOL GetIsOptional ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_AsPropertyObject (
+        /*[out,retval]*/ struct TS::PropertyObject * * returnValue ) = 0;
+      virtual HRESULT __stdcall get_ValueExpr (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_ValueExpr (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ParameterName (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_Type (
+        /*[out,retval]*/ unsigned short * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_DisplayType (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_Direction (
+        /*[out,retval]*/ long * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_UseDefault (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_UseDefault (
+        /*[in]*/ VARIANT_BOOL propertyValue ) = 0;
+      virtual HRESULT __stdcall get_UserData (
+        /*[out,retval]*/ struct TS::PropertyObject * * returnValue ) = 0;
+      virtual HRESULT __stdcall get_ValidEvaluationTypes (
+        /*[out,retval]*/ struct TS::EvaluationTypes * * val ) = 0;
+      virtual HRESULT __stdcall get_EnumTypeName (
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall raw_GetEnumValues (
+        /*[out,retval]*/ SAFEARRAY * * val ) = 0;
+      virtual HRESULT __stdcall get_DefaultValue (
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall get_IsOptional (
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+};
+
+struct __declspec(uuid("229f6aaf-8a75-4dca-8852-f845bac4c9f8"))
+ActiveXParameters : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    ActiveXParameterPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    ActiveXParameterPtr GetItem (
+        const _variant_t & index );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ VARIANT index,
+        /*[out,retval]*/ struct ActiveXParameter * * activeXParameterObject ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * numberOfParameters ) = 0;
+};
+
+struct __declspec(uuid("bb6a2e80-b2e4-4574-bbfe-2c0a33ebd16e"))
+ActiveXModule : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetFilePath,put=PutFilePath))
+    _bstr_t FilePath;
+    __declspec(property(get=GetActiveXReferenceExpr,put=PutActiveXReferenceExpr))
+    _bstr_t ActiveXReferenceExpr;
+    __declspec(property(get=GetServerId,put=PutServerId))
+    _bstr_t ServerId;
+    __declspec(property(get=GetCoClassName,put=PutCoClassName))
+    _bstr_t CoClassName;
+    __declspec(property(get=GetInterfaceName,put=PutInterfaceName))
+    _bstr_t InterfaceName;
+    __declspec(property(get=GetCreateOption,put=PutCreateOption))
+    enum ActiveXModuleCreateOptions CreateOption;
+    __declspec(property(get=GetUseStepLoadOptions,put=PutUseStepLoadOptions))
+    VARIANT_BOOL UseStepLoadOptions;
+    __declspec(property(get=GetMemberType,put=PutMemberType))
+    enum ActiveXModuleMemberTypes MemberType;
+    __declspec(property(get=GetMemberName,put=PutMemberName))
+    _bstr_t MemberName;
+    __declspec(property(get=GetParameters))
+    ActiveXParametersPtr Parameters;
+    __declspec(property(get=GetRemoteHost,put=PutRemoteHost))
+    _bstr_t RemoteHost;
+    __declspec(property(get=GetSpecifyHostByExpression,put=PutSpecifyHostByExpression))
+    VARIANT_BOOL SpecifyHostByExpression;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    TS::ModulePtr AsModule ( );
+    _bstr_t GetActiveXReferenceExpr ( );
+    void PutActiveXReferenceExpr (
+        _bstr_t propertyValue );
+    _bstr_t GetServerId ( );
+    void PutServerId (
+        _bstr_t propertyValue );
+    _bstr_t GetCoClassName ( );
+    void PutCoClassName (
+        _bstr_t propertyValue );
+    _bstr_t GetInterfaceName ( );
+    void PutInterfaceName (
+        _bstr_t propertyValue );
+    enum ActiveXModuleCreateOptions GetCreateOption ( );
+    void PutCreateOption (
+        enum ActiveXModuleCreateOptions propertyValue );
+    VARIANT_BOOL GetUseStepLoadOptions ( );
+    void PutUseStepLoadOptions (
+        VARIANT_BOOL propertyValue );
+    _bstr_t GetRemoteHost ( );
+    void PutRemoteHost (
+        _bstr_t propertyValue );
+    VARIANT_BOOL GetSpecifyHostByExpression ( );
+    void PutSpecifyHostByExpression (
+        VARIANT_BOOL propertyValue );
+    _bstr_t GetFilePath ( );
+    void PutFilePath (
+        _bstr_t propertyValue );
+    enum ActiveXModuleMemberTypes GetMemberType ( );
+    void PutMemberType (
+        enum ActiveXModuleMemberTypes propertyValue );
+    _bstr_t GetMemberName ( );
+    void PutMemberName (
+        _bstr_t propertyValue );
+    VARIANT_BOOL LoadMemberInfo (
+        VARIANT_BOOL discardParameterValues );
+    ActiveXParametersPtr GetParameters ( );
+    VARIANT_BOOL ReloadServer ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_AsModule (
+        /*[out,retval]*/ struct TS::Module * * moduleObject ) = 0;
+      virtual HRESULT __stdcall get_ActiveXReferenceExpr (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_ActiveXReferenceExpr (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ServerId (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_ServerId (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_CoClassName (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_CoClassName (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_InterfaceName (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_InterfaceName (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_CreateOption (
+        /*[out,retval]*/ enum ActiveXModuleCreateOptions * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_CreateOption (
+        /*[in]*/ enum ActiveXModuleCreateOptions propertyValue ) = 0;
+      virtual HRESULT __stdcall get_UseStepLoadOptions (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_UseStepLoadOptions (
+        /*[in]*/ VARIANT_BOOL propertyValue ) = 0;
+      virtual HRESULT __stdcall get_RemoteHost (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_RemoteHost (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_SpecifyHostByExpression (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_SpecifyHostByExpression (
+        /*[in]*/ VARIANT_BOOL propertyValue ) = 0;
+      virtual HRESULT __stdcall get_FilePath (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_FilePath (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_MemberType (
+        /*[out,retval]*/ enum ActiveXModuleMemberTypes * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_MemberType (
+        /*[in]*/ enum ActiveXModuleMemberTypes propertyValue ) = 0;
+      virtual HRESULT __stdcall get_MemberName (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_MemberName (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall raw_LoadMemberInfo (
+        /*[in]*/ VARIANT_BOOL discardParameterValues,
+        /*[out,retval]*/ VARIANT_BOOL * hasMemberInfo ) = 0;
+      virtual HRESULT __stdcall get_Parameters (
+        /*[out,retval]*/ struct ActiveXParameters * * propertyValue ) = 0;
+      virtual HRESULT __stdcall raw_ReloadServer (
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+};
+
+struct __declspec(uuid("2a5a2c8a-cd53-410f-9f43-0f90015f6957"))
+CommonCModule : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetModulePath,put=PutModulePath))
+    _bstr_t ModulePath;
+    __declspec(property(get=GetFunctionName,put=PutFunctionName))
+    _bstr_t FunctionName;
+    __declspec(property(get=GetSourceFilePath,put=PutSourceFilePath))
+    _bstr_t SourceFilePath;
+    __declspec(property(get=GetProjectFilePath,put=PutProjectFilePath))
+    _bstr_t ProjectFilePath;
+    __declspec(property(get=GetWorkspaceFilePath,put=PutWorkspaceFilePath))
+    _bstr_t WorkspaceFilePath;
+    __declspec(property(get=GetFunctionCall))
+    _bstr_t FunctionCall;
+    __declspec(property(get=GetCodeTemplateName,put=PutCodeTemplateName))
+    _bstr_t CodeTemplateName;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    TS::ModulePtr AsModule ( );
+    _bstr_t GetModulePath ( );
+    void PutModulePath (
+        _bstr_t propertyValue );
+    _bstr_t GetFunctionName ( );
+    void PutFunctionName (
+        _bstr_t propertyValue );
+    VARIANT_BOOL LoadPrototype (
+        VARIANT_BOOL discardParameterValues );
+    _bstr_t GetSourceFilePath ( );
+    void PutSourceFilePath (
+        _bstr_t propertyValue );
+    _bstr_t GetProjectFilePath ( );
+    void PutProjectFilePath (
+        _bstr_t propertyValue );
+    _bstr_t GetWorkspaceFilePath ( );
+    void PutWorkspaceFilePath (
+        _bstr_t propertyValue );
+    VARIANT_BOOL VerifyPrototypeFromSource ( );
+    HRESULT UpdatePrototypeFromSource (
+        VARIANT_BOOL keepParameterValues );
+    _bstr_t GetFunctionCall ( );
+    VARIANT_BOOL AcceptFunctionCall (
+        struct TS::PropertyObject * evaluationContext,
+        _bstr_t funcCall,
+        VARIANT_BOOL allowEditingPrototype,
+        VARIANT_BOOL * prototypeModified,
+        VARIANT_BOOL * cancelled );
+    _bstr_t GetCodeTemplateName ( );
+    void PutCodeTemplateName (
+        _bstr_t val );
+    VARIANT_BOOL LoadPrototypeFromCodeTemplate ( );
+    VARIANT_BOOL VerifyPrototype (
+        enum CommonCVerifyPrototypeResults * result );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_AsModule (
+        /*[out,retval]*/ struct TS::Module * * moduleObject ) = 0;
+      virtual HRESULT __stdcall get_ModulePath (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_ModulePath (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_FunctionName (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_FunctionName (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall raw_LoadPrototype (
+        /*[in]*/ VARIANT_BOOL discardParameterValues,
+        /*[out,retval]*/ VARIANT_BOOL * hasPrototypeInfo ) = 0;
+      virtual HRESULT __stdcall get_SourceFilePath (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_SourceFilePath (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ProjectFilePath (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_ProjectFilePath (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_WorkspaceFilePath (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_WorkspaceFilePath (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall raw_VerifyPrototypeFromSource (
+        /*[out,retval]*/ VARIANT_BOOL * parametersMatchSource ) = 0;
+      virtual HRESULT __stdcall raw_UpdatePrototypeFromSource (
+        /*[in]*/ VARIANT_BOOL keepParameterValues ) = 0;
+      virtual HRESULT __stdcall get_FunctionCall (
+        /*[out,retval]*/ BSTR * returnValue ) = 0;
+      virtual HRESULT __stdcall raw_AcceptFunctionCall (
+        /*[in]*/ struct TS::PropertyObject * evaluationContext,
+        /*[in]*/ BSTR funcCall,
+        /*[in]*/ VARIANT_BOOL allowEditingPrototype,
+        /*[out]*/ VARIANT_BOOL * prototypeModified,
+        /*[out]*/ VARIANT_BOOL * cancelled,
+        /*[out,retval]*/ VARIANT_BOOL * applyChanges ) = 0;
+      virtual HRESULT __stdcall get_CodeTemplateName (
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall put_CodeTemplateName (
+        /*[in]*/ BSTR val ) = 0;
+      virtual HRESULT __stdcall raw_LoadPrototypeFromCodeTemplate (
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+      virtual HRESULT __stdcall raw_VerifyPrototype (
+        /*[out]*/ enum CommonCVerifyPrototypeResults * result,
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+};
+
+struct __declspec(uuid("55560cec-f1d8-4740-873c-d00cb8c351fb"))
+CommonCParameter : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetStringBufferSize,put=PutStringBufferSize))
+    long StringBufferSize;
+    __declspec(property(get=GetStructType,put=PutStructType))
+    _bstr_t StructType;
+    __declspec(property(get=GetArrayDimensions,put=PutArrayDimensions))
+    long ArrayDimensions;
+    __declspec(property(get=GetUnknownInfo,put=PutUnknownInfo))
+    enum CommonCParameterUnknownInfoFlags UnknownInfo;
+    __declspec(property(get=GetUserData))
+    TS::PropertyObjectPtr UserData;
+    __declspec(property(get=GetPassArrayElementBy,put=PutPassArrayElementBy))
+    enum CommonCParameterPassOptions PassArrayElementBy;
+    __declspec(property(get=GetValidEvaluationTypes))
+    TS::EvaluationTypesPtr ValidEvaluationTypes;
+    __declspec(property(get=GetStringBufferSizeExpr,put=PutStringBufferSizeExpr))
+    _bstr_t StringBufferSizeExpr;
+    __declspec(property(get=GetEnumTypeName))
+    _bstr_t EnumTypeName;
+    __declspec(property(get=GetDisplayValueExpr))
+    _bstr_t DisplayValueExpr;
+    __declspec(property(get=GetParameterName,put=PutParameterName))
+    _bstr_t ParameterName;
+    __declspec(property(get=GetValueExpr,put=PutValueExpr))
+    _bstr_t ValueExpr;
+    __declspec(property(get=GetPass,put=PutPass))
+    enum CommonCParameterPassOptions Pass;
+    __declspec(property(get=GetResultAction,put=PutResultAction))
+    enum CommonCParameterResultActions ResultAction;
+    __declspec(property(get=GetFlags,put=PutFlags))
+    long Flags;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    TS::PropertyObjectPtr AsPropertyObject ( );
+    _bstr_t GetParameterName ( );
+    void PutParameterName (
+        _bstr_t propertyValue );
+    _bstr_t GetValueExpr ( );
+    void PutValueExpr (
+        _bstr_t propertyValue );
+    _bstr_t GetDescription ( );
+    enum CommonCParameterPassOptions GetPass ( );
+    void PutPass (
+        enum CommonCParameterPassOptions propertyValue );
+    enum CommonCParameterResultActions GetResultAction ( );
+    void PutResultAction (
+        enum CommonCParameterResultActions propertyValue );
+    long GetFlags ( );
+    void PutFlags (
+        long propertyValue );
+    long GetStringBufferSize ( );
+    void PutStringBufferSize (
+        long propertyValue );
+    _bstr_t GetStructType ( );
+    void PutStructType (
+        _bstr_t propertyValue );
+    long GetArrayDimensions ( );
+    void PutArrayDimensions (
+        long propertyValue );
+    long GetArrayDimensionSize (
+        long dimension );
+    HRESULT SetArrayDimensionSize (
+        long dimension,
+        long arrayDimensionSize );
+    enum CommonCParameterUnknownInfoFlags GetUnknownInfo ( );
+    TS::PropertyObjectPtr GetUserData ( );
+    enum CommonCParameterPassOptions GetPassArrayElementBy ( );
+    void PutPassArrayElementBy (
+        enum CommonCParameterPassOptions propertyValue );
+    _bstr_t GetArrayDimensionSizeExpr (
+        long dimension );
+    HRESULT SetArrayDimensionSizeExpr (
+        long dimension,
+        _bstr_t arrayDimensionSizeExpr );
+    TS::EvaluationTypesPtr GetValidEvaluationTypes ( );
+    _bstr_t GetStringBufferSizeExpr ( );
+    void PutStringBufferSizeExpr (
+        _bstr_t propertyValue );
+    _bstr_t GetEnumTypeName ( );
+    SAFEARRAY * GetEnumValues ( );
+    _bstr_t GetDisplayValueExpr ( );
+    void PutUnknownInfo (
+        enum CommonCParameterUnknownInfoFlags propertyValue );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_AsPropertyObject (
+        /*[out,retval]*/ struct TS::PropertyObject * * returnValue ) = 0;
+      virtual HRESULT __stdcall get_ParameterName (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_ParameterName (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ValueExpr (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_ValueExpr (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall raw_GetDescription (
+        /*[out,retval]*/ BSTR * parameterDescription ) = 0;
+      virtual HRESULT __stdcall get_Pass (
+        /*[out,retval]*/ enum CommonCParameterPassOptions * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_Pass (
+        /*[in]*/ enum CommonCParameterPassOptions propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ResultAction (
+        /*[out,retval]*/ enum CommonCParameterResultActions * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_ResultAction (
+        /*[in]*/ enum CommonCParameterResultActions propertyValue ) = 0;
+      virtual HRESULT __stdcall get_Flags (
+        /*[out,retval]*/ long * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_Flags (
+        /*[in]*/ long propertyValue ) = 0;
+      virtual HRESULT __stdcall get_StringBufferSize (
+        /*[out,retval]*/ long * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_StringBufferSize (
+        /*[in]*/ long propertyValue ) = 0;
+      virtual HRESULT __stdcall get_StructType (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_StructType (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ArrayDimensions (
+        /*[out,retval]*/ long * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_ArrayDimensions (
+        /*[in]*/ long propertyValue ) = 0;
+      virtual HRESULT __stdcall raw_GetArrayDimensionSize (
+        /*[in]*/ long dimension,
+        /*[out,retval]*/ long * arrayDimensionSize ) = 0;
+      virtual HRESULT __stdcall raw_SetArrayDimensionSize (
+        /*[in]*/ long dimension,
+        /*[in]*/ long arrayDimensionSize ) = 0;
+      virtual HRESULT __stdcall get_UnknownInfo (
+        /*[out,retval]*/ enum CommonCParameterUnknownInfoFlags * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_UserData (
+        /*[out,retval]*/ struct TS::PropertyObject * * returnValue ) = 0;
+      virtual HRESULT __stdcall get_PassArrayElementBy (
+        /*[out,retval]*/ enum CommonCParameterPassOptions * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_PassArrayElementBy (
+        /*[in]*/ enum CommonCParameterPassOptions propertyValue ) = 0;
+      virtual HRESULT __stdcall raw_GetArrayDimensionSizeExpr (
+        /*[in]*/ long dimension,
+        /*[out,retval]*/ BSTR * arrayDimensionSizeExpr ) = 0;
+      virtual HRESULT __stdcall raw_SetArrayDimensionSizeExpr (
+        /*[in]*/ long dimension,
+        /*[in]*/ BSTR arrayDimensionSizeExpr ) = 0;
+      virtual HRESULT __stdcall get_ValidEvaluationTypes (
+        /*[out,retval]*/ struct TS::EvaluationTypes * * val ) = 0;
+      virtual HRESULT __stdcall get_StringBufferSizeExpr (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_StringBufferSizeExpr (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_EnumTypeName (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall raw_GetEnumValues (
+        /*[out,retval]*/ SAFEARRAY * * val ) = 0;
+      virtual HRESULT __stdcall get_DisplayValueExpr (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_UnknownInfo (
+        /*[in]*/ enum CommonCParameterUnknownInfoFlags propertyValue ) = 0;
+};
+
+struct __declspec(uuid("5ea166e1-22ad-4364-a106-e219ae2dc658"))
+CVIParameter : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetCategory,put=PutCategory))
+    enum CVIParameterCategories Category;
+    __declspec(property(get=GetType,put=PutType))
+    enum CommonCParameterTypes Type;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    CommonCParameterPtr AsCommonCParameter ( );
+    enum CVIParameterCategories GetCategory ( );
+    void PutCategory (
+        enum CVIParameterCategories propertyValue );
+    enum CommonCParameterTypes GetType ( );
+    void PutType (
+        enum CommonCParameterTypes propertyValue );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_AsCommonCParameter (
+        /*[out,retval]*/ struct CommonCParameter * * commonCParameterObject ) = 0;
+      virtual HRESULT __stdcall get_Category (
+        /*[out,retval]*/ enum CVIParameterCategories * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_Category (
+        /*[in]*/ enum CVIParameterCategories propertyValue ) = 0;
+      virtual HRESULT __stdcall get_Type (
+        /*[out,retval]*/ enum CommonCParameterTypes * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_Type (
+        /*[in]*/ enum CommonCParameterTypes propertyValue ) = 0;
+};
+
+struct __declspec(uuid("5026e32e-d18c-45cc-8927-a92dc6bdeab6"))
+CVIParameters : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    CVIParameterPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    CVIParameterPtr GetItem (
+        const _variant_t & index );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    HRESULT New (
+        long index,
+        _bstr_t ParameterName,
+        _bstr_t parameterValueExpr,
+        enum CVIParameterCategories parameterCategory,
+        enum CommonCParameterPassOptions parameterPass,
+        enum CommonCParameterTypes parameterType );
+    HRESULT Delete (
+        long index );
+    HRESULT Move (
+        long index,
+        long newIndex );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ VARIANT index,
+        /*[out,retval]*/ struct CVIParameter * * cviParameterObject ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * numberOfParameters ) = 0;
+      virtual HRESULT __stdcall raw_New (
+        /*[in]*/ long index,
+        /*[in]*/ BSTR ParameterName,
+        /*[in]*/ BSTR parameterValueExpr,
+        /*[in]*/ enum CVIParameterCategories parameterCategory,
+        /*[in]*/ enum CommonCParameterPassOptions parameterPass,
+        /*[in]*/ enum CommonCParameterTypes parameterType ) = 0;
+      virtual HRESULT __stdcall raw_Delete (
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall raw_Move (
+        /*[in]*/ long index,
+        /*[in]*/ long newIndex ) = 0;
+};
+
+struct __declspec(uuid("56460000-7d59-47e5-bbea-0773c9dbba5c"))
+CVIModule : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetModuleType,put=PutModuleType))
+    enum CVIModuleTypes ModuleType;
+    __declspec(property(get=GetAlwaysRunInProcess,put=PutAlwaysRunInProcess))
+    VARIANT_BOOL AlwaysRunInProcess;
+    __declspec(property(get=GetParameters))
+    CVIParametersPtr Parameters;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    CommonCModulePtr AsCommonCModule ( );
+    enum CVIModuleTypes GetModuleType ( );
+    void PutModuleType (
+        enum CVIModuleTypes propertyValue );
+    VARIANT_BOOL GetAlwaysRunInProcess ( );
+    void PutAlwaysRunInProcess (
+        VARIANT_BOOL propertyValue );
+    CVIParametersPtr GetParameters ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_AsCommonCModule (
+        /*[out,retval]*/ struct CommonCModule * * commonCModuleObject ) = 0;
+      virtual HRESULT __stdcall get_ModuleType (
+        /*[out,retval]*/ enum CVIModuleTypes * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_ModuleType (
+        /*[in]*/ enum CVIModuleTypes propertyValue ) = 0;
+      virtual HRESULT __stdcall get_AlwaysRunInProcess (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_AlwaysRunInProcess (
+        /*[in]*/ VARIANT_BOOL propertyValue ) = 0;
+      virtual HRESULT __stdcall get_Parameters (
+        /*[out,retval]*/ struct CVIParameters * * propertyValue ) = 0;
+};
+
+struct __declspec(uuid("03ed7ba5-4cb0-413b-a7a5-33a6caeb5e4c"))
+DllParameter : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetType,put=PutType))
+    enum CommonCParameterTypes Type;
+    __declspec(property(get=GetImaginaryPartValueExpr,put=PutImaginaryPartValueExpr))
+    _bstr_t ImaginaryPartValueExpr;
+    __declspec(property(get=GetTSObjectParameterType,put=PutTSObjectParameterType))
+    _bstr_t TSObjectParameterType;
+    __declspec(property(get=GetCategory,put=PutCategory))
+    enum DllParameterCategories Category;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    CommonCParameterPtr AsCommonCParameter ( );
+    _bstr_t GetTSObjectParameterType ( );
+    void PutTSObjectParameterType (
+        _bstr_t propertyValue );
+    enum DllParameterCategories GetCategory ( );
+    void PutCategory (
+        enum DllParameterCategories propertyValue );
+    enum CommonCParameterTypes GetType ( );
+    void PutType (
+        enum CommonCParameterTypes propertyValue );
+    _bstr_t GetImaginaryPartValueExpr ( );
+    void PutImaginaryPartValueExpr (
+        _bstr_t propertyValue );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_AsCommonCParameter (
+        /*[out,retval]*/ struct CommonCParameter * * commonCParameterObject ) = 0;
+      virtual HRESULT __stdcall get_TSObjectParameterType (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_TSObjectParameterType (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_Category (
+        /*[out,retval]*/ enum DllParameterCategories * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_Category (
+        /*[in]*/ enum DllParameterCategories propertyValue ) = 0;
+      virtual HRESULT __stdcall get_Type (
+        /*[out,retval]*/ enum CommonCParameterTypes * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_Type (
+        /*[in]*/ enum CommonCParameterTypes propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ImaginaryPartValueExpr (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_ImaginaryPartValueExpr (
+        /*[in]*/ BSTR propertyValue ) = 0;
+};
+
+struct __declspec(uuid("b7ba2780-540f-46c4-b9f3-fd2726ff7a92"))
+DllParameters : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    DllParameterPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    DllParameterPtr GetItem (
+        const _variant_t & index );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    HRESULT New (
+        long index,
+        _bstr_t ParameterName,
+        _bstr_t parameterValueExpr,
+        enum DllParameterCategories parameterCategory,
+        enum CommonCParameterPassOptions parameterPass,
+        enum CommonCParameterTypes parameterType );
+    HRESULT Delete (
+        long index );
+    HRESULT Move (
+        long index,
+        long newIndex );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ VARIANT index,
+        /*[out,retval]*/ struct DllParameter * * dllParameterObject ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * numberOfParameters ) = 0;
+      virtual HRESULT __stdcall raw_New (
+        /*[in]*/ long index,
+        /*[in]*/ BSTR ParameterName,
+        /*[in]*/ BSTR parameterValueExpr,
+        /*[in]*/ enum DllParameterCategories parameterCategory,
+        /*[in]*/ enum CommonCParameterPassOptions parameterPass,
+        /*[in]*/ enum CommonCParameterTypes parameterType ) = 0;
+      virtual HRESULT __stdcall raw_Delete (
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall raw_Move (
+        /*[in]*/ long index,
+        /*[in]*/ long newIndex ) = 0;
+};
+
+struct __declspec(uuid("0910656a-38ec-4033-91b5-e6efa1982c22"))
+DllModule : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetCodeCreationTarget,put=PutCodeCreationTarget))
+    enum DllCodeCreationTargets CodeCreationTarget;
+    __declspec(property(get=GetParameters))
+    DllParametersPtr Parameters;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    CommonCModulePtr AsCommonCModule ( );
+    DllParametersPtr GetParameters ( );
+    enum DllCodeCreationTargets GetCodeCreationTarget ( );
+    void PutCodeCreationTarget (
+        enum DllCodeCreationTargets val );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_AsCommonCModule (
+        /*[out,retval]*/ struct CommonCModule * * commonCModuleObject ) = 0;
+      virtual HRESULT __stdcall get_Parameters (
+        /*[out,retval]*/ struct DllParameters * * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_CodeCreationTarget (
+        /*[out,retval]*/ enum DllCodeCreationTargets * val ) = 0;
+      virtual HRESULT __stdcall put_CodeCreationTarget (
+        /*[in]*/ enum DllCodeCreationTargets val ) = 0;
+};
+
+struct __declspec(uuid("539f8691-9d5a-4714-ab81-06ea9fb2472c"))
+HTBasicModule : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetSubroutineFilePath,put=PutSubroutineFilePath))
+    _bstr_t SubroutineFilePath;
+    __declspec(property(get=GetSubroutineName,put=PutSubroutineName))
+    _bstr_t SubroutineName;
+    __declspec(property(get=GetShowHTBasicApp,put=PutShowHTBasicApp))
+    VARIANT_BOOL ShowHTBasicApp;
+    __declspec(property(get=GetWorkingDirectory,put=PutWorkingDirectory))
+    enum HTBasicWorkingDirTypes WorkingDirectory;
+    __declspec(property(get=GetWorkingDirectorySpecifiedPath,put=PutWorkingDirectorySpecifiedPath))
+    _bstr_t WorkingDirectorySpecifiedPath;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    TS::ModulePtr AsModule ( );
+    _bstr_t GetSubroutineFilePath ( );
+    void PutSubroutineFilePath (
+        _bstr_t propertyValue );
+    _bstr_t GetSubroutineName ( );
+    void PutSubroutineName (
+        _bstr_t propertyValue );
+    VARIANT_BOOL GetShowHTBasicApp ( );
+    void PutShowHTBasicApp (
+        VARIANT_BOOL propertyValue );
+    enum HTBasicWorkingDirTypes GetWorkingDirectory ( );
+    void PutWorkingDirectory (
+        enum HTBasicWorkingDirTypes propertyValue );
+    _bstr_t GetWorkingDirectorySpecifiedPath ( );
+    void PutWorkingDirectorySpecifiedPath (
+        _bstr_t propertyValue );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_AsModule (
+        /*[out,retval]*/ struct TS::Module * * moduleObject ) = 0;
+      virtual HRESULT __stdcall get_SubroutineFilePath (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_SubroutineFilePath (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_SubroutineName (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_SubroutineName (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ShowHTBasicApp (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_ShowHTBasicApp (
+        /*[in]*/ VARIANT_BOOL propertyValue ) = 0;
+      virtual HRESULT __stdcall get_WorkingDirectory (
+        /*[out,retval]*/ enum HTBasicWorkingDirTypes * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_WorkingDirectory (
+        /*[in]*/ enum HTBasicWorkingDirTypes propertyValue ) = 0;
+      virtual HRESULT __stdcall get_WorkingDirectorySpecifiedPath (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_WorkingDirectorySpecifiedPath (
+        /*[in]*/ BSTR propertyValue ) = 0;
+};
+
+struct __declspec(uuid("da92a9c7-4952-4c60-b965-870c5174295f"))
+SequenceCallParameter : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetUseDefaultValue,put=PutUseDefaultValue))
+    VARIANT_BOOL UseDefaultValue;
+    __declspec(property(get=GetValueExpr,put=PutValueExpr))
+    _bstr_t ValueExpr;
+    __declspec(property(get=GetUserData))
+    TS::PropertyObjectPtr UserData;
+    __declspec(property(get=GetValidEvaluationTypes))
+    TS::EvaluationTypesPtr ValidEvaluationTypes;
+    __declspec(property(get=GetType))
+    enum TS::PropertyValueTypes Type;
+    __declspec(property(get=GetName))
+    _bstr_t Name;
+    __declspec(property(get=GetPassByReference))
+    VARIANT_BOOL PassByReference;
+    __declspec(property(get=GetTypeDisplayString))
+    _bstr_t TypeDisplayString;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    TS::PropertyObjectPtr AsPropertyObject ( );
+    VARIANT_BOOL GetUseDefaultValue ( );
+    void PutUseDefaultValue (
+        VARIANT_BOOL propertyValue );
+    _bstr_t GetValueExpr ( );
+    void PutValueExpr (
+        _bstr_t propertyValue );
+    TS::PropertyObjectPtr GetUserData ( );
+    TS::EvaluationTypesPtr GetValidEvaluationTypes ( );
+    enum TS::PropertyValueTypes GetType ( );
+    _bstr_t GetName ( );
+    VARIANT_BOOL GetPassByReference ( );
+    _bstr_t GetTypeDisplayString ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_AsPropertyObject (
+        /*[out,retval]*/ struct TS::PropertyObject * * returnValue ) = 0;
+      virtual HRESULT __stdcall get_UseDefaultValue (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_UseDefaultValue (
+        /*[in]*/ VARIANT_BOOL propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ValueExpr (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_ValueExpr (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_UserData (
+        /*[out,retval]*/ struct TS::PropertyObject * * returnValue ) = 0;
+      virtual HRESULT __stdcall get_ValidEvaluationTypes (
+        /*[out,retval]*/ struct TS::EvaluationTypes * * val ) = 0;
+      virtual HRESULT __stdcall get_Type (
+        /*[out,retval]*/ enum TS::PropertyValueTypes * val ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_PassByReference (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_TypeDisplayString (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+};
+
+struct __declspec(uuid("e2a80887-03bd-4a84-afc1-48af74ac1dad"))
+SequenceCallParameters : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    SequenceCallParameterPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    SequenceCallParameterPtr GetItem (
+        const _variant_t & index );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ VARIANT index,
+        /*[out,retval]*/ struct SequenceCallParameter * * seqCallParameterObject ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * numberOfParameters ) = 0;
+};
+
+struct __declspec(uuid("b874cd3d-f183-4c01-8f5a-3964b18d2caa"))
+SequenceCallModule : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetNewThreadOptions,put=PutNewThreadOptions))
+    long NewThreadOptions;
+    __declspec(property(get=GetNewExecutionTypeMask,put=PutNewExecutionTypeMask))
+    long NewExecutionTypeMask;
+    __declspec(property(get=GetNewExecutionTypeMaskExpr,put=PutNewExecutionTypeMaskExpr))
+    _bstr_t NewExecutionTypeMaskExpr;
+    __declspec(property(get=GetNewExecutionModelOption,put=PutNewExecutionModelOption))
+    enum SeqCallNewExecModelOptions NewExecutionModelOption;
+    __declspec(property(get=GetNewExecutionModelPath,put=PutNewExecutionModelPath))
+    _bstr_t NewExecutionModelPath;
+    __declspec(property(get=GetSequenceFilePath,put=PutSequenceFilePath))
+    _bstr_t SequenceFilePath;
+    __declspec(property(get=GetSequenceName,put=PutSequenceName))
+    _bstr_t SequenceName;
+    __declspec(property(get=GetSpecifyByExpression,put=PutSpecifyByExpression))
+    VARIANT_BOOL SpecifyByExpression;
+    __declspec(property(get=GetNewExecutionBreakOnEntryExpr,put=PutNewExecutionBreakOnEntryExpr))
+    _bstr_t NewExecutionBreakOnEntryExpr;
+    __declspec(property(get=GetNewExecutionWaitForCompletion,put=PutNewExecutionWaitForCompletion))
+    enum SeqCallWaitForExecOptions NewExecutionWaitForCompletion;
+    __declspec(property(get=GetUseCurrentFile,put=PutUseCurrentFile))
+    VARIANT_BOOL UseCurrentFile;
+    __declspec(property(get=GetRemoteHost,put=PutRemoteHost))
+    _bstr_t RemoteHost;
+    __declspec(property(get=GetSpecifyHostByExpression,put=PutSpecifyHostByExpression))
+    VARIANT_BOOL SpecifyHostByExpression;
+    __declspec(property(get=GetTraceSetting,put=PutTraceSetting))
+    enum SeqCallTraceSettings TraceSetting;
+    __declspec(property(get=GetIgnoreTermination,put=PutIgnoreTermination))
+    VARIANT_BOOL IgnoreTermination;
+    __declspec(property(get=GetCustomCPUAffinityForNewThread,put=PutCustomCPUAffinityForNewThread))
+    _bstr_t CustomCPUAffinityForNewThread;
+    __declspec(property(get=GetUseSequenceParameterPrototype,put=PutUseSequenceParameterPrototype))
+    VARIANT_BOOL UseSequenceParameterPrototype;
+    __declspec(property(get=GetParameters))
+    SequenceCallParametersPtr Parameters;
+    __declspec(property(get=GetParameterPrototype))
+    TS::PropertyObjectPtr ParameterPrototype;
+    __declspec(property(get=GetMultithreadingAndRemoteExecOption,put=PutMultithreadingAndRemoteExecOption))
+    enum SeqCallMultithreadOptions MultithreadingAndRemoteExecOption;
+    __declspec(property(get=GetStoreActiveXReferenceExpr,put=PutStoreActiveXReferenceExpr))
+    _bstr_t StoreActiveXReferenceExpr;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    TS::ModulePtr AsModule ( );
+    _bstr_t GetSequenceFilePath ( );
+    void PutSequenceFilePath (
+        _bstr_t propertyValue );
+    _bstr_t GetSequenceName ( );
+    void PutSequenceName (
+        _bstr_t propertyValue );
+    VARIANT_BOOL GetSpecifyByExpression ( );
+    void PutSpecifyByExpression (
+        VARIANT_BOOL propertyValue );
+    VARIANT_BOOL GetUseCurrentFile ( );
+    void PutUseCurrentFile (
+        VARIANT_BOOL propertyValue );
+    enum SeqCallTraceSettings GetTraceSetting ( );
+    void PutTraceSetting (
+        enum SeqCallTraceSettings propertyValue );
+    VARIANT_BOOL GetIgnoreTermination ( );
+    void PutIgnoreTermination (
+        VARIANT_BOOL propertyValue );
+    VARIANT_BOOL GetUseSequenceParameterPrototype ( );
+    void PutUseSequenceParameterPrototype (
+        VARIANT_BOOL propertyValue );
+    HRESULT LoadParameters (
+        VARIANT_BOOL useCurrentSeqFile,
+        _bstr_t seqFilePath,
+        _bstr_t seqName );
+    SequenceCallParametersPtr GetParameters ( );
+    TS::PropertyObjectPtr GetParameterPrototype ( );
+    enum SeqCallMultithreadOptions GetMultithreadingAndRemoteExecOption ( );
+    void PutMultithreadingAndRemoteExecOption (
+        enum SeqCallMultithreadOptions propertyValue );
+    _bstr_t GetStoreActiveXReferenceExpr ( );
+    void PutStoreActiveXReferenceExpr (
+        _bstr_t propertyValue );
+    long GetNewThreadOptions ( );
+    void PutNewThreadOptions (
+        long propertyValue );
+    long GetNewExecutionTypeMask ( );
+    void PutNewExecutionTypeMask (
+        long propertyValue );
+    _bstr_t GetNewExecutionTypeMaskExpr ( );
+    void PutNewExecutionTypeMaskExpr (
+        _bstr_t propertyValue );
+    enum SeqCallNewExecModelOptions GetNewExecutionModelOption ( );
+    void PutNewExecutionModelOption (
+        enum SeqCallNewExecModelOptions propertyValue );
+    _bstr_t GetNewExecutionModelPath ( );
+    void PutNewExecutionModelPath (
+        _bstr_t propertyValue );
+    _bstr_t GetNewExecutionBreakOnEntryExpr ( );
+    void PutNewExecutionBreakOnEntryExpr (
+        _bstr_t propertyValue );
+    enum SeqCallWaitForExecOptions GetNewExecutionWaitForCompletion ( );
+    void PutNewExecutionWaitForCompletion (
+        enum SeqCallWaitForExecOptions propertyValue );
+    _bstr_t GetRemoteHost ( );
+    void PutRemoteHost (
+        _bstr_t propertyValue );
+    VARIANT_BOOL GetSpecifyHostByExpression ( );
+    void PutSpecifyHostByExpression (
+        VARIANT_BOOL propertyValue );
+    HRESULT LoadParametersFromSequence (
+        struct TS::Sequence * sequence );
+    VARIANT_BOOL LoadPrototypeFromSequence (
+        struct TS::Sequence * sequence,
+        long options );
+    enum TS::CPUAffinityForNewThreadOptions GetCPUAffinityForNewThreadOption ( );
+    void PutCPUAffinityForNewThreadOption (
+        enum TS::CPUAffinityForNewThreadOptions val );
+    _bstr_t GetCustomCPUAffinityForNewThread ( );
+    void PutCustomCPUAffinityForNewThread (
+        _bstr_t val );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_AsModule (
+        /*[out,retval]*/ struct TS::Module * * moduleObject ) = 0;
+      virtual HRESULT __stdcall get_SequenceFilePath (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_SequenceFilePath (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_SequenceName (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_SequenceName (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_SpecifyByExpression (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_SpecifyByExpression (
+        /*[in]*/ VARIANT_BOOL propertyValue ) = 0;
+      virtual HRESULT __stdcall get_UseCurrentFile (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_UseCurrentFile (
+        /*[in]*/ VARIANT_BOOL propertyValue ) = 0;
+      virtual HRESULT __stdcall get_TraceSetting (
+        /*[out,retval]*/ enum SeqCallTraceSettings * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_TraceSetting (
+        /*[in]*/ enum SeqCallTraceSettings propertyValue ) = 0;
+      virtual HRESULT __stdcall get_IgnoreTermination (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_IgnoreTermination (
+        /*[in]*/ VARIANT_BOOL propertyValue ) = 0;
+      virtual HRESULT __stdcall get_UseSequenceParameterPrototype (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_UseSequenceParameterPrototype (
+        /*[in]*/ VARIANT_BOOL propertyValue ) = 0;
+      virtual HRESULT __stdcall raw_LoadParameters (
+        /*[in]*/ VARIANT_BOOL useCurrentSeqFile,
+        /*[in]*/ BSTR seqFilePath,
+        /*[in]*/ BSTR seqName ) = 0;
+      virtual HRESULT __stdcall get_Parameters (
+        /*[out,retval]*/ struct SequenceCallParameters * * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ParameterPrototype (
+        /*[out,retval]*/ struct TS::PropertyObject * * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_MultithreadingAndRemoteExecOption (
+        /*[out,retval]*/ enum SeqCallMultithreadOptions * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_MultithreadingAndRemoteExecOption (
+        /*[in]*/ enum SeqCallMultithreadOptions propertyValue ) = 0;
+      virtual HRESULT __stdcall get_StoreActiveXReferenceExpr (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_StoreActiveXReferenceExpr (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_NewThreadOptions (
+        /*[out,retval]*/ long * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_NewThreadOptions (
+        /*[in]*/ long propertyValue ) = 0;
+      virtual HRESULT __stdcall get_NewExecutionTypeMask (
+        /*[out,retval]*/ long * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_NewExecutionTypeMask (
+        /*[in]*/ long propertyValue ) = 0;
+      virtual HRESULT __stdcall get_NewExecutionTypeMaskExpr (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_NewExecutionTypeMaskExpr (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_NewExecutionModelOption (
+        /*[out,retval]*/ enum SeqCallNewExecModelOptions * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_NewExecutionModelOption (
+        /*[in]*/ enum SeqCallNewExecModelOptions propertyValue ) = 0;
+      virtual HRESULT __stdcall get_NewExecutionModelPath (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_NewExecutionModelPath (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_NewExecutionBreakOnEntryExpr (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_NewExecutionBreakOnEntryExpr (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_NewExecutionWaitForCompletion (
+        /*[out,retval]*/ enum SeqCallWaitForExecOptions * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_NewExecutionWaitForCompletion (
+        /*[in]*/ enum SeqCallWaitForExecOptions propertyValue ) = 0;
+      virtual HRESULT __stdcall get_RemoteHost (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_RemoteHost (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_SpecifyHostByExpression (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_SpecifyHostByExpression (
+        /*[in]*/ VARIANT_BOOL propertyValue ) = 0;
+      virtual HRESULT __stdcall raw_LoadParametersFromSequence (
+        /*[in]*/ struct TS::Sequence * sequence ) = 0;
+      virtual HRESULT __stdcall raw_LoadPrototypeFromSequence (
+        /*[in]*/ struct TS::Sequence * sequence,
+        /*[in]*/ long options,
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+      virtual HRESULT __stdcall get_CPUAffinityForNewThreadOption (
+        /*[out,retval]*/ enum TS::CPUAffinityForNewThreadOptions * val ) = 0;
+      virtual HRESULT __stdcall put_CPUAffinityForNewThreadOption (
+        /*[in]*/ enum TS::CPUAffinityForNewThreadOptions val ) = 0;
+      virtual HRESULT __stdcall get_CustomCPUAffinityForNewThread (
+        /*[out,retval]*/ BSTR * val ) = 0;
+      virtual HRESULT __stdcall put_CustomCPUAffinityForNewThread (
+        /*[in]*/ BSTR val ) = 0;
+};
+
+struct __declspec(uuid("8c307958-d67d-4d08-8559-782493809b3a"))
+LabVIEWModule : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetVIPath,put=PutVIPath))
+    _bstr_t VIPath;
+    __declspec(property(get=GetVICallOptions,put=PutVICallOptions))
+    long VICallOptions;
+    __declspec(property(get=GetRemoteHost,put=PutRemoteHost))
+    _bstr_t RemoteHost;
+    __declspec(property(get=GetSpecifyHostByExpression,put=PutSpecifyHostByExpression))
+    VARIANT_BOOL SpecifyHostByExpression;
+    __declspec(property(get=GetRemoteVIPath,put=PutRemoteVIPath))
+    _bstr_t RemoteVIPath;
+    __declspec(property(get=GetRemotePortNumber,put=PutRemotePortNumber))
+    long RemotePortNumber;
+    __declspec(property(get=GetRemoteConnectionTimeout,put=PutRemoteConnectionTimeout))
+    long RemoteConnectionTimeout;
+    __declspec(property(get=GetVIDescription))
+    _bstr_t VIDescription;
+    __declspec(property(get=GetParameters))
+    LabVIEWParametersPtr Parameters;
+    __declspec(property(get=GetVIType,put=PutVIType))
+    enum LabVIEWVITypes VIType;
+    __declspec(property(get=GetExpressVIName))
+    _bstr_t ExpressVIName;
+    __declspec(property(get=GetVIAttached))
+    VARIANT_BOOL VIAttached;
+    __declspec(property(get=GetHelpPicture))
+    IPictureDisp * HelpPicture;
+    __declspec(property(get=GetHelpPictureRects))
+    TS::PropertyObjectPtr HelpPictureRects;
+    __declspec(property(get=GetHelpFilePath))
+    _bstr_t HelpFilePath;
+    __declspec(property(get=GetHelpContext))
+    _bstr_t HelpContext;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    TS::ModulePtr AsModule ( );
+    _bstr_t GetVIPath ( );
+    void PutVIPath (
+        _bstr_t propertyValue );
+    long GetVICallOptions ( );
+    void PutVICallOptions (
+        long propertyValue );
+    _bstr_t GetRemoteHost ( );
+    void PutRemoteHost (
+        _bstr_t propertyValue );
+    VARIANT_BOOL GetSpecifyHostByExpression ( );
+    void PutSpecifyHostByExpression (
+        VARIANT_BOOL propertyValue );
+    _bstr_t GetRemoteVIPath ( );
+    void PutRemoteVIPath (
+        _bstr_t propertyValue );
+    long GetRemotePortNumber ( );
+    void PutRemotePortNumber (
+        long propertyValue );
+    long GetRemoteConnectionTimeout ( );
+    void PutRemoteConnectionTimeout (
+        long propertyValue );
+    _bstr_t GetVIDescription ( );
+    VARIANT_BOOL LoadPrototype (
+        VARIANT_BOOL discardParameterValues );
+    LabVIEWParametersPtr GetParameters ( );
+    enum LabVIEWVITypes GetVIType ( );
+    void PutVIType (
+        enum LabVIEWVITypes propertyValue );
+    _bstr_t GetExpressVIName ( );
+    VARIANT_BOOL GetVIAttached ( );
+    HRESULT ExportVI (
+        BSTR * pathString,
+        long options );
+    HRESULT ImportVI (
+        _bstr_t pathString,
+        enum ImportVITypes Type,
+        long options );
+    VARIANT_BOOL ConvertExpressVIToStandardVI (
+        _bstr_t newVIPath );
+    VARIANT_BOOL LoadVIInfo ( );
+    IPictureDisp * GetHelpPicture ( );
+    TS::PropertyObjectPtr GetHelpPictureRects ( );
+    _bstr_t GetHelpFilePath ( );
+    _bstr_t GetHelpContext ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_AsModule (
+        /*[out,retval]*/ struct TS::Module * * moduleObject ) = 0;
+      virtual HRESULT __stdcall get_VIPath (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_VIPath (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_VICallOptions (
+        /*[out,retval]*/ long * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_VICallOptions (
+        /*[in]*/ long propertyValue ) = 0;
+      virtual HRESULT __stdcall get_RemoteHost (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_RemoteHost (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_SpecifyHostByExpression (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_SpecifyHostByExpression (
+        /*[in]*/ VARIANT_BOOL propertyValue ) = 0;
+      virtual HRESULT __stdcall get_RemoteVIPath (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_RemoteVIPath (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_RemotePortNumber (
+        /*[out,retval]*/ long * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_RemotePortNumber (
+        /*[in]*/ long propertyValue ) = 0;
+      virtual HRESULT __stdcall get_RemoteConnectionTimeout (
+        /*[out,retval]*/ long * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_RemoteConnectionTimeout (
+        /*[in]*/ long propertyValue ) = 0;
+      virtual HRESULT __stdcall get_VIDescription (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall raw_LoadPrototype (
+        /*[in]*/ VARIANT_BOOL discardParameterValues,
+        /*[out,retval]*/ VARIANT_BOOL * hasPrototypeInfo ) = 0;
+      virtual HRESULT __stdcall get_Parameters (
+        /*[out,retval]*/ struct LabVIEWParameters * * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_VIType (
+        /*[out,retval]*/ enum LabVIEWVITypes * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_VIType (
+        /*[in]*/ enum LabVIEWVITypes propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ExpressVIName (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_VIAttached (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall raw_ExportVI (
+        /*[in,out]*/ BSTR * pathString,
+        /*[in]*/ long options ) = 0;
+      virtual HRESULT __stdcall raw_ImportVI (
+        /*[in]*/ BSTR pathString,
+        /*[in]*/ enum ImportVITypes Type,
+        /*[in]*/ long options ) = 0;
+      virtual HRESULT __stdcall raw_ConvertExpressVIToStandardVI (
+        /*[in]*/ BSTR newVIPath,
+        /*[out,retval]*/ VARIANT_BOOL * modifiedModule ) = 0;
+      virtual HRESULT __stdcall raw_LoadVIInfo (
+        /*[out,retval]*/ VARIANT_BOOL * prototypeMatches ) = 0;
+      virtual HRESULT __stdcall get_HelpPicture (
+        /*[out,retval]*/ IPictureDisp * * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_HelpPictureRects (
+        /*[out,retval]*/ struct TS::PropertyObject * * returnValue ) = 0;
+      virtual HRESULT __stdcall get_HelpFilePath (
+        /*[out,retval]*/ BSTR * returnValue ) = 0;
+      virtual HRESULT __stdcall get_HelpContext (
+        /*[out,retval]*/ BSTR * returnValue ) = 0;
+};
+
+struct __declspec(uuid("2906c8d9-82e7-4512-b920-f932a87de0d2"))
+LabVIEWParameters : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    LabVIEWParameterPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    LabVIEWParameterPtr GetItem (
+        const _variant_t & index );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ VARIANT index,
+        /*[out,retval]*/ struct LabVIEWParameter * * labViewParameterObject ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * numberOfParameters ) = 0;
+};
+
+struct __declspec(uuid("4a9044c2-b2c7-40c2-aaab-b6eede6bb190"))
+LabVIEWParameter : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetArrayElementPrototype))
+    LabVIEWParameterElementPtr ArrayElementPrototype;
+    __declspec(property(get=GetComplexImaginaryPartElement))
+    LabVIEWParameterElementPtr ComplexImaginaryPartElement;
+    __declspec(property(get=GetElements))
+    LabVIEWParameterElementsPtr Elements;
+    __declspec(property(get=GetUseDefaultValue,put=PutUseDefaultValue))
+    VARIANT_BOOL UseDefaultValue;
+    __declspec(property(get=GetValueExpr,put=PutValueExpr))
+    _bstr_t ValueExpr;
+    __declspec(property(get=GetArrayDimensions))
+    long ArrayDimensions;
+    __declspec(property(get=GetParameterCaption))
+    _bstr_t ParameterCaption;
+    __declspec(property(get=GetTypeDisplayString))
+    _bstr_t TypeDisplayString;
+    __declspec(property(get=GetCategory))
+    enum LabVIEWParameterCategories Category;
+    __declspec(property(get=GetDirection))
+    enum LabVIEWParameterDirections Direction;
+    __declspec(property(get=GetType))
+    enum LabVIEWParameterTypes Type;
+    __declspec(property(get=GetWireRequirement))
+    enum LabVIEWParameterWireRequirements WireRequirement;
+    __declspec(property(get=GetParameterName))
+    _bstr_t ParameterName;
+    __declspec(property(get=GetDefaultValue))
+    _bstr_t DefaultValue;
+    __declspec(property(get=GetValidEvaluationTypes))
+    TS::EvaluationTypesPtr ValidEvaluationTypes;
+    __declspec(property(get=GetPartiallySpecified))
+    VARIANT_BOOL PartiallySpecified;
+    __declspec(property(get=GetComplexRealPartElement))
+    LabVIEWParameterElementPtr ComplexRealPartElement;
+    __declspec(property(get=GetPassAsBinaryString,put=PutPassAsBinaryString))
+    VARIANT_BOOL PassAsBinaryString;
+    __declspec(property(get=GetUserData))
+    TS::PropertyObjectPtr UserData;
+    __declspec(property(get=GetDisplayType))
+    _bstr_t DisplayType;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    TS::PropertyObjectPtr AsPropertyObject ( );
+    VARIANT_BOOL GetUseDefaultValue ( );
+    void PutUseDefaultValue (
+        VARIANT_BOOL propertyValue );
+    _bstr_t GetValueExpr ( );
+    void PutValueExpr (
+        _bstr_t propertyValue );
+    enum LabVIEWParameterCategories GetCategory ( );
+    enum LabVIEWParameterDirections GetDirection ( );
+    enum LabVIEWParameterTypes GetType ( );
+    enum LabVIEWParameterWireRequirements GetWireRequirement ( );
+    _bstr_t GetParameterName ( );
+    _bstr_t GetDefaultValue ( );
+    VARIANT_BOOL GetPassAsBinaryString ( );
+    void PutPassAsBinaryString (
+        VARIANT_BOOL propertyValue );
+    LabVIEWParameterElementsPtr GetElements ( );
+    long GetArrayDimensions ( );
+    long GetDefaultArrayDimensionSize (
+        long dimension );
+    _bstr_t GetArrayIndex (
+        long offset,
+        long options );
+    TS::PropertyObjectPtr GetUserData ( );
+    _bstr_t GetDisplayType ( );
+    LabVIEWParameterElementPtr GetArrayElementPrototype ( );
+    _bstr_t GetParameterCaption ( );
+    _bstr_t GetTypeDisplayString ( );
+    TS::EvaluationTypesPtr GetValidEvaluationTypes ( );
+    SAFEARRAY * GetEnumValues ( );
+    VARIANT_BOOL UpdateClusterMapping (
+        struct TS::SequenceContext * sequenceContext );
+    VARIANT_BOOL DisplayCreateCustomDataTypeDialog (
+        struct TS::SequenceContext * sequenceContext );
+    VARIANT_BOOL GetPartiallySpecified ( );
+    VARIANT_BOOL CreateDefaultArrayElements ( );
+    VARIANT_BOOL DeleteArrayElements ( );
+    HRESULT InsertArrayElement (
+        long index );
+    HRESULT DeleteArrayElement (
+        long index );
+    LabVIEWParameterElementPtr GetComplexRealPartElement ( );
+    LabVIEWParameterElementPtr GetComplexImaginaryPartElement ( );
+    VARIANT_BOOL ExprClusterTypeMismatch (
+        struct TS::SequenceContext * sequenceContext );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_AsPropertyObject (
+        /*[out,retval]*/ struct TS::PropertyObject * * returnValue ) = 0;
+      virtual HRESULT __stdcall get_UseDefaultValue (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_UseDefaultValue (
+        /*[in]*/ VARIANT_BOOL propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ValueExpr (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_ValueExpr (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_Category (
+        /*[out,retval]*/ enum LabVIEWParameterCategories * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_Direction (
+        /*[out,retval]*/ enum LabVIEWParameterDirections * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_Type (
+        /*[out,retval]*/ enum LabVIEWParameterTypes * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_WireRequirement (
+        /*[out,retval]*/ enum LabVIEWParameterWireRequirements * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ParameterName (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_DefaultValue (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_PassAsBinaryString (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_PassAsBinaryString (
+        /*[in]*/ VARIANT_BOOL propertyValue ) = 0;
+      virtual HRESULT __stdcall get_Elements (
+        /*[out,retval]*/ struct LabVIEWParameterElements * * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ArrayDimensions (
+        /*[out,retval]*/ long * returnValue ) = 0;
+      virtual HRESULT __stdcall raw_GetDefaultArrayDimensionSize (
+        /*[in]*/ long dimension,
+        /*[out,retval]*/ long * returnValue ) = 0;
+      virtual HRESULT __stdcall raw_GetArrayIndex (
+        /*[in]*/ long offset,
+        /*[in]*/ long options,
+        /*[out,retval]*/ BSTR * returnValue ) = 0;
+      virtual HRESULT __stdcall get_UserData (
+        /*[out,retval]*/ struct TS::PropertyObject * * returnValue ) = 0;
+      virtual HRESULT __stdcall get_DisplayType (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ArrayElementPrototype (
+        /*[out,retval]*/ struct LabVIEWParameterElement * * val ) = 0;
+      virtual HRESULT __stdcall get_ParameterCaption (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_TypeDisplayString (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ValidEvaluationTypes (
+        /*[out,retval]*/ struct TS::EvaluationTypes * * val ) = 0;
+      virtual HRESULT __stdcall raw_GetEnumValues (
+        /*[out,retval]*/ SAFEARRAY * * val ) = 0;
+      virtual HRESULT __stdcall raw_UpdateClusterMapping (
+        /*[in]*/ struct TS::SequenceContext * sequenceContext,
+        /*[out,retval]*/ VARIANT_BOOL * updatedMapping ) = 0;
+      virtual HRESULT __stdcall raw_DisplayCreateCustomDataTypeDialog (
+        /*[in]*/ struct TS::SequenceContext * sequenceContext,
+        /*[out,retval]*/ VARIANT_BOOL * userHitOk ) = 0;
+      virtual HRESULT __stdcall get_PartiallySpecified (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall raw_CreateDefaultArrayElements (
+        /*[out,retval]*/ VARIANT_BOOL * createdElements ) = 0;
+      virtual HRESULT __stdcall raw_DeleteArrayElements (
+        /*[out,retval]*/ VARIANT_BOOL * deletedElements ) = 0;
+      virtual HRESULT __stdcall raw_InsertArrayElement (
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall raw_DeleteArrayElement (
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall get_ComplexRealPartElement (
+        /*[out,retval]*/ struct LabVIEWParameterElement * * val ) = 0;
+      virtual HRESULT __stdcall get_ComplexImaginaryPartElement (
+        /*[out,retval]*/ struct LabVIEWParameterElement * * val ) = 0;
+      virtual HRESULT __stdcall raw_ExprClusterTypeMismatch (
+        /*[in]*/ struct TS::SequenceContext * sequenceContext,
+        /*[out,retval]*/ VARIANT_BOOL * needToRefresh ) = 0;
+};
+
+struct __declspec(uuid("b9db7ca4-fe77-4ad4-8843-d94cf44ede0e"))
+LabVIEWParameterElements : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    LabVIEWParameterElementPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    LabVIEWParameterElementPtr GetItem (
+        const _variant_t & index );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ VARIANT index,
+        /*[out,retval]*/ struct LabVIEWParameterElement * * parameterElementObject ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * numberOfElements ) = 0;
+};
+
+struct __declspec(uuid("c33f70ef-7e29-460a-8534-b658532b92d1"))
+LabVIEWParameterElement : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetArrayElementPrototype))
+    LabVIEWParameterElementPtr ArrayElementPrototype;
+    __declspec(property(get=GetIndexString))
+    _bstr_t IndexString;
+    __declspec(property(get=GetComplexRealPartElement))
+    LabVIEWParameterElementPtr ComplexRealPartElement;
+    __declspec(property(get=GetComplexImaginaryPartElement))
+    LabVIEWParameterElementPtr ComplexImaginaryPartElement;
+    __declspec(property(get=GetElements))
+    LabVIEWParameterElementsPtr Elements;
+    __declspec(property(get=GetValueExpr,put=PutValueExpr))
+    _bstr_t ValueExpr;
+    __declspec(property(get=GetArrayDimensions))
+    long ArrayDimensions;
+    __declspec(property(get=GetElementCaption))
+    _bstr_t ElementCaption;
+    __declspec(property(get=GetUseDefaultValue,put=PutUseDefaultValue))
+    VARIANT_BOOL UseDefaultValue;
+    __declspec(property(get=GetDefaultValue))
+    _bstr_t DefaultValue;
+    __declspec(property(get=GetCategory))
+    enum LabVIEWParameterCategories Category;
+    __declspec(property(get=GetDirection))
+    enum LabVIEWParameterDirections Direction;
+    __declspec(property(get=GetType))
+    enum LabVIEWParameterTypes Type;
+    __declspec(property(get=GetWireRequirement))
+    enum LabVIEWParameterWireRequirements WireRequirement;
+    __declspec(property(get=GetElementName))
+    _bstr_t ElementName;
+    __declspec(property(get=GetTypeDisplayString))
+    _bstr_t TypeDisplayString;
+    __declspec(property(get=GetValidEvaluationTypes))
+    TS::EvaluationTypesPtr ValidEvaluationTypes;
+    __declspec(property(get=GetPartiallySpecified))
+    VARIANT_BOOL PartiallySpecified;
+    __declspec(property(get=GetPassAsBinaryString,put=PutPassAsBinaryString))
+    VARIANT_BOOL PassAsBinaryString;
+    __declspec(property(get=GetUserData))
+    TS::PropertyObjectPtr UserData;
+    __declspec(property(get=GetDisplayType))
+    _bstr_t DisplayType;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    TS::PropertyObjectPtr AsPropertyObject ( );
+    _bstr_t GetValueExpr ( );
+    void PutValueExpr (
+        _bstr_t propertyValue );
+    enum LabVIEWParameterCategories GetCategory ( );
+    enum LabVIEWParameterTypes GetType ( );
+    _bstr_t GetElementName ( );
+    VARIANT_BOOL GetPassAsBinaryString ( );
+    void PutPassAsBinaryString (
+        VARIANT_BOOL propertyValue );
+    LabVIEWParameterElementsPtr GetElements ( );
+    long GetArrayDimensions ( );
+    long GetDefaultArrayDimensionSize (
+        long dimension );
+    _bstr_t GetArrayIndex (
+        long offset,
+        long options );
+    TS::PropertyObjectPtr GetUserData ( );
+    _bstr_t GetDisplayType ( );
+    LabVIEWParameterElementPtr GetArrayElementPrototype ( );
+    _bstr_t GetElementCaption ( );
+    VARIANT_BOOL GetUseDefaultValue ( );
+    void PutUseDefaultValue (
+        VARIANT_BOOL propertyValue );
+    _bstr_t GetDefaultValue ( );
+    enum LabVIEWParameterDirections GetDirection ( );
+    enum LabVIEWParameterWireRequirements GetWireRequirement ( );
+    _bstr_t GetTypeDisplayString ( );
+    TS::EvaluationTypesPtr GetValidEvaluationTypes ( );
+    SAFEARRAY * GetEnumValues ( );
+    VARIANT_BOOL UpdateClusterMapping (
+        struct TS::SequenceContext * sequenceContext );
+    VARIANT_BOOL DisplayCreateCustomDataTypeDialog (
+        struct TS::SequenceContext * sequenceContext );
+    VARIANT_BOOL GetPartiallySpecified ( );
+    VARIANT_BOOL CreateDefaultArrayElements ( );
+    VARIANT_BOOL DeleteArrayElements ( );
+    HRESULT InsertArrayElement (
+        long index );
+    HRESULT DeleteArrayElement (
+        long index );
+    _bstr_t GetIndexString ( );
+    LabVIEWParameterElementPtr GetComplexRealPartElement ( );
+    LabVIEWParameterElementPtr GetComplexImaginaryPartElement ( );
+    VARIANT_BOOL ExprClusterTypeMismatch (
+        struct TS::SequenceContext * sequenceContext );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_AsPropertyObject (
+        /*[out,retval]*/ struct TS::PropertyObject * * returnValue ) = 0;
+      virtual HRESULT __stdcall get_ValueExpr (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_ValueExpr (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_Category (
+        /*[out,retval]*/ enum LabVIEWParameterCategories * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_Type (
+        /*[out,retval]*/ enum LabVIEWParameterTypes * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ElementName (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_PassAsBinaryString (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_PassAsBinaryString (
+        /*[in]*/ VARIANT_BOOL propertyValue ) = 0;
+      virtual HRESULT __stdcall get_Elements (
+        /*[out,retval]*/ struct LabVIEWParameterElements * * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ArrayDimensions (
+        /*[out,retval]*/ long * returnValue ) = 0;
+      virtual HRESULT __stdcall raw_GetDefaultArrayDimensionSize (
+        /*[in]*/ long dimension,
+        /*[out,retval]*/ long * returnValue ) = 0;
+      virtual HRESULT __stdcall raw_GetArrayIndex (
+        /*[in]*/ long offset,
+        /*[in]*/ long options,
+        /*[out,retval]*/ BSTR * returnValue ) = 0;
+      virtual HRESULT __stdcall get_UserData (
+        /*[out,retval]*/ struct TS::PropertyObject * * returnValue ) = 0;
+      virtual HRESULT __stdcall get_DisplayType (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ArrayElementPrototype (
+        /*[out,retval]*/ struct LabVIEWParameterElement * * val ) = 0;
+      virtual HRESULT __stdcall get_ElementCaption (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_UseDefaultValue (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_UseDefaultValue (
+        /*[in]*/ VARIANT_BOOL propertyValue ) = 0;
+      virtual HRESULT __stdcall get_DefaultValue (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_Direction (
+        /*[out,retval]*/ enum LabVIEWParameterDirections * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_WireRequirement (
+        /*[out,retval]*/ enum LabVIEWParameterWireRequirements * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_TypeDisplayString (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ValidEvaluationTypes (
+        /*[out,retval]*/ struct TS::EvaluationTypes * * val ) = 0;
+      virtual HRESULT __stdcall raw_GetEnumValues (
+        /*[out,retval]*/ SAFEARRAY * * val ) = 0;
+      virtual HRESULT __stdcall raw_UpdateClusterMapping (
+        /*[in]*/ struct TS::SequenceContext * sequenceContext,
+        /*[out,retval]*/ VARIANT_BOOL * updatedMapping ) = 0;
+      virtual HRESULT __stdcall raw_DisplayCreateCustomDataTypeDialog (
+        /*[in]*/ struct TS::SequenceContext * sequenceContext,
+        /*[out,retval]*/ VARIANT_BOOL * userHitOk ) = 0;
+      virtual HRESULT __stdcall get_PartiallySpecified (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall raw_CreateDefaultArrayElements (
+        /*[out,retval]*/ VARIANT_BOOL * createdElements ) = 0;
+      virtual HRESULT __stdcall raw_DeleteArrayElements (
+        /*[out,retval]*/ VARIANT_BOOL * deletedElements ) = 0;
+      virtual HRESULT __stdcall raw_InsertArrayElement (
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall raw_DeleteArrayElement (
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall get_IndexString (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ComplexRealPartElement (
+        /*[out,retval]*/ struct LabVIEWParameterElement * * val ) = 0;
+      virtual HRESULT __stdcall get_ComplexImaginaryPartElement (
+        /*[out,retval]*/ struct LabVIEWParameterElement * * val ) = 0;
+      virtual HRESULT __stdcall raw_ExprClusterTypeMismatch (
+        /*[in]*/ struct TS::SequenceContext * sequenceContext,
+        /*[out,retval]*/ VARIANT_BOOL * needToRefresh ) = 0;
+};
+
+struct __declspec(uuid("92b7ef28-64ec-40ea-8ae1-bf76a7fd91c5"))
+DotNetModule : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetSpecifyHostByExpression,put=PutSpecifyHostByExpression))
+    VARIANT_BOOL SpecifyHostByExpression;
+    __declspec(property(get=GetMemberType,put=PutMemberType))
+    enum DotNetModuleMemberTypes MemberType;
+    __declspec(property(get=GetMemberFlags,put=PutMemberFlags))
+    long MemberFlags;
+    __declspec(property(get=GetMemberName,put=PutMemberName))
+    _bstr_t MemberName;
+    __declspec(property(put=PutMemberIndex))
+    long MemberIndex;
+    __declspec(property(get=GetClassReference,put=PutClassReference))
+    _bstr_t ClassReference;
+    __declspec(property(get=GetClassName,put=PutClassName))
+    _bstr_t ClassName;
+    __declspec(property(get=GetParameters))
+    DotNetParametersPtr Parameters;
+    __declspec(property(get=GetCreateObject,put=PutCreateObject))
+    VARIANT_BOOL CreateObject;
+    __declspec(property(get=GetConstructorPrototype))
+    _bstr_t ConstructorPrototype;
+    __declspec(property(get=GetSourceFilePath,put=PutSourceFilePath))
+    _bstr_t SourceFilePath;
+    __declspec(property(get=GetProjectFilePath,put=PutProjectFilePath))
+    _bstr_t ProjectFilePath;
+    __declspec(property(get=GetSolutionFilePath,put=PutSolutionFilePath))
+    _bstr_t SolutionFilePath;
+    __declspec(property(put=PutConstructorIndex))
+    long ConstructorIndex;
+    __declspec(property(get=GetIsStruct))
+    VARIANT_BOOL IsStruct;
+    __declspec(property(get=GetNameOfMethodToCreate,put=PutNameOfMethodToCreate))
+    _bstr_t NameOfMethodToCreate;
+    __declspec(property(get=GetIsConstructorPrototypeIncompatible))
+    VARIANT_BOOL IsConstructorPrototypeIncompatible;
+    __declspec(property(get=GetConstructorParameters))
+    DotNetParametersPtr ConstructorParameters;
+    __declspec(property(get=GetDisposeObject,put=PutDisposeObject))
+    VARIANT_BOOL DisposeObject;
+    __declspec(property(get=GetUseStepLoadOptions,put=PutUseStepLoadOptions))
+    VARIANT_BOOL UseStepLoadOptions;
+    __declspec(property(get=GetMemberHelpString))
+    _bstr_t MemberHelpString;
+    __declspec(property(get=GetClassHelpString))
+    _bstr_t ClassHelpString;
+    __declspec(property(get=GetUnmappedConstructorArgumentValues))
+    TS::UnmappedArgumentValuesPtr UnmappedConstructorArgumentValues;
+    __declspec(property(get=GetRemoteHost,put=PutRemoteHost))
+    _bstr_t RemoteHost;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    TS::ModulePtr AsModule ( );
+    HRESULT GetAssembly (
+        enum DotNetModuleAssemblyLocations * assemblyLocationParam,
+        BSTR * assemblyPathParam );
+    HRESULT SetAssembly (
+        enum DotNetModuleAssemblyLocations assemblyLocationParam,
+        _bstr_t assemblyPathParam );
+    _bstr_t GetClassReference ( );
+    void PutClassReference (
+        _bstr_t propertyValue );
+    _bstr_t GetClassName ( );
+    void PutClassName (
+        _bstr_t propertyValue );
+    VARIANT_BOOL GetCreateObject ( );
+    void PutCreateObject (
+        VARIANT_BOOL propertyValue );
+    void PutConstructorIndex (
+        long _arg1 );
+    VARIANT_BOOL LoadConstructorInfo (
+        VARIANT_BOOL discardParameterValues );
+    DotNetParametersPtr GetConstructorParameters ( );
+    VARIANT_BOOL GetDisposeObject ( );
+    void PutDisposeObject (
+        VARIANT_BOOL propertyValue );
+    VARIANT_BOOL GetUseStepLoadOptions ( );
+    void PutUseStepLoadOptions (
+        VARIANT_BOOL propertyValue );
+    _bstr_t GetRemoteHost ( );
+    void PutRemoteHost (
+        _bstr_t propertyValue );
+    VARIANT_BOOL GetSpecifyHostByExpression ( );
+    void PutSpecifyHostByExpression (
+        VARIANT_BOOL propertyValue );
+    enum DotNetModuleMemberTypes GetMemberType ( );
+    void PutMemberType (
+        enum DotNetModuleMemberTypes propertyValue );
+    long GetMemberFlags ( );
+    void PutMemberFlags (
+        long propertyValue );
+    _bstr_t GetMemberName ( );
+    void PutMemberName (
+        _bstr_t propertyValue );
+    void PutMemberIndex (
+        long _arg1 );
+    VARIANT_BOOL LoadMemberInfo (
+        VARIANT_BOOL discardParameterValues );
+    DotNetParametersPtr GetParameters ( );
+    _bstr_t GetConstructorPrototype ( );
+    VARIANT_BOOL DisplayCreateCustomDataTypeDialog (
+        struct TS::SequenceContext * sequenceContext );
+    _bstr_t GetSourceFilePath ( );
+    void PutSourceFilePath (
+        _bstr_t propertyValue );
+    _bstr_t GetProjectFilePath ( );
+    void PutProjectFilePath (
+        _bstr_t propertyValue );
+    _bstr_t GetSolutionFilePath ( );
+    void PutSolutionFilePath (
+        _bstr_t propertyValue );
+    VARIANT_BOOL GetIsStruct ( );
+    _bstr_t GetNameOfMethodToCreate ( );
+    void PutNameOfMethodToCreate (
+        _bstr_t propertyValue );
+    VARIANT_BOOL LoadConstructorPrototypeFromMetadataToken (
+        long metadataToken,
+        long options );
+    VARIANT_BOOL GetIsConstructorPrototypeIncompatible ( );
+    long GetMetadataToken ( );
+    long GetConstructorMetadataToken ( );
+    VARIANT_BOOL LoadPrototypeFromMetadataToken (
+        long metadataToken,
+        long options );
+    _bstr_t GetMemberHelpString ( );
+    _bstr_t GetClassHelpString ( );
+    TS::UnmappedArgumentValuesPtr GetUnmappedConstructorArgumentValues ( );
+    HRESULT ClearUnmappedConstructorArgumentValues ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_AsModule (
+        /*[out,retval]*/ struct TS::Module * * moduleObject ) = 0;
+      virtual HRESULT __stdcall raw_GetAssembly (
+        /*[out]*/ enum DotNetModuleAssemblyLocations * assemblyLocationParam,
+        /*[out]*/ BSTR * assemblyPathParam ) = 0;
+      virtual HRESULT __stdcall raw_SetAssembly (
+        /*[in]*/ enum DotNetModuleAssemblyLocations assemblyLocationParam,
+        /*[in]*/ BSTR assemblyPathParam ) = 0;
+      virtual HRESULT __stdcall get_ClassReference (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_ClassReference (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ClassName (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_ClassName (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_CreateObject (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_CreateObject (
+        /*[in]*/ VARIANT_BOOL propertyValue ) = 0;
+      virtual HRESULT __stdcall put_ConstructorIndex (
+        /*[in]*/ long _arg1 ) = 0;
+      virtual HRESULT __stdcall raw_LoadConstructorInfo (
+        /*[in]*/ VARIANT_BOOL discardParameterValues,
+        /*[out,retval]*/ VARIANT_BOOL * hasConstructorInfo ) = 0;
+      virtual HRESULT __stdcall get_ConstructorParameters (
+        /*[out,retval]*/ struct DotNetParameters * * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_DisposeObject (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_DisposeObject (
+        /*[in]*/ VARIANT_BOOL propertyValue ) = 0;
+      virtual HRESULT __stdcall get_UseStepLoadOptions (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_UseStepLoadOptions (
+        /*[in]*/ VARIANT_BOOL propertyValue ) = 0;
+      virtual HRESULT __stdcall get_RemoteHost (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_RemoteHost (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_SpecifyHostByExpression (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_SpecifyHostByExpression (
+        /*[in]*/ VARIANT_BOOL propertyValue ) = 0;
+      virtual HRESULT __stdcall get_MemberType (
+        /*[out,retval]*/ enum DotNetModuleMemberTypes * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_MemberType (
+        /*[in]*/ enum DotNetModuleMemberTypes propertyValue ) = 0;
+      virtual HRESULT __stdcall get_MemberFlags (
+        /*[out,retval]*/ long * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_MemberFlags (
+        /*[in]*/ long propertyValue ) = 0;
+      virtual HRESULT __stdcall get_MemberName (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_MemberName (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall put_MemberIndex (
+        /*[in]*/ long _arg1 ) = 0;
+      virtual HRESULT __stdcall raw_LoadMemberInfo (
+        /*[in]*/ VARIANT_BOOL discardParameterValues,
+        /*[out,retval]*/ VARIANT_BOOL * hasMemberInfo ) = 0;
+      virtual HRESULT __stdcall get_Parameters (
+        /*[out,retval]*/ struct DotNetParameters * * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ConstructorPrototype (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall raw_DisplayCreateCustomDataTypeDialog (
+        /*[in]*/ struct TS::SequenceContext * sequenceContext,
+        /*[out,retval]*/ VARIANT_BOOL * userHitOk ) = 0;
+      virtual HRESULT __stdcall get_SourceFilePath (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_SourceFilePath (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ProjectFilePath (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_ProjectFilePath (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_SolutionFilePath (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_SolutionFilePath (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_IsStruct (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_NameOfMethodToCreate (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_NameOfMethodToCreate (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall raw_LoadConstructorPrototypeFromMetadataToken (
+        /*[in]*/ long metadataToken,
+        /*[in]*/ long options,
+        /*[out,retval]*/ VARIANT_BOOL * modified ) = 0;
+      virtual HRESULT __stdcall get_IsConstructorPrototypeIncompatible (
+        /*[out,retval]*/ VARIANT_BOOL * val ) = 0;
+      virtual HRESULT __stdcall raw_GetMetadataToken (
+        /*[out,retval]*/ long * metadataToken ) = 0;
+      virtual HRESULT __stdcall raw_GetConstructorMetadataToken (
+        /*[out,retval]*/ long * metadataToken ) = 0;
+      virtual HRESULT __stdcall raw_LoadPrototypeFromMetadataToken (
+        /*[in]*/ long metadataToken,
+        /*[in]*/ long options,
+        /*[out,retval]*/ VARIANT_BOOL * modified ) = 0;
+      virtual HRESULT __stdcall get_MemberHelpString (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ClassHelpString (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_UnmappedConstructorArgumentValues (
+        /*[out,retval]*/ struct TS::UnmappedArgumentValues * * propertyValue ) = 0;
+      virtual HRESULT __stdcall raw_ClearUnmappedConstructorArgumentValues ( ) = 0;
+};
+
+struct __declspec(uuid("a8863ce0-fab3-4bf8-8bae-4bb78b9e1298"))
+DotNetParameters : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    DotNetParameterPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    DotNetParameterPtr GetItem (
+        const _variant_t & index );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ VARIANT index,
+        /*[out,retval]*/ struct DotNetParameter * * dotNetParameterObject ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * enumerator ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * numberOfParameters ) = 0;
+};
+
+struct __declspec(uuid("990a94d5-3acf-448f-9c30-76bcfab19500"))
+DotNetParameter : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetHelpString))
+    _bstr_t HelpString;
+    __declspec(property(get=GetElements))
+    DotNetParametersPtr Elements;
+    __declspec(property(get=GetUseDefaultValue,put=PutUseDefaultValue))
+    VARIANT_BOOL UseDefaultValue;
+    __declspec(property(get=GetValueExpr,put=PutValueExpr))
+    _bstr_t ValueExpr;
+    __declspec(property(get=GetDisposeObject,put=PutDisposeObject))
+    VARIANT_BOOL DisposeObject;
+    __declspec(property(get=GetType))
+    enum DotNetParameterTypes Type;
+    __declspec(property(get=GetDisplayType))
+    _bstr_t DisplayType;
+    __declspec(property(get=GetArrayDimensions))
+    long ArrayDimensions;
+    __declspec(property(get=GetParameterName))
+    _bstr_t ParameterName;
+    __declspec(property(get=GetFlags))
+    long Flags;
+    __declspec(property(get=GetDirection))
+    long Direction;
+    __declspec(property(get=GetDefaultValue))
+    _bstr_t DefaultValue;
+    __declspec(property(get=GetUserData))
+    TS::PropertyObjectPtr UserData;
+    __declspec(property(get=GetValidEvaluationTypes))
+    TS::EvaluationTypesPtr ValidEvaluationTypes;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    TS::PropertyObjectPtr AsPropertyObject ( );
+    VARIANT_BOOL GetUseDefaultValue ( );
+    void PutUseDefaultValue (
+        VARIANT_BOOL propertyValue );
+    _bstr_t GetValueExpr ( );
+    void PutValueExpr (
+        _bstr_t propertyValue );
+    VARIANT_BOOL GetDisposeObject ( );
+    void PutDisposeObject (
+        VARIANT_BOOL propertyValue );
+    _bstr_t GetParameterName ( );
+    enum DotNetParameterTypes GetType ( );
+    _bstr_t GetDisplayType ( );
+    long GetFlags ( );
+    long GetDirection ( );
+    _bstr_t GetDefaultValue ( );
+    DotNetParametersPtr GetElements ( );
+    long GetArrayDimensions ( );
+    TS::PropertyObjectPtr GetUserData ( );
+    TS::EvaluationTypesPtr GetValidEvaluationTypes ( );
+    SAFEARRAY * GetEnumValues ( );
+    VARIANT_BOOL DisplayCreateCustomDataTypeDialog (
+        struct TS::SequenceContext * sequenceContext );
+    HRESULT InsertArrayElement (
+        long index );
+    HRESULT DeleteArrayElement (
+        long index );
+    _bstr_t GetHelpString ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_AsPropertyObject (
+        /*[out,retval]*/ struct TS::PropertyObject * * returnValue ) = 0;
+      virtual HRESULT __stdcall get_UseDefaultValue (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_UseDefaultValue (
+        /*[in]*/ VARIANT_BOOL propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ValueExpr (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_ValueExpr (
+        /*[in]*/ BSTR propertyValue ) = 0;
+      virtual HRESULT __stdcall get_DisposeObject (
+        /*[out,retval]*/ VARIANT_BOOL * propertyValue ) = 0;
+      virtual HRESULT __stdcall put_DisposeObject (
+        /*[in]*/ VARIANT_BOOL propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ParameterName (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_Type (
+        /*[out,retval]*/ enum DotNetParameterTypes * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_DisplayType (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_Flags (
+        /*[out,retval]*/ long * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_Direction (
+        /*[out,retval]*/ long * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_DefaultValue (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_Elements (
+        /*[out,retval]*/ struct DotNetParameters * * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_ArrayDimensions (
+        /*[out,retval]*/ long * propertyValue ) = 0;
+      virtual HRESULT __stdcall get_UserData (
+        /*[out,retval]*/ struct TS::PropertyObject * * returnValue ) = 0;
+      virtual HRESULT __stdcall get_ValidEvaluationTypes (
+        /*[out,retval]*/ struct TS::EvaluationTypes * * val ) = 0;
+      virtual HRESULT __stdcall raw_GetEnumValues (
+        /*[out,retval]*/ SAFEARRAY * * val ) = 0;
+      virtual HRESULT __stdcall raw_DisplayCreateCustomDataTypeDialog (
+        /*[in]*/ struct TS::SequenceContext * sequenceContext,
+        /*[out,retval]*/ VARIANT_BOOL * userHitOk ) = 0;
+      virtual HRESULT __stdcall raw_InsertArrayElement (
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall raw_DeleteArrayElement (
+        /*[in]*/ long index ) = 0;
+      virtual HRESULT __stdcall get_HelpString (
+        /*[out,retval]*/ BSTR * propertyValue ) = 0;
+};
+
+} // namespace TSAdp
+
+#pragma pack(pop)

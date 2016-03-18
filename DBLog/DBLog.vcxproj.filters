@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{821f819e-0633-44ec-abb4-04b207f842f7}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{8921b4f8-64a4-4edd-ae43-738336fa4c9c}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{92fea0a9-e518-4883-9e2e-92b94d60e101}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="SQL Files">
+      <UniqueIdentifier>{ad0dcb77-2bef-41ce-8025-abd773df4705}</UniqueIdentifier>
+      <Extensions>sql;ini</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Columns.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DBLog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DBLogUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="format.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mutex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Statement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TSDatalink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TSDBLog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DBLog.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="TSDatalink.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="TSDBLog.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="DBLog.idl">
+      <Filter>Source Files</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DBLog.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Columns.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DBLogUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="enums.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="format.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mutex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Statement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TSDatalink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TSDBLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="..\Access Create Generic Insert Result Tables.sql">
+      <Filter>SQL Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\Access Create Generic Recordset Result Tables.sql">
+      <Filter>SQL Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\Access Drop Result Tables.sql">
+      <Filter>SQL Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\Clear Records from Result Tables.sql">
+      <Filter>SQL Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\MySQL Create Insert Result Tables.sql">
+      <Filter>SQL Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\MySQL Drop Result Tables.sql">
+      <Filter>SQL Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\Oracle Create Result Tables.sql">
+      <Filter>SQL Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\Oracle Drop Result Tables.sql">
+      <Filter>SQL Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\SQL Server Create Generic Insert Result Tables.sql">
+      <Filter>SQL Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\SQL Server Create Generic Recordset Result Tables.sql">
+      <Filter>SQL Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\SQL Server Create Stored Proc Result Tables.sql">
+      <Filter>SQL Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\SQL Server Drop Result Tables.sql">
+      <Filter>SQL Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\Sybase Create Insert Result Tables.sql">
+      <Filter>SQL Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\Sybase Drop Result Tables.sql">
+      <Filter>SQL Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\TestStandDatabaseOptionsDef.ini">
+      <Filter>SQL Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\View Step &amp; Property Results - All Measurments.sql">
+      <Filter>SQL Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\View Step &amp; Property Results.sql">
+      <Filter>SQL Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\View UUT &amp; Step Results.sql">
+      <Filter>SQL Files</Filter>
+    </CustomBuildStep>
+  </ItemGroup>
+</Project>

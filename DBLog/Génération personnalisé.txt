@@ -1,0 +1,9 @@
+Ligne de commande:
+regsvr32 /s /c "$(TargetPath)"
+echo regsvr32 exec. time > "$(OutDir)regsvr32.trg"
+
+Description:
+Performing registration
+
+Sorties:
+$(OutDir)regsvr32.trg;%(Outputs)

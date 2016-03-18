@@ -1,0 +1,1677 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.40219.01 (4a6033e4).
+//
+// c:\program files (x86)\national instruments\teststand 4.2.1\components\models\teststandmodels\database\dblog\debug\tsuisupp.tli
+//
+// Wrapper implementations for Win32 type library ..\..\bin\tsuisupp.dll
+// compiler-generated file created 03/17/16 at 23:42:03 - DO NOT EDIT!
+
+#pragma once
+
+namespace TSUI {
+
+//
+// interface MRUFiles wrapper method implementations
+//
+
+_bstr_t MRUFiles::GetItem ( long itemIndex ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Item(itemIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+IUnknownPtr MRUFiles::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long MRUFiles::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+long MRUFiles::GetMax ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Max(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void MRUFiles::PutMax ( long val ) {
+    HRESULT _hr = put_Max(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+HRESULT MRUFiles::Clear ( ) {
+    HRESULT _hr = raw_Clear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+VARIANT_BOOL MRUFiles::Remove ( _bstr_t fileNameVal ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_Remove(fileNameVal, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+_bstr_t MRUFiles::GetDisplayName ( long itemIndex, long maxWidth ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetDisplayName(itemIndex, maxWidth, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+HRESULT MRUFiles::Add ( _bstr_t fileNameVal ) {
+    HRESULT _hr = raw_Add(fileNameVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface SelectedSteps wrapper method implementations
+//
+
+TS::StepPtr SelectedSteps::GetItem ( long itemIndex ) {
+    struct TS::Step * _result = 0;
+    HRESULT _hr = get_Item(itemIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::StepPtr(_result, false);
+}
+
+IUnknownPtr SelectedSteps::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long SelectedSteps::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT SelectedSteps::Clear ( ) {
+    HRESULT _hr = raw_Clear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT SelectedSteps::AddStepIndex ( long stepIndex ) {
+    HRESULT _hr = raw_AddStepIndex(stepIndex);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+VARIANT_BOOL SelectedSteps::GetEndSelected ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_EndSelected(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void SelectedSteps::PutEndSelected ( VARIANT_BOOL val ) {
+    HRESULT _hr = put_EndSelected(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+long SelectedSteps::GetStepIndex ( long nthSelectedStep ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetStepIndex(nthSelectedStep, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+enum TS::StepGroups SelectedSteps::GetStepGroup ( long nthSelectedStep ) {
+    enum TS::StepGroups _result;
+    HRESULT _hr = raw_GetStepGroup(nthSelectedStep, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT SelectedSteps::AddStep ( struct TS::Step * val ) {
+    HRESULT _hr = raw_AddStep(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT SelectedSteps::AddSteps ( SAFEARRAY * val ) {
+    HRESULT _hr = raw_AddSteps(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+long SelectedSteps::GetSelectionFlags ( ) {
+    long _result = 0;
+    HRESULT _hr = get_SelectionFlags(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void SelectedSteps::PutSelectionFlags ( long val ) {
+    HRESULT _hr = put_SelectionFlags(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+HRESULT SelectedSteps::BeginUpdate ( ) {
+    HRESULT _hr = raw_BeginUpdate();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT SelectedSteps::EndUpdate ( ) {
+    HRESULT _hr = raw_EndUpdate();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface Strings wrapper method implementations
+//
+
+_bstr_t Strings::GetItem ( long itemIndex ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Item(itemIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+void Strings::PutItem ( long itemIndex, _bstr_t val ) {
+    HRESULT _hr = put_Item(itemIndex, val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+IUnknownPtr Strings::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long Strings::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT Strings::Clear ( ) {
+    HRESULT _hr = raw_Clear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT Strings::Add ( _bstr_t val ) {
+    HRESULT _hr = raw_Add(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT Strings::Insert ( long itemIndex, _bstr_t val ) {
+    HRESULT _hr = raw_Insert(itemIndex, val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT Strings::Remove ( long itemIndex ) {
+    HRESULT _hr = raw_Remove(itemIndex);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface NumericConnection wrapper method implementations
+//
+
+enum NumericSources NumericConnection::GetSource ( ) {
+    enum NumericSources _result;
+    HRESULT _hr = get_Source(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void NumericConnection::PutSource ( enum NumericSources val ) {
+    HRESULT _hr = put_Source(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+HRESULT NumericConnection::Refresh ( ) {
+    HRESULT _hr = raw_Refresh();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface NumericConnections wrapper method implementations
+//
+
+NumericConnectionPtr NumericConnections::GetItem ( long itemIndex ) {
+    struct NumericConnection * _result = 0;
+    HRESULT _hr = get_Item(itemIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return NumericConnectionPtr(_result, false);
+}
+
+IUnknownPtr NumericConnections::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long NumericConnections::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+NumericConnectionPtr NumericConnections::Add ( IDispatch * uiObj ) {
+    struct NumericConnection * _result = 0;
+    HRESULT _hr = raw_Add(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return NumericConnectionPtr(_result, false);
+}
+
+VARIANT_BOOL NumericConnections::Remove ( IDispatch * uiObj ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_Remove(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT NumericConnections::Clear ( ) {
+    HRESULT _hr = raw_Clear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+NumericConnectionPtr NumericConnections::FromControl ( IDispatch * uiObj ) {
+    struct NumericConnection * _result = 0;
+    HRESULT _hr = raw_FromControl(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return NumericConnectionPtr(_result, false);
+}
+
+//
+// interface ImageConnection wrapper method implementations
+//
+
+enum ImageSources ImageConnection::GetSource ( ) {
+    enum ImageSources _result;
+    HRESULT _hr = get_Source(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void ImageConnection::PutSource ( enum ImageSources val ) {
+    HRESULT _hr = put_Source(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface ImageConnections wrapper method implementations
+//
+
+ImageConnectionPtr ImageConnections::GetItem ( long itemIndex ) {
+    struct ImageConnection * _result = 0;
+    HRESULT _hr = get_Item(itemIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ImageConnectionPtr(_result, false);
+}
+
+IUnknownPtr ImageConnections::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long ImageConnections::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+ImageConnectionPtr ImageConnections::Add ( IDispatch * uiObj ) {
+    struct ImageConnection * _result = 0;
+    HRESULT _hr = raw_Add(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ImageConnectionPtr(_result, false);
+}
+
+VARIANT_BOOL ImageConnections::Remove ( IDispatch * uiObj ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_Remove(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT ImageConnections::Clear ( ) {
+    HRESULT _hr = raw_Clear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+ImageConnectionPtr ImageConnections::FromControl ( IDispatch * uiObj ) {
+    struct ImageConnection * _result = 0;
+    HRESULT _hr = raw_FromControl(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ImageConnectionPtr(_result, false);
+}
+
+//
+// interface CaptionConnection wrapper method implementations
+//
+
+enum CaptionSources CaptionConnection::GetSource ( ) {
+    enum CaptionSources _result;
+    HRESULT _hr = get_Source(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void CaptionConnection::PutSource ( enum CaptionSources val ) {
+    HRESULT _hr = put_Source(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL CaptionConnection::GetLongName ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_LongName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void CaptionConnection::PutLongName ( VARIANT_BOOL val ) {
+    HRESULT _hr = put_LongName(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+void CaptionConnection::PutFormatExpression ( _bstr_t val ) {
+    HRESULT _hr = put_FormatExpression(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t CaptionConnection::GetFormatExpression ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_FormatExpression(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+HRESULT CaptionConnection::Refresh ( ) {
+    HRESULT _hr = raw_Refresh();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface CaptionConnections wrapper method implementations
+//
+
+CaptionConnectionPtr CaptionConnections::GetItem ( long itemIndex ) {
+    struct CaptionConnection * _result = 0;
+    HRESULT _hr = get_Item(itemIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CaptionConnectionPtr(_result, false);
+}
+
+IUnknownPtr CaptionConnections::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long CaptionConnections::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+CaptionConnectionPtr CaptionConnections::Add ( IDispatch * uiObj ) {
+    struct CaptionConnection * _result = 0;
+    HRESULT _hr = raw_Add(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CaptionConnectionPtr(_result, false);
+}
+
+VARIANT_BOOL CaptionConnections::Remove ( IDispatch * uiObj ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_Remove(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT CaptionConnections::Clear ( ) {
+    HRESULT _hr = raw_Clear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+CaptionConnectionPtr CaptionConnections::FromControl ( IDispatch * uiObj ) {
+    struct CaptionConnection * _result = 0;
+    HRESULT _hr = raw_FromControl(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CaptionConnectionPtr(_result, false);
+}
+
+//
+// interface CommandConnection wrapper method implementations
+//
+
+enum CommandKinds CommandConnection::GetKind ( ) {
+    enum CommandKinds _result;
+    HRESULT _hr = get_Kind(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void CommandConnection::PutKind ( enum CommandKinds val ) {
+    HRESULT _hr = put_Kind(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+long CommandConnection::GetIndex ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Index(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void CommandConnection::PutIndex ( long val ) {
+    HRESULT _hr = put_Index(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+long CommandConnection::GetOptions ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Options(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void CommandConnection::PutOptions ( long val ) {
+    HRESULT _hr = put_Options(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+HRESULT CommandConnection::Refresh ( ) {
+    HRESULT _hr = raw_Refresh();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT CommandConnection::FreezeRefresh ( VARIANT_BOOL frz ) {
+    HRESULT _hr = raw_FreezeRefresh(frz);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface CommandConnections wrapper method implementations
+//
+
+CommandConnectionPtr CommandConnections::GetItem ( long itemIndex ) {
+    struct CommandConnection * _result = 0;
+    HRESULT _hr = get_Item(itemIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CommandConnectionPtr(_result, false);
+}
+
+IUnknownPtr CommandConnections::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long CommandConnections::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+CommandConnectionPtr CommandConnections::Add ( IDispatch * uiObj ) {
+    struct CommandConnection * _result = 0;
+    HRESULT _hr = raw_Add(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CommandConnectionPtr(_result, false);
+}
+
+VARIANT_BOOL CommandConnections::Remove ( IDispatch * uiObj ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_Remove(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT CommandConnections::Clear ( ) {
+    HRESULT _hr = raw_Clear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+CommandConnectionPtr CommandConnections::FromControl ( IDispatch * uiObj ) {
+    struct CommandConnection * _result = 0;
+    HRESULT _hr = raw_FromControl(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CommandConnectionPtr(_result, false);
+}
+
+//
+// interface SequenceViewConnection wrapper method implementations
+//
+
+IDispatchPtr SequenceViewConnection::GetUIControl ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_UIControl(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+VARIANT_BOOL SequenceViewConnection::GetDoubleClickEditsStepProperties ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_DoubleClickEditsStepProperties(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void SequenceViewConnection::PutDoubleClickEditsStepProperties ( VARIANT_BOOL val ) {
+    HRESULT _hr = put_DoubleClickEditsStepProperties(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface SequenceViewConnections wrapper method implementations
+//
+
+SequenceViewConnectionPtr SequenceViewConnections::GetItem ( long itemIndex ) {
+    struct SequenceViewConnection * _result = 0;
+    HRESULT _hr = get_Item(itemIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return SequenceViewConnectionPtr(_result, false);
+}
+
+IUnknownPtr SequenceViewConnections::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long SequenceViewConnections::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+SequenceViewConnectionPtr SequenceViewConnections::Add ( IDispatch * uiObj ) {
+    struct SequenceViewConnection * _result = 0;
+    HRESULT _hr = raw_Add(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return SequenceViewConnectionPtr(_result, false);
+}
+
+VARIANT_BOOL SequenceViewConnections::Remove ( IDispatch * uiObj ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_Remove(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT SequenceViewConnections::Clear ( ) {
+    HRESULT _hr = raw_Clear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+SequenceViewConnectionPtr SequenceViewConnections::FromControl ( IDispatch * uiObj ) {
+    struct SequenceViewConnection * _result = 0;
+    HRESULT _hr = raw_FromControl(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return SequenceViewConnectionPtr(_result, false);
+}
+
+//
+// interface SequenceFileListConnection wrapper method implementations
+//
+
+VARIANT_BOOL SequenceFileListConnection::GetShowFullPath ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_ShowFullPath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void SequenceFileListConnection::PutShowFullPath ( VARIANT_BOOL val ) {
+    HRESULT _hr = put_ShowFullPath(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL SequenceFileListConnection::GetShowCommentInTip ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_ShowCommentInTip(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void SequenceFileListConnection::PutShowCommentInTip ( VARIANT_BOOL val ) {
+    HRESULT _hr = put_ShowCommentInTip(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface SequenceFileListConnections wrapper method implementations
+//
+
+SequenceFileListConnectionPtr SequenceFileListConnections::GetItem ( long itemIndex ) {
+    struct SequenceFileListConnection * _result = 0;
+    HRESULT _hr = get_Item(itemIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return SequenceFileListConnectionPtr(_result, false);
+}
+
+IUnknownPtr SequenceFileListConnections::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long SequenceFileListConnections::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+SequenceFileListConnectionPtr SequenceFileListConnections::Add ( IDispatch * uiObj ) {
+    struct SequenceFileListConnection * _result = 0;
+    HRESULT _hr = raw_Add(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return SequenceFileListConnectionPtr(_result, false);
+}
+
+VARIANT_BOOL SequenceFileListConnections::Remove ( IDispatch * uiObj ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_Remove(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT SequenceFileListConnections::Clear ( ) {
+    HRESULT _hr = raw_Clear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+SequenceFileListConnectionPtr SequenceFileListConnections::FromControl ( IDispatch * uiObj ) {
+    struct SequenceFileListConnection * _result = 0;
+    HRESULT _hr = raw_FromControl(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return SequenceFileListConnectionPtr(_result, false);
+}
+
+//
+// interface SequenceListConnection wrapper method implementations
+//
+
+IDispatchPtr SequenceListConnection::GetUIControl ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_UIControl(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+VARIANT_BOOL SequenceListConnection::GetColumnVisible ( enum SeqListConnectionColumns column ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_GetColumnVisible(column, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT SequenceListConnection::SetColumnVisible ( enum SeqListConnectionColumns column, VARIANT_BOOL val ) {
+    HRESULT _hr = raw_SetColumnVisible(column, val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+long SequenceListConnection::GetColumnIndex ( enum SeqListConnectionColumns column ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetColumnIndex(column, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface SequenceListConnections wrapper method implementations
+//
+
+SequenceListConnectionPtr SequenceListConnections::GetItem ( long itemIndex ) {
+    struct SequenceListConnection * _result = 0;
+    HRESULT _hr = get_Item(itemIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return SequenceListConnectionPtr(_result, false);
+}
+
+IUnknownPtr SequenceListConnections::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long SequenceListConnections::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+SequenceListConnectionPtr SequenceListConnections::Add ( IDispatch * uiObj ) {
+    struct SequenceListConnection * _result = 0;
+    HRESULT _hr = raw_Add(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return SequenceListConnectionPtr(_result, false);
+}
+
+VARIANT_BOOL SequenceListConnections::Remove ( IDispatch * uiObj ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_Remove(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT SequenceListConnections::Clear ( ) {
+    HRESULT _hr = raw_Clear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+SequenceListConnectionPtr SequenceListConnections::FromControl ( IDispatch * uiObj ) {
+    struct SequenceListConnection * _result = 0;
+    HRESULT _hr = raw_FromControl(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return SequenceListConnectionPtr(_result, false);
+}
+
+//
+// interface StepGroupListConnections wrapper method implementations
+//
+
+StepGroupListConnectionPtr StepGroupListConnections::GetItem ( long itemIndex ) {
+    struct StepGroupListConnection * _result = 0;
+    HRESULT _hr = get_Item(itemIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return StepGroupListConnectionPtr(_result, false);
+}
+
+IUnknownPtr StepGroupListConnections::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long StepGroupListConnections::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+StepGroupListConnectionPtr StepGroupListConnections::Add ( IDispatch * uiObj ) {
+    struct StepGroupListConnection * _result = 0;
+    HRESULT _hr = raw_Add(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return StepGroupListConnectionPtr(_result, false);
+}
+
+VARIANT_BOOL StepGroupListConnections::Remove ( IDispatch * uiObj ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_Remove(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT StepGroupListConnections::Clear ( ) {
+    HRESULT _hr = raw_Clear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+StepGroupListConnectionPtr StepGroupListConnections::FromControl ( IDispatch * uiObj ) {
+    struct StepGroupListConnection * _result = 0;
+    HRESULT _hr = raw_FromControl(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return StepGroupListConnectionPtr(_result, false);
+}
+
+//
+// interface VariablesConnection wrapper method implementations
+//
+
+IDispatchPtr VariablesConnection::GetUIControl ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_UIControl(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+//
+// interface VariablesConnections wrapper method implementations
+//
+
+VariablesConnectionPtr VariablesConnections::GetItem ( long itemIndex ) {
+    struct VariablesConnection * _result = 0;
+    HRESULT _hr = get_Item(itemIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return VariablesConnectionPtr(_result, false);
+}
+
+IUnknownPtr VariablesConnections::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long VariablesConnections::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+VariablesConnectionPtr VariablesConnections::Add ( IDispatch * uiObj ) {
+    struct VariablesConnection * _result = 0;
+    HRESULT _hr = raw_Add(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return VariablesConnectionPtr(_result, false);
+}
+
+VARIANT_BOOL VariablesConnections::Remove ( IDispatch * uiObj ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_Remove(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT VariablesConnections::Clear ( ) {
+    HRESULT _hr = raw_Clear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+VariablesConnectionPtr VariablesConnections::FromControl ( IDispatch * uiObj ) {
+    struct VariablesConnection * _result = 0;
+    HRESULT _hr = raw_FromControl(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return VariablesConnectionPtr(_result, false);
+}
+
+//
+// interface InsertionPaletteConnection wrapper method implementations
+//
+
+IDispatchPtr InsertionPaletteConnection::GetUIControl ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_UIControl(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+long InsertionPaletteConnection::GetStepTypesPage ( ) {
+    long _result = 0;
+    HRESULT _hr = get_StepTypesPage(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+long InsertionPaletteConnection::GetTemplatesPage ( ) {
+    long _result = 0;
+    HRESULT _hr = get_TemplatesPage(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface InsertionPaletteConnections wrapper method implementations
+//
+
+InsertionPaletteConnectionPtr InsertionPaletteConnections::GetItem ( long itemIndex ) {
+    struct InsertionPaletteConnection * _result = 0;
+    HRESULT _hr = get_Item(itemIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return InsertionPaletteConnectionPtr(_result, false);
+}
+
+IUnknownPtr InsertionPaletteConnections::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long InsertionPaletteConnections::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+InsertionPaletteConnectionPtr InsertionPaletteConnections::Add ( IDispatch * uiObj ) {
+    struct InsertionPaletteConnection * _result = 0;
+    HRESULT _hr = raw_Add(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return InsertionPaletteConnectionPtr(_result, false);
+}
+
+VARIANT_BOOL InsertionPaletteConnections::Remove ( IDispatch * uiObj ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_Remove(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT InsertionPaletteConnections::Clear ( ) {
+    HRESULT _hr = raw_Clear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+InsertionPaletteConnectionPtr InsertionPaletteConnections::FromControl ( IDispatch * uiObj ) {
+    struct InsertionPaletteConnection * _result = 0;
+    HRESULT _hr = raw_FromControl(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return InsertionPaletteConnectionPtr(_result, false);
+}
+
+//
+// interface SequenceFileViewMgrConnections wrapper method implementations
+//
+
+SequenceFileListConnectionsPtr SequenceFileViewMgrConnections::GetSequenceFileList ( ) {
+    struct SequenceFileListConnections * _result = 0;
+    HRESULT _hr = get_SequenceFileList(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return SequenceFileListConnectionsPtr(_result, false);
+}
+
+SequenceListConnectionsPtr SequenceFileViewMgrConnections::GetSequenceList ( ) {
+    struct SequenceListConnections * _result = 0;
+    HRESULT _hr = get_SequenceList(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return SequenceListConnectionsPtr(_result, false);
+}
+
+StepGroupListConnectionsPtr SequenceFileViewMgrConnections::GetStepGroupList ( ) {
+    struct StepGroupListConnections * _result = 0;
+    HRESULT _hr = get_StepGroupList(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return StepGroupListConnectionsPtr(_result, false);
+}
+
+SequenceViewConnectionsPtr SequenceFileViewMgrConnections::GetSequenceView ( ) {
+    struct SequenceViewConnections * _result = 0;
+    HRESULT _hr = get_SequenceView(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return SequenceViewConnectionsPtr(_result, false);
+}
+
+CommandConnectionsPtr SequenceFileViewMgrConnections::GetCommand ( ) {
+    struct CommandConnections * _result = 0;
+    HRESULT _hr = get_Command(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CommandConnectionsPtr(_result, false);
+}
+
+CaptionConnectionsPtr SequenceFileViewMgrConnections::GetCaption ( ) {
+    struct CaptionConnections * _result = 0;
+    HRESULT _hr = get_Caption(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CaptionConnectionsPtr(_result, false);
+}
+
+ImageConnectionsPtr SequenceFileViewMgrConnections::GetImage ( ) {
+    struct ImageConnections * _result = 0;
+    HRESULT _hr = get_Image(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ImageConnectionsPtr(_result, false);
+}
+
+VariablesConnectionsPtr SequenceFileViewMgrConnections::GetVariables ( ) {
+    struct VariablesConnections * _result = 0;
+    HRESULT _hr = get_Variables(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return VariablesConnectionsPtr(_result, false);
+}
+
+InsertionPaletteConnectionsPtr SequenceFileViewMgrConnections::GetInsertionPalettes ( ) {
+    struct InsertionPaletteConnections * _result = 0;
+    HRESULT _hr = get_InsertionPalettes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return InsertionPaletteConnectionsPtr(_result, false);
+}
+
+//
+// interface ExecutionViewConnection wrapper method implementations
+//
+
+OLE_COLOR ExecutionViewConnection::GetColorRunning ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_ColorRunning(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void ExecutionViewConnection::PutColorRunning ( OLE_COLOR val ) {
+    HRESULT _hr = put_ColorRunning(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+OLE_COLOR ExecutionViewConnection::GetColorPaused ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_ColorPaused(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void ExecutionViewConnection::PutColorPaused ( OLE_COLOR val ) {
+    HRESULT _hr = put_ColorPaused(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+OLE_COLOR ExecutionViewConnection::GetColorStopped ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_ColorStopped(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void ExecutionViewConnection::PutColorStopped ( OLE_COLOR val ) {
+    HRESULT _hr = put_ColorStopped(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+long ExecutionViewConnection::GetOptions ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Options(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void ExecutionViewConnection::PutOptions ( long val ) {
+    HRESULT _hr = put_Options(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+IDispatchPtr ExecutionViewConnection::GetUIControl ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_UIControl(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+//
+// interface ExecutionViewConnections wrapper method implementations
+//
+
+ExecutionViewConnectionPtr ExecutionViewConnections::GetItem ( long itemIndex ) {
+    struct ExecutionViewConnection * _result = 0;
+    HRESULT _hr = get_Item(itemIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ExecutionViewConnectionPtr(_result, false);
+}
+
+IUnknownPtr ExecutionViewConnections::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long ExecutionViewConnections::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+ExecutionViewConnectionPtr ExecutionViewConnections::Add ( IDispatch * uiObj ) {
+    struct ExecutionViewConnection * _result = 0;
+    HRESULT _hr = raw_Add(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ExecutionViewConnectionPtr(_result, false);
+}
+
+VARIANT_BOOL ExecutionViewConnections::Remove ( IDispatch * uiObj ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_Remove(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT ExecutionViewConnections::Clear ( ) {
+    HRESULT _hr = raw_Clear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+ExecutionViewConnectionPtr ExecutionViewConnections::FromControl ( IDispatch * uiObj ) {
+    struct ExecutionViewConnection * _result = 0;
+    HRESULT _hr = raw_FromControl(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ExecutionViewConnectionPtr(_result, false);
+}
+
+//
+// interface CallStackConnections wrapper method implementations
+//
+
+CallStackConnectionPtr CallStackConnections::GetItem ( long itemIndex ) {
+    struct CallStackConnection * _result = 0;
+    HRESULT _hr = get_Item(itemIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CallStackConnectionPtr(_result, false);
+}
+
+IUnknownPtr CallStackConnections::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long CallStackConnections::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+CallStackConnectionPtr CallStackConnections::Add ( IDispatch * uiObj ) {
+    struct CallStackConnection * _result = 0;
+    HRESULT _hr = raw_Add(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CallStackConnectionPtr(_result, false);
+}
+
+VARIANT_BOOL CallStackConnections::Remove ( IDispatch * uiObj ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_Remove(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT CallStackConnections::Clear ( ) {
+    HRESULT _hr = raw_Clear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+CallStackConnectionPtr CallStackConnections::FromControl ( IDispatch * uiObj ) {
+    struct CallStackConnection * _result = 0;
+    HRESULT _hr = raw_FromControl(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CallStackConnectionPtr(_result, false);
+}
+
+//
+// interface ThreadListConnections wrapper method implementations
+//
+
+ThreadListConnectionPtr ThreadListConnections::GetItem ( long itemIndex ) {
+    struct ThreadListConnection * _result = 0;
+    HRESULT _hr = get_Item(itemIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ThreadListConnectionPtr(_result, false);
+}
+
+IUnknownPtr ThreadListConnections::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long ThreadListConnections::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+ThreadListConnectionPtr ThreadListConnections::Add ( IDispatch * uiObj ) {
+    struct ThreadListConnection * _result = 0;
+    HRESULT _hr = raw_Add(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ThreadListConnectionPtr(_result, false);
+}
+
+VARIANT_BOOL ThreadListConnections::Remove ( IDispatch * uiObj ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_Remove(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT ThreadListConnections::Clear ( ) {
+    HRESULT _hr = raw_Clear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+ThreadListConnectionPtr ThreadListConnections::FromControl ( IDispatch * uiObj ) {
+    struct ThreadListConnection * _result = 0;
+    HRESULT _hr = raw_FromControl(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ThreadListConnectionPtr(_result, false);
+}
+
+//
+// interface ExecutionListConnection wrapper method implementations
+//
+
+void ExecutionListConnection::PutShowHiddenExecutions ( VARIANT_BOOL val ) {
+    HRESULT _hr = put_ShowHiddenExecutions(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+VARIANT_BOOL ExecutionListConnection::GetShowHiddenExecutions ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_ShowHiddenExecutions(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+void ExecutionListConnection::PutDisplayExpression ( _bstr_t val ) {
+    HRESULT _hr = put_DisplayExpression(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+_bstr_t ExecutionListConnection::GetDisplayExpression ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DisplayExpression(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface ExecutionListConnections wrapper method implementations
+//
+
+ExecutionListConnectionPtr ExecutionListConnections::GetItem ( long itemIndex ) {
+    struct ExecutionListConnection * _result = 0;
+    HRESULT _hr = get_Item(itemIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ExecutionListConnectionPtr(_result, false);
+}
+
+IUnknownPtr ExecutionListConnections::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long ExecutionListConnections::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+ExecutionListConnectionPtr ExecutionListConnections::Add ( IDispatch * uiObj ) {
+    struct ExecutionListConnection * _result = 0;
+    HRESULT _hr = raw_Add(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ExecutionListConnectionPtr(_result, false);
+}
+
+VARIANT_BOOL ExecutionListConnections::Remove ( IDispatch * uiObj ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_Remove(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT ExecutionListConnections::Clear ( ) {
+    HRESULT _hr = raw_Clear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+ExecutionListConnectionPtr ExecutionListConnections::FromControl ( IDispatch * uiObj ) {
+    struct ExecutionListConnection * _result = 0;
+    HRESULT _hr = raw_FromControl(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ExecutionListConnectionPtr(_result, false);
+}
+
+//
+// interface ReportViewConnections wrapper method implementations
+//
+
+ReportViewConnectionPtr ReportViewConnections::GetItem ( long itemIndex ) {
+    struct ReportViewConnection * _result = 0;
+    HRESULT _hr = get_Item(itemIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ReportViewConnectionPtr(_result, false);
+}
+
+IUnknownPtr ReportViewConnections::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long ReportViewConnections::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+ReportViewConnectionPtr ReportViewConnections::Add ( IDispatch * uiObj ) {
+    struct ReportViewConnection * _result = 0;
+    HRESULT _hr = raw_Add(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ReportViewConnectionPtr(_result, false);
+}
+
+VARIANT_BOOL ReportViewConnections::Remove ( IDispatch * uiObj ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_Remove(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT ReportViewConnections::Clear ( ) {
+    HRESULT _hr = raw_Clear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+ReportViewConnectionPtr ReportViewConnections::FromControl ( IDispatch * uiObj ) {
+    struct ReportViewConnection * _result = 0;
+    HRESULT _hr = raw_FromControl(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ReportViewConnectionPtr(_result, false);
+}
+
+//
+// interface ExecutionViewMgrConnections wrapper method implementations
+//
+
+ExecutionViewConnectionsPtr ExecutionViewMgrConnections::GetExecutionView ( ) {
+    struct ExecutionViewConnections * _result = 0;
+    HRESULT _hr = get_ExecutionView(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ExecutionViewConnectionsPtr(_result, false);
+}
+
+ReportViewConnectionsPtr ExecutionViewMgrConnections::GetReportView ( ) {
+    struct ReportViewConnections * _result = 0;
+    HRESULT _hr = get_ReportView(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ReportViewConnectionsPtr(_result, false);
+}
+
+ExecutionListConnectionsPtr ExecutionViewMgrConnections::GetExecutionList ( ) {
+    struct ExecutionListConnections * _result = 0;
+    HRESULT _hr = get_ExecutionList(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ExecutionListConnectionsPtr(_result, false);
+}
+
+CommandConnectionsPtr ExecutionViewMgrConnections::GetCommand ( ) {
+    struct CommandConnections * _result = 0;
+    HRESULT _hr = get_Command(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CommandConnectionsPtr(_result, false);
+}
+
+CaptionConnectionsPtr ExecutionViewMgrConnections::GetCaption ( ) {
+    struct CaptionConnections * _result = 0;
+    HRESULT _hr = get_Caption(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CaptionConnectionsPtr(_result, false);
+}
+
+CallStackConnectionsPtr ExecutionViewMgrConnections::GetCallStack ( ) {
+    struct CallStackConnections * _result = 0;
+    HRESULT _hr = get_CallStack(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CallStackConnectionsPtr(_result, false);
+}
+
+ThreadListConnectionsPtr ExecutionViewMgrConnections::GetThreadList ( ) {
+    struct ThreadListConnections * _result = 0;
+    HRESULT _hr = get_ThreadList(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ThreadListConnectionsPtr(_result, false);
+}
+
+ImageConnectionsPtr ExecutionViewMgrConnections::GetImage ( ) {
+    struct ImageConnections * _result = 0;
+    HRESULT _hr = get_Image(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ImageConnectionsPtr(_result, false);
+}
+
+NumericConnectionsPtr ExecutionViewMgrConnections::GetNumeric ( ) {
+    struct NumericConnections * _result = 0;
+    HRESULT _hr = get_Numeric(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return NumericConnectionsPtr(_result, false);
+}
+
+VariablesConnectionsPtr ExecutionViewMgrConnections::GetVariables ( ) {
+    struct VariablesConnections * _result = 0;
+    HRESULT _hr = get_Variables(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return VariablesConnectionsPtr(_result, false);
+}
+
+//
+// interface AdapterListConnections wrapper method implementations
+//
+
+AdapterListConnectionPtr AdapterListConnections::GetItem ( long itemIndex ) {
+    struct AdapterListConnection * _result = 0;
+    HRESULT _hr = get_Item(itemIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return AdapterListConnectionPtr(_result, false);
+}
+
+IUnknownPtr AdapterListConnections::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long AdapterListConnections::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+AdapterListConnectionPtr AdapterListConnections::Add ( IDispatch * uiObj ) {
+    struct AdapterListConnection * _result = 0;
+    HRESULT _hr = raw_Add(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return AdapterListConnectionPtr(_result, false);
+}
+
+VARIANT_BOOL AdapterListConnections::Remove ( IDispatch * uiObj ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_Remove(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT AdapterListConnections::Clear ( ) {
+    HRESULT _hr = raw_Clear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+AdapterListConnectionPtr AdapterListConnections::FromControl ( IDispatch * uiObj ) {
+    struct AdapterListConnection * _result = 0;
+    HRESULT _hr = raw_FromControl(uiObj, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return AdapterListConnectionPtr(_result, false);
+}
+
+//
+// interface ApplicationMgrConnections wrapper method implementations
+//
+
+CommandConnectionsPtr ApplicationMgrConnections::GetCommand ( ) {
+    struct CommandConnections * _result = 0;
+    HRESULT _hr = get_Command(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CommandConnectionsPtr(_result, false);
+}
+
+CaptionConnectionsPtr ApplicationMgrConnections::GetCaption ( ) {
+    struct CaptionConnections * _result = 0;
+    HRESULT _hr = get_Caption(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return CaptionConnectionsPtr(_result, false);
+}
+
+AdapterListConnectionsPtr ApplicationMgrConnections::GetAdapterList ( ) {
+    struct AdapterListConnections * _result = 0;
+    HRESULT _hr = get_AdapterList(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return AdapterListConnectionsPtr(_result, false);
+}
+
+//
+// interface SelectedSequences wrapper method implementations
+//
+
+TS::SequencePtr SelectedSequences::GetItem ( long itemIndex ) {
+    struct TS::Sequence * _result = 0;
+    HRESULT _hr = get_Item(itemIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::SequencePtr(_result, false);
+}
+
+IUnknownPtr SelectedSequences::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long SelectedSequences::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT SelectedSequences::Clear ( ) {
+    HRESULT _hr = raw_Clear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT SelectedSequences::AddSequence ( struct TS::Sequence * val ) {
+    HRESULT _hr = raw_AddSequence(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT SelectedSequences::AddSequences ( SAFEARRAY * val ) {
+    HRESULT _hr = raw_AddSequences(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT SelectedSequences::BeginUpdate ( ) {
+    HRESULT _hr = raw_BeginUpdate();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT SelectedSequences::EndUpdate ( ) {
+    HRESULT _hr = raw_EndUpdate();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface SelectedPropertyObjects wrapper method implementations
+//
+
+TS::PropertyObjectPtr SelectedPropertyObjects::GetItem ( long itemIndex ) {
+    struct TS::PropertyObject * _result = 0;
+    HRESULT _hr = get_Item(itemIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TS::PropertyObjectPtr(_result, false);
+}
+
+IUnknownPtr SelectedPropertyObjects::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+long SelectedPropertyObjects::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+HRESULT SelectedPropertyObjects::Clear ( ) {
+    HRESULT _hr = raw_Clear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT SelectedPropertyObjects::AddPropertyObject ( struct TS::PropertyObject * val ) {
+    HRESULT _hr = raw_AddPropertyObject(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT SelectedPropertyObjects::AddPropertyObjects ( SAFEARRAY * val ) {
+    HRESULT _hr = raw_AddPropertyObjects(val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT SelectedPropertyObjects::BeginUpdate ( ) {
+    HRESULT _hr = raw_BeginUpdate();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+HRESULT SelectedPropertyObjects::EndUpdate ( ) {
+    HRESULT _hr = raw_EndUpdate();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+} // namespace TSUI
